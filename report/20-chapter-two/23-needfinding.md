@@ -40,3 +40,12 @@ En el caso de **Dafne**, también adquieren especial importancia la **consulta d
 En el caso de **Samir**, destacan las tareas relacionadas con la **comunicación y coordinación familiar**, debido a que actualmente depende de llamadas y de terceros para conocer el estado de su familiar.
 
 Estas tareas representan actividades que los usuarios ya realizan en su contexto actual y permiten identificar oportunidades para **reducir esfuerzos**, **tiempos de coordinación** e **incertidumbre**.
+
+### 2.3.3. User Journey Mapping
+Se elaboraron los User Journey Maps para representar la experiencia actual (As-Is) de los usuarios durante el seguimiento y cuidado de adultos mayores.
+Los mapas permiten identificar las principales etapas del proceso, las acciones realizadas, los pensamientos y emociones de los usuarios, los puntos de dolor y las oportunidades de mejora.
+Para su elaboración se utilizó **UXPressia**.
+
+#### User Journey Map — Dafne
+
+#### User Journey Map — Samir
