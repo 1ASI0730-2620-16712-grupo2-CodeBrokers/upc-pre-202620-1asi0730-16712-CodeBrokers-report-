@@ -20,20 +20,64 @@ Se desarrollaron dos User Personas principales: Dafne Cabrera Sánchez, como rep
 La User Task Matrix permite identificar las principales tareas que los usuarios realizan actualmente dentro del proceso de cuidado y seguimiento de adultos mayores, independientemente de la existencia de SeniorCare.
 Las tareas fueron identificadas a partir de las entrevistas realizadas y se clasificaron según los usuarios involucrados, su frecuencia y su nivel de importancia.
 
-| N.º | Tarea actual | **Dafne** | **Samir** | Frecuencia | Importancia |
-|:---:|---|:---:|:---:|:---:|:---:|
-| 1 | Supervisar el estado del adulto mayor | ✓ | ✓ | Alta | Alta |
-| 2 | Comunicarse con el adulto mayor | ✓ | ✓ | Alta | Alta |
-| 3 | Comunicarse con familiares o responsables | ✓ | ✓ | Alta | Alta |
-| 4 | Identificar situaciones que requieren atención | ✓ | ✓ | Media | Alta |
-| 5 | Informar sobre un incidente o cambio de estado | ✓ | ✓ | Media | Alta |
-| 6 | Confirmar que una situación fue atendida | ✓ | ✓ | Media | Alta |
-| 7 | Consultar información previa del adulto mayor | ✓ | — | Media | Alta |
-| 8 | Registrar observaciones sobre el estado del adulto mayor | ✓ | — | Alta | Alta |
-| 9 | Coordinar la atención con otras personas responsables | ✓ | ✓ | Alta | Alta |
-| 10 | Realizar llamadas de seguimiento | ✓ | ✓ | Alta | Media |
-| 11 | Verificar información proporcionada por terceros | ✓ | ✓ | Media | Alta |
-| 12 | Mantener informados a otros responsables | ✓ | ✓ | Media | Alta |
+\setlength{\LTleft}{\fill}
+\setlength{\LTright}{\fill}
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{4pt}
+
+\fontsize{8}{9.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{longtable}{
+|>{\centering\arraybackslash}p{0.06\textwidth}
+|>{\raggedright\arraybackslash}p{0.44\textwidth}
+|>{\centering\arraybackslash}p{0.11\textwidth}
+|>{\centering\arraybackslash}p{0.11\textwidth}
+|>{\centering\arraybackslash}p{0.12\textwidth}
+|>{\centering\arraybackslash}p{0.12\textwidth}|
+}
+
+\hline
+\multicolumn{6}{|c|}{\textbf{\normalsize User Task Matrix}} \\
+\hline
+\textbf{N.º} & \textbf{Tarea actual} & \textbf{Dafne} & \textbf{Samir} & \textbf{Frecuencia} & \textbf{Importancia} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{N.º} & \textbf{Tarea actual} & \textbf{Dafne} & \textbf{Samir} & \textbf{Frecuencia} & \textbf{Importancia} \\
+\hline
+\endhead
+
+1 & Supervisar el estado del adulto mayor & \checkmark & \checkmark & Alta & Alta \\
+\hline
+2 & Comunicarse con el adulto mayor & \checkmark & \checkmark & Alta & Alta \\
+\hline
+3 & Comunicarse con familiares o responsables & \checkmark & \checkmark & Alta & Alta \\
+\hline
+4 & Identificar situaciones que requieren atención & \checkmark & \checkmark & Media & Alta \\
+\hline
+5 & Informar sobre un incidente o cambio de estado & \checkmark & \checkmark & Media & Alta \\
+\hline
+6 & Confirmar que una situación fue atendida & \checkmark & \checkmark & Media & Alta \\
+\hline
+7 & Consultar información previa del adulto mayor & \checkmark & --- & Media & Alta \\
+\hline
+8 & Registrar observaciones sobre el estado del adulto mayor & \checkmark & --- & Alta & Alta \\
+\hline
+9 & Coordinar la atención con otras personas responsables & \checkmark & \checkmark & Alta & Alta \\
+\hline
+10 & Realizar llamadas de seguimiento & \checkmark & \checkmark & Alta & Media \\
+\hline
+11 & Verificar información proporcionada por terceros & \checkmark & \checkmark & Media & Alta \\
+\hline
+12 & Mantener informados a otros responsables & \checkmark & \checkmark & Media & Alta \\
+\hline
+
+\end{longtable}
+
+\normalsize
 
 #### **Análisis de la User Task Matrix**
 
