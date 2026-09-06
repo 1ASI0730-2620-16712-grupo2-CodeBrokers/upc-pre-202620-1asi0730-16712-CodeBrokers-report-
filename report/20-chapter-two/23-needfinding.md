@@ -50,29 +50,29 @@ Las tareas fueron identificadas a partir de las entrevistas realizadas y se clas
 \hline
 \endhead
 
-1 & Supervisar el estado del adulto mayor & \checkmark & \checkmark & Alta & Alta \\
+1 & Supervisar el estado del adulto mayor & $\checkmark$ & $\checkmark$ & Alta & Alta \\
 \hline
-2 & Comunicarse con el adulto mayor & \checkmark & \checkmark & Alta & Alta \\
+2 & Comunicarse con el adulto mayor & $\checkmark$ & $\checkmark$ & Alta & Alta \\
 \hline
-3 & Comunicarse con familiares o responsables & \checkmark & \checkmark & Alta & Alta \\
+3 & Comunicarse con familiares o responsables & $\checkmark$ & $\checkmark$ & Alta & Alta \\
 \hline
-4 & Identificar situaciones que requieren atención & \checkmark & \checkmark & Media & Alta \\
+4 & Identificar situaciones que requieren atención & $\checkmark$ & $\checkmark$ & Media & Alta \\
 \hline
-5 & Informar sobre un incidente o cambio de estado & \checkmark & \checkmark & Media & Alta \\
+5 & Informar sobre un incidente o cambio de estado & $\checkmark$ & $\checkmark$ & Media & Alta \\
 \hline
-6 & Confirmar que una situación fue atendida & \checkmark & \checkmark & Media & Alta \\
+6 & Confirmar que una situación fue atendida & $\checkmark$ & $\checkmark$ & Media & Alta \\
 \hline
-7 & Consultar información previa del adulto mayor & \checkmark & --- & Media & Alta \\
+7 & Consultar información previa del adulto mayor & $\checkmark$ & --- & Media & Alta \\
 \hline
-8 & Registrar observaciones sobre el estado del adulto mayor & \checkmark & --- & Alta & Alta \\
+8 & Registrar observaciones sobre el estado del adulto mayor & $\checkmark$ & --- & Alta & Alta \\
 \hline
-9 & Coordinar la atención con otras personas responsables & \checkmark & \checkmark & Alta & Alta \\
+9 & Coordinar la atención con otras personas responsables & $\checkmark$ & $\checkmark$ & Alta & Alta \\
 \hline
-10 & Realizar llamadas de seguimiento & \checkmark & \checkmark & Alta & Media \\
+10 & Realizar llamadas de seguimiento & $\checkmark$ & $\checkmark$ & Alta & Media \\
 \hline
-11 & Verificar información proporcionada por terceros & \checkmark & \checkmark & Media & Alta \\
+11 & Verificar información proporcionada por terceros & $\checkmark$ & $\checkmark$ & Media & Alta \\
 \hline
-12 & Mantener informados a otros responsables & \checkmark & \checkmark & Media & Alta \\
+12 & Mantener informados a otros responsables & $\checkmark$ & $\checkmark$ & Media & Alta \\
 \hline
 
 \end{longtable}
