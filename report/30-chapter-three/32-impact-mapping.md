@@ -9,4 +9,4 @@
 | Brindar mayor seguridad y acompañamiento al adulto mayor durante sus actividades cotidianas, incluso sin compañía física. | Adultos mayores | Contar con un sistema que identifique de manera temprana posibles situaciones de riesgo. | Monitoreo preventivo y sistema de alertas |
 | Incrementar la frecuencia de uso de la plataforma por parte de familiares y cuidadores. | Familiares y cuidadores | Obtener una visión clara y rápida del estado general del adulto mayor sin necesidad de encontrarse físicamente con él. | Panel de seguimiento remoto |
 
-Table: Impact Mapping de SeniorCare
+Table: Impact Mapping de Vitalink
