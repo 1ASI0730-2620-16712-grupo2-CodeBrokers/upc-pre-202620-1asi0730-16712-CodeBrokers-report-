@@ -49,3 +49,29 @@ Para su elaboración se utilizó **UXPressia**.
 #### User Journey Map — Dafne
 
 #### User Journey Map — Samir
+
+### 2.3.4. Empathy Mapping
+Se elaboraron los Empathy Maps de los User Personas con el propósito de comprender con mayor profundidad lo que los usuarios expresan, observan, realizan, escuchan, piensan y sienten durante el proceso actual de cuidado y seguimiento del adulto mayor.
+Los mapas también permiten identificar los principales Pains y Gains de cada perfil.
+Para su elaboración se utilizó UXPressia.
+La Figura 5 presenta el Empathy Map de Dafne, elaborado a partir de sus respuestas y experiencias durante el proceso actual de seguimiento de pacientes.
+
+#### Empathy Map — Dafne
+
+#### Empathy Map — Samir
+
+### Síntesis del Needfinding
+
+El análisis conjunto de los **User Personas**, **User Task Matrix**, **User Journey Maps** y **Empathy Maps** permite identificar cinco necesidades transversales en los usuarios entrevistados:
+
+1. **Información oportuna:** los usuarios necesitan conocer el estado del adulto mayor sin depender exclusivamente de llamadas o comunicaciones tardías.
+2. **Información centralizada:** tanto el personal de salud como los familiares enfrentan dificultades debido a la dispersión de información en notas, documentos, llamadas y mensajes.
+3. **Priorización de situaciones:** los usuarios necesitan distinguir rápidamente aquellas situaciones que requieren atención inmediata.
+4. **Coordinación entre responsables:** existe incertidumbre respecto a quién recibió la información, quién está atendiendo un caso y si la situación ya fue resuelta.
+5. **Privacidad y seguridad:** los usuarios consideran importante conocer quién puede acceder a la información del adulto mayor y que los datos permanezcan protegidos.
+
+En consecuencia, la principal necesidad identificada es **reducir la incertidumbre** asociada al estado y cuidado del adulto mayor, facilitando el acceso oportuno a información relevante y la coordinación entre las personas responsables.
+
+Para el **personal de salud**, esto implica contar con mayor claridad sobre los casos que requieren seguimiento y sobre las acciones realizadas. Para los **familiares**, implica conocer de manera sencilla si el adulto mayor se encuentra bien, si requiere atención y si alguna persona ya está encargándose de la situación.
+
+Estos hallazgos constituyen la base para definir posteriormente las necesidades funcionales y las oportunidades de diseño de **SeniorCare**.
