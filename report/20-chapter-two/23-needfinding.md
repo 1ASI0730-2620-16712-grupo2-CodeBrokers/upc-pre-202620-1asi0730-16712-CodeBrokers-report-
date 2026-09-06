@@ -1,23 +1,23 @@
 ## 2.3. Needfinding
-El proceso de Needfinding permitió identificar las principales necesidades, dificultades y expectativas de los usuarios que participan en el cuidado y seguimiento de adultos mayores. Para ello, se analizaron las entrevistas realizadas a representantes de los segmentos objetivo de SeniorCare: Clínicas y hospitales y Familiares y adultos mayores.
+El proceso de Needfinding permitió identificar las principales necesidades, dificultades y expectativas de los usuarios que participan en el cuidado y seguimiento de adultos mayores. Para ello, se analizaron las entrevistas realizadas a representantes de los segmentos objetivo de VitaLink: Clínicas y hospitales y Familiares y adultos mayores.
 Los hallazgos evidencian que actualmente el seguimiento de los adultos mayores depende principalmente de llamadas telefónicas, WhatsApp, notas físicas y otros medios informales. Esta situación genera información dispersa, comunicación tardía, dificultad para conocer el estado actual del adulto mayor y problemas para coordinar quién se encuentra atendiendo una situación determinada.
 A partir de estos resultados se desarrollaron los siguientes artefactos de Needfinding: User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping. Estos permiten representar las características de los usuarios, sus tareas actuales, la experiencia que atraviesan y los principales puntos de dolor y oportunidades identificados durante las entrevistas.
 
 ### 2.3.1. User Personas
-A partir de las entrevistas realizadas se construyeron los User Personas correspondientes a los segmentos objetivo de SeniorCare. Cada persona representa las características, necesidades, comportamientos, motivaciones y dificultades identificadas en los usuarios entrevistados.
+A partir de las entrevistas realizadas se construyeron los User Personas correspondientes a los segmentos objetivo de VitaLink. Cada persona representa las características, necesidades, comportamientos, motivaciones y dificultades identificadas en los usuarios entrevistados.
 Para la elaboración de estos perfiles se utilizó UXPressia, siguiendo las indicaciones establecidas para el desarrollo de los artefactos de Needfinding.
 Se desarrollaron dos User Personas principales: Dafne Cabrera Sánchez, como representante del segmento de clínicas y hospitales, y Samir Choquehuanca Miranda, como representante del segmento de familiares y adultos mayores.
 
 #### 2.3.1.1 User Persona – Clínicas y hospitales
 
-\includegraphics[width=0.7\linewidth]{assets/User Persona - Dafne Cabrera.png}
+![User Persona – Clínicas y hospitales](assets/User Persona - Dafne Cabrera.png){width=90%}
 
 #### 2.3.1.2 User Persona – Familiares y adultos mayores
 
-\includegraphics[width=0.7\linewidth]{assets/User Persona - Samir Choquehuanca.png}
+![User Persona – Familiares y adultos mayores](assets/User Persona - Samir Choquehuanca.png){width=90%}
 
 ### 2.3.2. User Task Matrix
-La User Task Matrix permite identificar las principales tareas que los usuarios realizan actualmente dentro del proceso de cuidado y seguimiento de adultos mayores, independientemente de la existencia de SeniorCare.
+La User Task Matrix permite identificar las principales tareas que los usuarios realizan actualmente dentro del proceso de cuidado y seguimiento de adultos mayores, independientemente de la existencia de VitaLink.
 Las tareas fueron identificadas a partir de las entrevistas realizadas y se clasificaron según los usuarios involucrados, su frecuencia y su nivel de importancia.
 
 \setlength{\LTleft}{\fill}
@@ -94,13 +94,25 @@ Se elaboraron los User Journey Maps para representar la experiencia actual (As-I
 Los mapas permiten identificar las principales etapas del proceso, las acciones realizadas, los pensamientos y emociones de los usuarios, los puntos de dolor y las oportunidades de mejora.
 Para su elaboración se utilizó **UXPressia**.
 
-#### User Journey Map — Dafne
+```{=latex}
+\begin{center}
+\includegraphics[width=0.90\textwidth]{assets/As-Is User Journey – Dafne Cabrera.png}
 
-\includegraphics[width=0.7\linewidth]{assets/As-Is User Journey – Dafne Cabrera.png}
+\vspace{0.15cm}
 
-#### User Journey Map — Samir
+{\small Figura 3: User Journey Map - Clínicas y hospitales}
+\end{center}
+```
 
-\includegraphics[width=0.7\linewidth]{assets/As-Is User Journey – Samir.png}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.90\textwidth]{assets/As-Is User Journey – Samir.png}
+
+\vspace{0.15cm}
+
+{\small Figura 4: User Journey Map - Familias y Adulto Mayor}
+\end{center}
+```
 
 ### 2.3.4. Empathy Mapping
 Se elaboraron los Empathy Maps de los User Personas con el propósito de comprender con mayor profundidad lo que los usuarios expresan, observan, realizan, escuchan, piensan y sienten durante el proceso actual de cuidado y seguimiento del adulto mayor.
@@ -108,14 +120,27 @@ Los mapas también permiten identificar los principales Pains y Gains de cada pe
 Para su elaboración se utilizó UXPressia.
 La Figura 5 presenta el Empathy Map de Dafne, elaborado a partir de sus respuestas y experiencias durante el proceso actual de seguimiento de pacientes.
 
-#### Empathy Map — Dafne
-
-\includegraphics[width=0.7\linewidth]{assets/Empathy map - Dafne.png}
 
 
-#### Empathy Map — Samir
+```{=latex}
+\begin{center}
+\includegraphics[width=0.90\textwidth]{assets/Empathy map - Dafne.png}
 
-\includegraphics[width=0.7\linewidth]{assets/Empathy map - Samir.png}
+\vspace{0.15cm}
+
+{\small Figura 5: Empathy Map - Clínicas y hospitales}
+\end{center}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.90\textwidth]{assets/Empathy map - Samir.png}
+
+\vspace{0.15cm}
+
+{\small Figura 6: Empathy Map - Familiares y Adulto Mayor}
+\end{center}
+```
 
 ### Síntesis del Needfinding
 
@@ -131,4 +156,4 @@ En consecuencia, la principal necesidad identificada es **reducir la incertidumb
 
 Para el **personal de salud**, esto implica contar con mayor claridad sobre los casos que requieren seguimiento y sobre las acciones realizadas. Para los **familiares**, implica conocer de manera sencilla si el adulto mayor se encuentra bien, si requiere atención y si alguna persona ya está encargándose de la situación.
 
-Estos hallazgos constituyen la base para definir posteriormente las necesidades funcionales y las oportunidades de diseño de **SeniorCare**.
+Estos hallazgos constituyen la base para definir posteriormente las necesidades funcionales y las oportunidades de diseño de **VitaLink**.
