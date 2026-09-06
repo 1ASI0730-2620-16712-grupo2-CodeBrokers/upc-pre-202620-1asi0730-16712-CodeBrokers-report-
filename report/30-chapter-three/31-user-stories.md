@@ -2,308 +2,34 @@
 
 ## 3.1. User Stories
 
-\subsection*{Épica 1 - Landing Page}
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **EP-01** | **Landing Page** | Sitio web estático con vistas segmentadas para captar pacientes/familiares y profesionales de salud. | - | - |
+| US-01 | Propuesta de valor segmentada en Landing Page | Como visitante, quiero entender en segundos qué problema resuelve VitaLink, para decidir si me interesa conocer más. | **Dado** que el visitante ingresa a la Landing Page, **Cuando** la página carga, **Entonces** el médico debe visualizar el titular "Optimice el seguimiento preventivo", y el familiar el titular "La tranquilidad de saber que tus padres están bien". | EP-01 |
+| US-02 | Explicación del funcionamiento del sistema | Como visitante, quiero entender cómo funciona la plataforma paso a paso, para evaluar su utilidad. | **Dado** que el usuario explora la página, **Cuando** llega a la sección de funcionamiento, **Entonces** el médico debe ver el "Flujo clínico integrado", y el familiar los "Cuatro pilares fundamentales" del servicio. | EP-01 |
+| US-03 | Visualización de Planes y Suscripciones | Como visitante, quiero conocer las opciones de planes y sus costos, para elegir el que mejor se adapte a mi necesidad. | **Dado** que el visitante navega a la sección de tarifas, **Cuando** revisa los planes, **Entonces** el sistema debe mostrar 3 opciones de suscripción específicas para su perfil (Básica/Pro/Institucional o Básico/Familiar/Plus) con sus respectivos precios. | EP-01 |
+| US-04 | Sección de privacidad y seguridad de datos | Como profesional de salud, quiero ver una sección de seguridad de datos, para confiar en registrar información clínica. | **Dado** que un profesional de salud explora la landing page, **Cuando** navega hacia la sección respectiva, **Entonces** debe visualizar los protocolos de "Seguridad de grado médico", incluyendo cifrado E2E, HIPAA & GDPR y control de acceso. | EP-01 |
+| US-05 | Respaldo mediante Testimonios | Como familiar, quiero leer historias de otras familias y médicos, para confiar en la efectividad del sistema. | **Dado** que un familiar evalúa la confiabilidad del servicio, **Cuando** visualiza la landing page, **Entonces** debe encontrar una sección con al menos tres testimonios reales de usuarios que respaldan la aplicación. | EP-01 |
+| US-06 | Interfaz de captura de leads (Botones de acción) | Como visitante, quiero botones claros para iniciar mi registro o pedir información, para comenzar a usar la plataforma. | **Dado** que el visitante decide adoptar la plataforma, **Cuando** interactúa con los llamados a la acción, **Entonces** el familiar debe ser dirigido al registro mediante "Crear cuenta", y el médico al contacto mediante "Unirme como proveedor" o "Solicitar información técnica". | EP-01 |
+| US-07 | Mockups visuales del producto | Como visitante, quiero ver ejemplos de la interfaz real, para entender rápidamente cómo se recibe la información. | **Dado** que un visitante revisa las funcionalidades, **Cuando** observa las imágenes ilustrativas, **Entonces** el médico debe ver un dashboard clínico en monitor, y el familiar una notificación de alerta en su smartphone. | EP-01 |
+| **EP-02** | **Frontend (Vista Médico)** | Interfaz de usuario para que los profesionales de salud gestionen pacientes y alertas. | - | - |
+| US-08 | Resumen inicial de alertas pendientes | Como médico, quiero ver un resumen inicial con pacientes pendientes, para priorizar mi atención al iniciar el día. | **Dado** que el médico inicia su jornada en la aplicación, **Cuando** accede a la pantalla principal, **Entonces** el sistema debe mostrar el número total de alertas pendientes y permitir la navegación hacia la lista completa. | EP-02 |
+| US-09 | Nivel de urgencia visual en cada alerta | Como médico, quiero ver el nivel de urgencia visual, para decidir rápido qué revisar primero. | **Dado** que el médico revisa la lista de alertas, **Cuando** el sistema carga los datos, **Entonces** cada alerta debe mostrar una etiqueta que clasifique visualmente su urgencia (alto, medio o bajo) permitiendo ordenarlas. | EP-02 |
+| US-10 | Acceso al detalle de paciente desde el resumen | Como médico, quiero acceder al detalle de un paciente desde el resumen, para revisar contexto sin buscar en varias pantallas. | **Dado** que el médico necesita más información de un caso, **Cuando** selecciona una alerta específica, **Entonces** el sistema debe navegar al expediente detallado del paciente manteniendo una opción de regreso al resumen. | EP-02 |
+| US-11 | Historial de registros del paciente ordenado | Como médico, quiero ver el historial ordenado por fecha, para entender la evolución sin papeles dispersos. | **Dado** que el médico visualiza el detalle de un paciente, **Cuando** accede a la sección de historial, **Entonces** debe visualizar los eventos organizados cronológicamente, o un mensaje informativo si no existen registros previos. | EP-02 |
+| US-12 | Marcar alerta como en revisión o atendida | Como médico, quiero marcar una alerta como "en revisión" o "atendida", para que otros sepan el estado del caso. | **Dado** que el médico gestiona una situación de riesgo, **Cuando** ejecuta la acción de cambiar el estado de la alerta, **Entonces** el sistema debe reflejar la actualización inmediatamente en el listado general de alertas. | EP-02 |
+| US-13 | Observación breve al atender una alerta | Como médico, quiero agregar una observación breve al atender una alerta, para dejar registro rápido de lo ocurrido. | **Dado** que el médico actualiza el estado de un incidente, **Cuando** finaliza la acción, **Entonces** el sistema debe habilitar un campo opcional para registrar observaciones asociadas a la fecha y nombre del médico. | EP-02 |
+| US-14 | Visibilidad de revisión previa por otro profesional | Como médico, quiero ver si un caso ya fue revisado, para evitar duplicar esfuerzos. | **Dado** que el médico analiza la lista de pendientes, **Cuando** visualiza las alertas, **Entonces** el sistema debe distinguir claramente aquellas que ya poseen revisión previa e indicar qué profesional interactuó con ellas. | EP-02 |
+| **EP-03** | **Backend (API RESTful)** | Lógica de servidor, base de datos y procesamiento de reglas de negocio. | - | - |
+| US-15 | Generación automática de alerta desde un evento | Como Developer, quiero registrar un evento y generar una alerta asociada mediante API, para iniciar el flujo de atención. | **Dado** que el servidor recibe una solicitud de registro de evento, **Cuando** los datos cumplen los parámetros de riesgo configurados, **Entonces** la API debe generar una alerta asociada, o retornar un error si los datos son inválidos. | EP-03 |
+| US-16 | Asignación de nivel de prioridad a alertas | Como Developer, quiero asignar un nivel de prioridad a cada alerta, para permitir su ordenamiento en el frontend. | **Dado** que el sistema procesa la creación de una nueva alerta, **Cuando** evalúa el payload de entrada, **Entonces** debe asignar y almacenar un nivel de prioridad que quedará expuesto a través del endpoint correspondiente. | EP-03 |
+| US-17 | Almacenamiento del historial del paciente | Como Developer, quiero almacenar el historial de un paciente, para permitir consultas posteriores. | **Dado** que el backend recibe acciones o alertas de un paciente, **Cuando** procesa la solicitud, **Entonces** debe persistir la información en la base de datos permitiendo futuras consultas filtradas por rango de fechas. | EP-03 |
+| US-18 | Trazabilidad de atención de alertas | Como Developer, quiero registrar quién atendió una alerta y cuándo, para mantener trazabilidad. | **Dado** que se ejecuta un endpoint de cambio de estado de alerta, **Cuando** la transacción es exitosa, **Entonces** la base de datos debe registrar el timestamp exacto y el identificador del profesional responsable. | EP-03 |
+| US-19 | Cambio de estado de alerta sin eliminar | Como Developer, quiero cambiar el estado de una alerta sin eliminarla, para conservar el historial completo. | **Dado** que el sistema recibe una solicitud para dar por cerrada una alerta, **Cuando** actualiza el registro, **Entonces** debe aplicar un soft-delete o actualizar su estado lógico, manteniendo la persistencia física de los datos. | EP-03 |
+| US-20 | Asociación de paciente con proveedor de salud | Como Developer, quiero asociar a cada paciente un proveedor de salud, para vincular la información clínica. | **Dado** que se envía la configuración de un paciente a la API, **Cuando** incluye un identificador de proveedor, **Entonces** el sistema debe validar y registrar la vinculación única, o marcarlo como "sin vincular" si es omitido. | EP-03 |
+| US-21 | Validación de datos básicos del paciente | Como Developer, quiero validar que los datos básicos estén completos, para asegurar información mínima confiable. | **Dado** que se solicita la activación del seguimiento clínico, **Cuando** el payload carece de campos obligatorios, **Entonces** la API debe retornar un código de error detallando específicamente qué atributos faltan. | EP-03 |
+| **EP-04** | **Frontend (Vista Familiar / Cuidador)** | Interfaz para que la red de apoyo supervise el estado del adulto mayor. | - | - |
+| US-22 | Panel visual del estado general | Como familiar cuidador, quiero ver un estado general y simple al abrir la app, para reducir mi ansiedad cuando estoy lejos. | **Dado** que el familiar inicia sesión en la aplicación móvil, **Cuando** carga la pantalla de inicio, **Entonces** debe visualizar un indicador claro en tiempo real sobre el bienestar del adulto mayor sin necesidad de navegar más profundo. | EP-04 |
+| US-23 | Confirmación rápida de atención de alertas | Como familiar cuidador, quiero confirmar con un solo botón que estoy atendiendo una alerta, para avisar a mi familia rápidamente. | **Dado** que el sistema reporta una situación irregular, **Cuando** el familiar interactúa con la notificación, **Entonces** debe disponer de un botón visible que marque la alerta como "atendida por familiar" informando a la red de cuidadores. | EP-04 |
+| US-24 | Visualización de información centralizada | Como familiar, quiero ver si otro familiar ya atendió un caso, para evitar coordinaciones telefónicas duplicadas. | **Dado** que ocurre un incidente, **Cuando** el familiar revisa el historial en la aplicación, **Entonces** el sistema debe indicar si algún miembro de la red de cuidadores o médico ya se hizo cargo de la situación. | EP-04 |
 
-\noindent
-\textbf{US-01: Propuesta de valor clara en Landing Page} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-01 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Propuesta de valor clara en Landing Page \\ \hline
-\textbf{Description} & Como visitante médico, quiero entender en segundos qué problema resuelve VitaLink, para decidir si me interesa conocer más. \\ \hline
-\textbf{Acceptance criteria} &
-1. El encabezado principal muestra un titular claro con el problema que resuelve VitaLink. \newline
-2. El mensaje central es visible sin necesidad de desplazarse. \newline
-3. El texto es comprensible en menos de 10 segundos de lectura. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-02: Sección de privacidad y seguridad de datos} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-02 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Sección de privacidad y seguridad de datos \\ \hline
-\textbf{Description} & Como profesional de salud, quiero ver una sección de privacidad/seguridad de datos, para confiar en registrar información de mis pacientes. \\ \hline
-\textbf{Acceptance criteria} &
-1. La landing page incluye una sección visible dedicada a privacidad y seguridad de datos. \newline
-2. Se incluye un enlace a la política de privacidad completa. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-03: Botón para solicitar información} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-03 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Botón para solicitar información \\ \hline
-\textbf{Description} & Como profesional de salud, quiero un botón claro para "solicitar información" antes de registrarme, para evaluar la herramienta sin compromiso. \\ \hline
-\textbf{Acceptance criteria} &
-1. El botón "Solicitar información" está visible en el encabezado de la página. \newline
-2. Al pulsar el botón, se despliega un formulario breve con nombre, correo y especialidad. \newline
-3. Tras enviar el formulario, el sistema muestra un mensaje de confirmación. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-04: Respaldo de clínicas e instituciones} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-04 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Respaldo de clínicas e instituciones \\ \hline
-\textbf{Description} & Como profesional de salud, quiero ver quiénes respaldan la plataforma (clínicas/instituciones), para confiar en su legitimidad. \\ \hline
-\textbf{Acceptance criteria} &
-1. La landing page muestra los logotipos de clínicas o instituciones que respaldan VitaLink. \newline
-2. Se incluye al menos un testimonio breve de un profesional de salud. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-05: Sección de preguntas frecuentes} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-05 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Sección de preguntas frecuentes \\ \hline
-\textbf{Description} & Como profesional de salud, quiero ver una sección de preguntas frecuentes, para resolver dudas sin tener que contactar a alguien. \\ \hline
-\textbf{Acceptance criteria} &
-1. La landing page incluye una sección de preguntas frecuentes. \newline
-2. Cada pregunta se expande y contrae al pulsarla. \newline
-3. Las preguntas cubren costos, privacidad y funcionamiento básico. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-06: Botón para unirse como proveedor de salud} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-06 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Botón para unirse como proveedor de salud \\ \hline
-\textbf{Description} & Como profesional de salud, quiero un botón específico para "unirme como proveedor de salud", para iniciar mi registro directamente. \\ \hline
-\textbf{Acceptance criteria} &
-1. El botón "Unirme como proveedor de salud" está visible en el encabezado. \newline
-2. Al pulsar el botón, el sistema dirige al flujo de registro para médicos. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-07: Ejemplo visual de una alerta} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-07 \\ \hline
-\textbf{Epic ID} & EP-01 \\ \hline
-\textbf{Title} & Ejemplo visual de una alerta \\ \hline
-\textbf{Description} & Como profesional de salud, quiero ver un ejemplo visual simple de cómo se ve una alerta, para entender rápido cómo funciona el seguimiento. \\ \hline
-\textbf{Acceptance criteria} &
-1. La landing page incluye un mockup ilustrativo de una alerta dentro del panel médico. \newline
-2. El ejemplo usa datos claramente ficticios. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-
-\subsection*{Épica 2 - Frontend (vista médico)}
-
-\noindent
-\textbf{US-08: Resumen inicial de alertas pendientes} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-08 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Resumen inicial de alertas pendientes \\ \hline
-\textbf{Description} & Como médico, quiero ver un resumen inicial con la cantidad de pacientes con alertas pendientes, para priorizar mi atención al iniciar el día. \\ \hline
-\textbf{Acceptance criteria} &
-1. La pantalla de Inicio muestra el número total de alertas pendientes al cargar. \newline
-2. Al pulsar el resumen, el sistema navega a la lista completa de alertas. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-09: Nivel de urgencia visual en cada alerta} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-09 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Nivel de urgencia visual en cada alerta \\ \hline
-\textbf{Description} & Como médico, quiero ver el nivel de urgencia de cada alerta de forma visual (color/etiqueta), para decidir rápido qué revisar primero. \\ \hline
-\textbf{Acceptance criteria} &
-1. Cada alerta muestra una etiqueta según su nivel de urgencia: alto, medio o bajo. \newline
-2. La lista de alertas se puede ordenar por nivel de urgencia. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-10: Acceso al detalle de paciente desde el resumen} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-10 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Acceso al detalle de paciente desde el resumen \\ \hline
-\textbf{Description} & Como médico, quiero acceder al detalle de un paciente desde el resumen, para revisar contexto sin buscar en varias pantallas. \\ \hline
-\textbf{Acceptance criteria} &
-1. Cada alerta del resumen navega directamente al detalle del paciente correspondiente. \newline
-2. El sistema mantiene un botón de regreso al resumen. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-11: Historial de registros del paciente ordenado por fecha} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-11 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Historial de registros del paciente ordenado por fecha \\ \hline
-\textbf{Description} & Como médico, quiero ver el historial de registros de un paciente ordenado por fecha, para entender su evolución sin papeles dispersos. \\ \hline
-\textbf{Acceptance criteria} &
-1. El historial se muestra en orden cronológico descendente por defecto. \newline
-2. Cada registro indica fecha, tipo de evento y un resumen breve. \newline
-3. Si el paciente no tiene registros previos, el sistema muestra un mensaje de historial vacío. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-12: Marcar alerta como en revisión o atendida} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-12 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Marcar alerta como en revisión o atendida \\ \hline
-\textbf{Description} & Como médico, quiero marcar una alerta como "en revisión" o "atendida", para que otros sepan el estado del caso. \\ \hline
-\textbf{Acceptance criteria} &
-1. Cada alerta cuenta con un control para cambiar su estado. \newline
-2. El cambio de estado se refleja de inmediato en la lista de alertas. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-13: Observación breve al atender una alerta} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-13 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Observación breve al atender una alerta \\ \hline
-\textbf{Description} & Como médico, quiero agregar una observación breve al atender una alerta, para dejar registro rápido de lo ocurrido. \\ \hline
-\textbf{Acceptance criteria} &
-1. Al cambiar el estado de una alerta, el sistema ofrece un campo opcional de observación. \newline
-2. La observación queda asociada a la alerta con fecha y nombre del médico. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-14: Visibilidad de revisión previa por otro profesional} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-14 \\ \hline
-\textbf{Epic ID} & EP-02 \\ \hline
-\textbf{Title} & Visibilidad de revisión previa por otro profesional \\ \hline
-\textbf{Description} & Como médico, quiero ver si un caso ya fue revisado por otra persona, para evitar duplicar esfuerzos. \\ \hline
-\textbf{Acceptance criteria} &
-1. Cada alerta muestra si ya fue revisada e indica quién la atendió. \newline
-2. Una alerta con revisión previa se distingue de una sin revisar. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-
-\subsection*{Épica 3 - Backend}
-
-\noindent
-\textbf{US-15: Generación automática de alerta desde un evento} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-15 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Generación automática de alerta desde un evento \\ \hline
-\textbf{Description} & Como sistema, quiero registrar un evento y generar automáticamente una alerta asociada, para iniciar el flujo de atención. \\ \hline
-\textbf{Acceptance criteria} &
-1. Al registrarse un evento que cumple las reglas configuradas, el sistema crea una alerta. \newline
-2. Si no cumple las reglas configuradas entonces debe mostrar el error. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-16: Asignación de nivel de prioridad a alertas} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-16 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Asignación de nivel de prioridad a alertas \\ \hline
-\textbf{Description} & Como sistema, quiero asignar un nivel de prioridad a cada alerta, para permitir su ordenamiento en el frontend. \\ \hline
-\textbf{Acceptance criteria} &
-1. El sistema asigna un nivel de prioridad al crear la alerta. \newline
-2. El nivel de prioridad queda disponible para el frontend mediante la API. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-17: Almacenamiento del historial del paciente} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-17 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Almacenamiento del historial del paciente \\ \hline
-\textbf{Description} & Como sistema, quiero almacenar el historial de un paciente (registros, alertas, acciones), para permitir consultas posteriores. \\ \hline
-\textbf{Acceptance criteria} &
-1. El sistema almacena de forma persistente los registros, alertas y acciones del paciente. \newline
-2. El historial es consultable por rango de fechas y tipo de elemento. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-18: Trazabilidad de atención de alertas} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-18 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Trazabilidad de atención de alertas \\ \hline
-\textbf{Description} & Como sistema, quiero registrar quién atendió una alerta y cuándo, para mantener trazabilidad de las acciones. \\ \hline
-\textbf{Acceptance criteria} &
-1. Cada cambio de estado registra el identificador del profesional que lo realizó. \newline
-2. El sistema almacena fecha y hora exacta de cada cambio de estado. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-19: Cambio de estado de alerta sin eliminar} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-19 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Cambio de estado de alerta sin eliminar \\ \hline
-\textbf{Description} & Como sistema, quiero cambiar el estado de una alerta (pendiente/en revisión/atendida/cerrada) sin eliminarla, para conservar el historial completo. \\ \hline
-\textbf{Acceptance criteria} &
-1. El sistema soporta los estados pendiente, en revisión, atendida y cerrada. \newline
-2. Ninguna transición de estado elimina físicamente el registro de la alerta. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-20: Asociación de paciente con proveedor de salud} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-20 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Asociación de paciente con proveedor de salud \\ \hline
-\textbf{Description} & Como sistema, quiero asociar a cada paciente un proveedor de salud (si existe), para vincular la información clínica correspondiente. \\ \hline
-\textbf{Acceptance criteria} &
-1. El sistema permite vincular un paciente a un único proveedor de salud activo a la vez. \newline
-2. Si el paciente no tiene proveedor asociado, el sistema lo marca como sin vincular. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
-
-\noindent
-\textbf{US-21: Validación de datos básicos del paciente} \newline
-\begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{User Story ID} & US-21 \\ \hline
-\textbf{Epic ID} & EP-03 \\ \hline
-\textbf{Title} & Validación de datos básicos del paciente \\ \hline
-\textbf{Description} & Como sistema, quiero validar que los datos básicos de un paciente estén completos antes de activar su seguimiento, para asegurar información mínima confiable. \\ \hline
-\textbf{Acceptance criteria} &
-1. El sistema rechaza la activación del seguimiento si falta algún campo obligatorio. \newline
-2. El sistema indica qué campos faltan cuando la validación falla. \\ \hline
-\end{tabular}
-\vspace{0.8cm}
