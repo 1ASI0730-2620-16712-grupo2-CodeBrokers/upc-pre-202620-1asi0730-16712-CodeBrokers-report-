@@ -10,7 +10,11 @@ Se desarrollaron dos User Personas principales: Dafne Cabrera Sánchez, como rep
 
 #### 2.3.1.1 User Persona – Clínicas y hospitales
 
+\includegraphics[width=0.7\linewidth]{assets/User Persona - Dafne Cabrera.png}
+
 #### 2.3.1.2 User Persona – Familiares y adultos mayores
+
+\includegraphics[width=0.7\linewidth]{assets/User Persona - Samir Choquehuanca.png}
 
 ### 2.3.2. User Task Matrix
 La User Task Matrix permite identificar las principales tareas que los usuarios realizan actualmente dentro del proceso de cuidado y seguimiento de adultos mayores, independientemente de la existencia de SeniorCare.
@@ -48,7 +52,11 @@ Para su elaboración se utilizó **UXPressia**.
 
 #### User Journey Map — Dafne
 
+\includegraphics[width=0.7\linewidth]{assets/As-Is User Journey – Dafne Cabrera.png}
+
 #### User Journey Map — Samir
+
+\includegraphics[width=0.7\linewidth]{assets/As-Is User Journey – Samir.png}
 
 ### 2.3.4. Empathy Mapping
 Se elaboraron los Empathy Maps de los User Personas con el propósito de comprender con mayor profundidad lo que los usuarios expresan, observan, realizan, escuchan, piensan y sienten durante el proceso actual de cuidado y seguimiento del adulto mayor.
@@ -58,7 +66,12 @@ La Figura 5 presenta el Empathy Map de Dafne, elaborado a partir de sus respuest
 
 #### Empathy Map — Dafne
 
+\includegraphics[width=0.7\linewidth]{assets/Empathy map - Dafne.png}
+
+
 #### Empathy Map — Samir
+
+\includegraphics[width=0.7\linewidth]{assets/Empathy map - Samir.png}
 
 ### Síntesis del Needfinding
 
