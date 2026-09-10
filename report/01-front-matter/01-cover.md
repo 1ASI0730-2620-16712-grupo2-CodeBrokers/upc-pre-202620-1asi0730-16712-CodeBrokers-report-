@@ -24,7 +24,8 @@
 {\large \text U202312348 - Said Conde, Yazid } \\[0.2cm]
 {\large \text U202317767 - Tello Quispe, Luis German } \\[0.2cm]
 {\large \text U202316466 - Rodriguez Gonzales, Leonel German } \\[0.2cm]
-{\large \text U20201b772 - Salon Puerta, Merly } \\[0.5cm]
+{\large \text U20201b772 - Salon Puerta, Merly } \\[0.2cm]
+{\large \text U202321086 - Benigno Montero, Harold Fauskorp } \\[0.5cm]
 
 {\large \textbf{Período 202620}} \\[1cm]
 
