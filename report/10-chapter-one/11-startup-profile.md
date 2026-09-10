@@ -95,7 +95,19 @@ A largo plazo, SeniorCare podrá evolucionar mediante la integración con dispos
 \includegraphics[width=\linewidth]{assets/foto-luis-tello.jpg}
 \end{tabular}
 
+\vspace{0.8cm}
 
+\noindent
+\begin{tabular}{p{0.72\textwidth} p{0.23\textwidth}}
+\textbf{Integrante: Harold Fauskorp Benigno Montero} \newline
+\textbf{Código de estudiante:} U202321086 \newline
+\textbf{Carrera:} Ingeniería de Software \newline
+\textbf{Descripción:} Estudiante de Ingeniería de Software, con conocimientos en git, GitHub, C++, HTML, CSS, JavaScript, POO, algoritmos y estructura de datos, modelamiento de bases de datos relacionales y no relacionales, MongoDB, y buen dominio de PostgreSQL y SQL Server. \newline
+\textbf{Aporte al equipo:} Apoyo a mi equipo con estructuracion de los documentos para el desarrollo del proyecto. Asimismo, contribuyo con la revisión y corrección de los avances, apoyándome en mis conocimientos de programación y en el análisis de requerimientos y requisitos.
+&
+\vspace{-0.5cm}
+\includegraphics[width=\linewidth]{assets/harold.png}
+\end{tabular}
 
 
 
