@@ -10,11 +10,11 @@ Las decisiones de interacción responden directamente a la arquitectura de infor
 * **Prioridad visual determinada por la urgencia.** La jerarquía visual descrita en el 4.2.1 se traduce en el prototipo en el orden de lectura del tablero: el resumen de alertas pendientes ocupa la posición dominante al cargar la vista del médico, y cada alerta expone su nivel de gravedad mediante color y etiqueta antes que cualquier otro dato. Esto materializa las historias US-08 y US-09.
 * **Navegación en profundidad sin pérdida de contexto.** Desde el resumen, cada alerta conduce al detalle del paciente conservando un camino de retorno explícito, según el criterio de aceptación de la US-10. El prototipo simula esta ida y vuelta para evitar que el médico deba reconstruir el contexto al regresar al listado.
 * **Confirmación explícita en las acciones que alteran el estado del caso.** El cambio de estado de una alerta y el registro de la observación se presentan como una misma interacción encadenada, en coherencia con la organización secuencial descrita en el 4.2.1 y con el carácter opcional de la observación establecido en la US-13.
-* **Adaptación a dos anchos de pantalla.** El prototipo cubre Desktop y Mobile Web Browser. En mobile la navegación colapsa según el criterio ya definido para la landing page en el 4.2.5, y el tablero de alertas pasa de disposición en columnas a una lista vertical priorizada por gravedad.
+* **Densidad de información adecuada al contexto de uso.** El prototipo se desarrolló para Desktop Web Browser, que es el entorno en el que el profesional de salud realiza la revisión de alertas dentro de su jornada. Esa decisión permite mostrar el listado de alertas y el detalle del paciente en una misma pantalla, sin obligar al médico a alternar entre vistas para comparar la gravedad de varios casos.
 
 ### Prototipo de la Web Application
 
-El siguiente screenshot corresponde al video de demostración, en el que se recorren los principales flujos de interacción cubiertos por el prototipo: el ingreso del profesional de salud, la revisión del tablero de alertas, el acceso al detalle del paciente y el registro de la atención.
+El siguiente screenshot corresponde al video de demostración de la Web Application en Desktop Web Browser, en el que se recorren los principales flujos de interacción cubiertos por el prototipo: el ingreso del profesional de salud, la revisión del tablero de alertas, el acceso al detalle del paciente y el registro de la atención.
 
 \includegraphics[width=\linewidth]{assets/45-prototyping-screenshot.png}
 
