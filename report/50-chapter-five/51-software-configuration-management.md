@@ -130,3 +130,20 @@ El informe se redacta en Markdown con un archivo por sección, nombrado con el p
 ### 5.1.4. Software Deployment Configuration
 
 
+Para el despliegue de la Landing Page de VitaLink, el equipo CodeBrokers utilizó **GitHub Pages**
+como plataforma de publicación, aprovechando su integración directa con el repositorio de
+GitHub. Esta decisión permite que cada actualización consolidada en la rama `main` se refleje
+de forma automática en el entorno público, sin necesidad de configuración adicional de
+infraestructura.
+
+El proceso de configuración seguido fue el siguiente: en primer lugar, se accedió a la
+configuración del repositorio de la Landing Page desde GitHub. Posteriormente, en la sección
+**Pages**, se seleccionó la rama `main` como fuente de despliegue y se indicó la carpeta raíz
+(`/root`) como directorio de publicación. GitHub Pages procesó automáticamente los archivos
+estáticos (`index.html`, `styles.css`, `script.js`) y habilitó HTTPS por defecto mediante
+sus certificados propios.
+
+
+El entorno de producción de la Landing Page de VitaLink está accesible públicamente en la
+siguiente URL: https://codebrokers-web-app-1asi0730-2620-16712.github.io/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page/
+
