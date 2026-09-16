@@ -185,9 +185,44 @@ Table: Cobertura prevista de documentación de servicios
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante este Sprint se finalizó la implementación de la Landing Page y se llevó a cabo su publicación a través de GitHub Pages, aprovechando esta plataforma gratuita de despliegue. Con ello, se logró disponer de una versión inicial disponible en línea, con el propósito de facilitar su evaluación y recibir comentarios de mejora.
 
+Actividades realizadas: Se creó la organización de GitHub: https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers
+
+Se realizó la carga del código fuente de la Landing Page, incorporando los archivos necesarios en HTML, CSS y JavaScript para garantizar su funcionamiento.
+
+Posteriormente, se habilitó la opción de GitHub Pages desde la sección Settings > Pages, configurando la rama principal como fuente de despliegue y utilizando la carpeta raíz del repositorio.
+
+Finalmente, se validó que la publicación de la Landing Page estuviera disponible de forma correcta a través de la siguiente URL:
+
+Landing Page desplegada: https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page
+**Evidencia del despliegue:**
+
+\includegraphics[width=0.7\linewidth]{assets/vista-page.png}
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+
+En este apartado se presenta la participación de cada miembro en el repositorio de la Landing Page.
+
+Todos los integrantes del equipo aportaron al desarrollo de la página, generando commits y pull requests para incorporar distintas secciones y funcionalidades. A continuación, se detallan algunos aportes destacados:
+
+Eduardo: Se encargo de la vista home
+
+Yazid: Se encargo de la internacionalizacion y footer
+
+Luis: Se encargo de la seccion pricing
+
+Leonel: Se encargo del hero
+
+Merly: Se encargo de la vista familias
+
+Harol: Se encargo de la vista medico.
+
+**Capturas de Insights del repositorio:**
+
+\includegraphics[width=0.7\linewidth]{assets/insigh.png}
+
+
 
 
 
