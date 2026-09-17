@@ -1,5 +1,14 @@
 ## 3.3. Product Backlog.
 
+El Product Backlog de VitaLink reúne las 23 User Stories identificadas en la sección 3.1, ordenadas según el valor que aportan al negocio. El criterio de priorización fue el siguiente: primero las historias del sitio web estático, que son las que comunican la propuesta de valor y captan tanto a profesionales de salud como a familiares; a continuación el circuito que entrega el valor central del producto, es decir, detectar la situación de riesgo, notificar al profesional y registrar la atención; y finalmente el contexto clínico de respaldo. Las historias de habilitación técnica, redactadas como "Como sistema, quiero...", no encabezan el backlog: cada una se ubica inmediatamente antes  de la historia de usuario que la necesita.
+
+La gestión del Product Backlog se realiza en **Jira**, en el proyecto CodeBrokers (clave VTL) de la organización `codebrokers.atlassian.net`. Las historias están agrupadas en tres épicas —EP-01 Landing Page, EP-02 Frontend y EP-03 Backend— y cada una incluye su descripción, sus criterios de aceptación y su estimación en story points.
+
+**URL del Product Backlog:** \href{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}
+
+Las siete historias del épico EP-01 (Landing Page) se encuentran comprometidas en el Sprint 1, mientras que las catorce restantes permanecen en el backlog a la espera de su planificación en los sprints siguientes.
+
+
 <<<<<<< HEAD
 \begingroup
 \centering

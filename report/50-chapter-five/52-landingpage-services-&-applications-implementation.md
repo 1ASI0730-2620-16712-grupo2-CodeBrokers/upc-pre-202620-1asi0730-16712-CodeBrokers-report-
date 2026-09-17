@@ -6,19 +6,52 @@
 
 En esta sección se documenta la reunión de planificación del Sprint 1, en la que el equipo CodeBrokers definió el objetivo del sprint, seleccionó las historias de usuario a comprometer desde el Product Backlog y acordó la velocidad esperada. El Sprint 1 concentra la totalidad del épico EP-01 (Landing Page), por tratarse del primer incremento entregable del producto VitaLink y de la superficie que valida la propuesta de valor frente a los segmentos objetivo.
 
-| Campo | Detalle |
-| :--- | :--- |
-| **Sprint #** | Sprint 1 |
-| **Date** | 2026-08-24 |
-| **Time** | 19:00 PM (GMT-5) |
-| **Location** | Reunión remota vía Discord |
-| **Prepared By** | Benigno Montero, Harold Fauskorp |
-| **Attendees (to planning meeting)** | Osorio Ramírez, Eduardo Jesús; Said Conde, Yazid; Tello Quispe, Luis German; Rodriguez Gonzales, Leonel German; Salon Puerta, Merly; Benigno Montero, Harold Fauskorp |
-| **Sprint 0 Review Summary** | No aplica. El Sprint 1 es el primer sprint del proyecto, por lo que no existe un sprint previo del cual derivar una revisión. El punto de partida es el Product Backlog priorizado en la sección 3.3 y el diseño definido en el Capítulo IV. |
-| **Sprint 0 Retrospective Summary** | No aplica. Al no existir un sprint previo, el equipo acordó como acuerdos iniciales de trabajo: usar GitFlow con ramas `feature/<número>-<descripción>` por entregable, aplicar Conventional Commits, y exigir al menos una revisión de par antes de integrar a `develop`. |
-| **Sprint 1 Goal** | Publicar una Landing Page desplegada que comunique con claridad la propuesta de valor de VitaLink al segmento de profesionales de la salud y habilite las acciones de conversión (solicitar información y unirse como proveedor de salud), transmitiendo confianza mediante evidencia de respaldo institucional y una sección explícita de privacidad y seguridad de datos. <br><br> **Via** Implementación de la Landing Page en HTML5, CSS3 y JavaScript, siguiendo el Style Guideline de la sección 4.1 y la arquitectura de información de la sección 4.2, desplegada en un servicio de hosting estático. <br><br> **The Success Metrics Are** Las 7 historias de usuario comprometidas alcanzan sus criterios de aceptación, la Landing Page se encuentra accesible mediante una URL pública y todas las ramas de trabajo se integran a `develop` mediante Pull Request revisado. |
-| **Sprint 1 Velocity** | 16 Story Points |
-| **Sum of Story Points** | 16 Story Points |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.67\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\textbf{Sprint \#} & Sprint 1 \\
+\hline
+\textbf{Date} & 2026-08-24 \\
+\hline
+\textbf{Time} & 19:00 PM (GMT-5) \\
+\hline
+\textbf{Location} & Reunión remota vía Discord \\
+\hline
+\textbf{Prepared By} & Benigno Montero, Harold Fauskorp \\
+\hline
+\textbf{Attendees (to planning meeting)} & Osorio Ramírez, Eduardo Jesús; Said Conde, Yazid; Tello Quispe, Luis German; Rodriguez Gonzales, Leonel German; Salon Puerta, Merly; Benigno Montero, Harold Fauskorp \\
+\hline
+\textbf{Sprint 0 Review Summary} & No aplica. El Sprint 1 es el primer sprint del proyecto, por lo que no existe un sprint previo del cual derivar una revisión. El punto de partida es el Product Backlog priorizado en la sección 3.3 y el diseño definido en el Capítulo IV. \\
+\hline
+\textbf{Sprint 0 Retrospective Summary} & No aplica. Al no existir un sprint previo, el equipo acordó como acuerdos iniciales de trabajo: usar GitFlow con ramas \texttt{feature/<número>-<descripción>} por entregable, aplicar Conventional Commits, y exigir al menos una revisión de par antes de integrar a \texttt{develop}. \\
+\hline
+\textbf{Sprint 1 Goal} & Publicar una Landing Page desplegada que comunique con claridad la propuesta de valor de VitaLink al segmento de profesionales de la salud y habilite las acciones de conversión (solicitar información y unirse como proveedor de salud), transmitiendo confianza mediante evidencia de respaldo institucional y una sección explícita de privacidad y seguridad de datos. \newline\newline \textbf{Via} Implementación de la Landing Page en HTML5, CSS3 y JavaScript, siguiendo el Style Guideline de la sección 4.1 y la arquitectura de información de la sección 4.2, desplegada en un servicio de hosting estático. \newline\newline \textbf{The Success Metrics Are} Las 7 historias de usuario comprometidas alcanzan sus criterios de aceptación, la Landing Page se encuentra accesible mediante una URL pública y todas las ramas de trabajo se integran a \texttt{develop} mediante Pull Request revisado. \\
+\hline
+\textbf{Sprint 1 Velocity} & 16 Story Points \\
+\hline
+\textbf{Sum of Story Points} & 16 Story Points \\
+\end{longtable}
+\endgroup
 
 Table: Sprint Planning 1
 
@@ -26,7 +59,42 @@ La velocidad comprometida de 16 Story Points corresponde al total del épico EP-
 
 #### 5.2.1.2. Aspect Leaders and Collaborrators
 
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
 
+\begin{longtable}{|p{0.45\textwidth}|p{0.25\textwidth}|p{0.20\textwidth}|}
+\hline
+\textbf{Team Member (Last Name, First Name)} & \textbf{GitHub Username} & \textbf{Aspect Name 1 (L/C)} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Team Member (Last Name, First Name)} & \textbf{GitHub Username} & \textbf{Aspect Name 1 (L/C)} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Osorio Ramírez, Eduardo Jesús & Iron819 & L \\
+\hline
+Said Conde, Yazid & BL4Z3K4D & C \\
+\hline
+Tello Quispe, Luis German & luistello1739-web & C \\
+\hline
+Rodriguez Gonzales, Leonel German & leokiss15 & C \\
+\hline
+Salon Puerta, Merly & MerlySalonP & C \\
+\hline
+Benigno Montero, Harold Fauskorp & Harold-11 & C \\
+\end{longtable}
+\endgroup
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -34,20 +102,52 @@ En esta sección se descomponen las historias de usuario comprometidas para el S
 
 **URL del Sprint Backlog en Jira:** \href{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}
 
-| User Story Id | User Story Title | Work-Item Id | Work-Item Title | Description | Estimation (hours) | Assigned To | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| US-01 | Propuesta de valor clara en Landing Page | WI-01 | Estructura base del proyecto de la Landing Page | Crear el repositorio de la Landing Page con la estructura de carpetas para HTML, CSS y JS, e incorporar el reset de estilos y las variables del Style Guideline (4.1). | 4 | Benigno Montero, Harold Fauskorp | Done |
-| US-01 | Propuesta de valor clara en Landing Page | WI-02 | Implementación de la sección Hero | Maquetar el bloque principal con titular, subtitular e imagen de apoyo, expresando el problema que resuelve VitaLink en menos de diez segundos de lectura. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
-| US-02 | Sección de privacidad y seguridad de datos | WI-03 | Sección de privacidad y seguridad | Maquetar la sección dedicada al tratamiento de datos clínicos, con los tres pilares de seguridad y el enlace a la política de privacidad completa. | 3 | Salon Puerta, Merly | Done |
-| US-03 | Botón para solicitar información | WI-04 | Formulario de solicitud de información | Implementar el formulario con los campos nombre, correo y especialidad, incluyendo validación en el cliente y mensaje de confirmación tras el envío. | 5 | Said Conde, Yazid | Done |
-| US-03 | Botón para solicitar información | WI-05 | Botón de llamada a la acción en el encabezado | Incorporar el botón "Solicitar información" en el encabezado con comportamiento fijo al desplazarse y anclaje al formulario. | 2 | Said Conde, Yazid | Done |
-| US-04 | Respaldo de clínicas e instituciones | WI-06 | Franja de respaldo institucional | Maquetar la franja de logotipos de clínicas e instituciones aliadas y el testimonio de un profesional de la salud. | 3 | Rodriguez Gonzales, Leonel German | Done |
-| US-05 | Sección de preguntas frecuentes | WI-07 | Componente acordeón de preguntas frecuentes | Implementar en JavaScript el comportamiento de expansión y contracción de cada pregunta, garantizando la navegación por teclado. | 4 | Tello Quispe, Luis German | Done |
-| US-05 | Sección de preguntas frecuentes | WI-08 | Redacción del contenido de preguntas frecuentes | Redactar las preguntas y respuestas sobre costos, privacidad y funcionamiento básico, alineadas al Ubiquitous Language (2.5). | 2 | Tello Quispe, Luis German | Done |
-| US-06 | Botón para unirse como proveedor de salud | WI-09 | Botón de registro para proveedores de salud | Incorporar el botón "Unirme como proveedor de salud" en el encabezado y enlazarlo al flujo de registro médico. | 3 | Rodriguez Gonzales, Leonel German | Done |
-| US-07 | Ejemplo visual de una alerta | WI-10 | Mockup ilustrativo del panel de alertas | Maquetar el ejemplo visual de una alerta dentro del panel médico, empleando datos claramente ficticios y los colores de urgencia definidos en 4.1. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
-| — | Tarea transversal del sprint | WI-11 | Despliegue de la Landing Page | Configurar el despliegue continuo de la Landing Page en el servicio de hosting estático y verificar la accesibilidad de la URL pública. | 3 | Benigno Montero, Harold Fauskorp | Done |
-| — | Tarea transversal del sprint | WI-12 | Revisión de responsividad y verificación cruzada | Verificar la correcta visualización en los puntos de quiebre definidos y revisar el cumplimiento de los criterios de aceptación de las siete historias comprometidas. | 3 | Salon Puerta, Merly | Done |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.06\textwidth}|p{0.15\textwidth}|p{0.06\textwidth}|p{0.16\textwidth}|p{0.26\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.06\textwidth}|}
+\hline
+\textbf{US Id} & \textbf{User Story Title} & \textbf{WI Id} & \textbf{Work-Item Title} & \textbf{Description} & \textbf{Est. (h)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{US Id} & \textbf{User Story Title} & \textbf{WI Id} & \textbf{Work-Item Title} & \textbf{Description} & \textbf{Est. (h)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+US-01 & Propuesta de valor clara en Landing Page & WI-01 & Estructura base del proyecto de la Landing Page & Crear el repositorio de la Landing Page con la estructura de carpetas para HTML, CSS y JS, e incorporar el reset de estilos y las variables del Style Guideline (4.1). & 4 & Benigno Montero, Harold Fauskorp & Done \\
+\hline
+US-01 & Propuesta de valor clara en Landing Page & WI-02 & Implementación de la sección Hero & Maquetar el bloque principal con titular, subtitular e imagen de apoyo, expresando el problema que resuelve VitaLink en menos de diez segundos de lectura. & 4 & Osorio Ramírez, Eduardo Jesús & Done \\
+\hline
+US-02 & Sección de privacidad y seguridad de datos & WI-03 & Sección de privacidad y seguridad & Maquetar la sección dedicada al tratamiento de datos clínicos, con los tres pilares de seguridad y el enlace a la política de privacidad completa. & 3 & Salon Puerta, Merly & Done \\
+\hline
+US-03 & Botón para solicitar información & WI-04 & Formulario de solicitud de información & Implementar el formulario con los campos nombre, correo y especialidad, incluyendo validación en el cliente y mensaje de confirmación tras el envío. & 5 & Said Conde, Yazid & Done \\
+\hline
+US-03 & Botón para solicitar información & WI-05 & Botón de llamada a la acción en el encabezado & Incorporar el botón "Solicitar información" en el encabezado con comportamiento fijo al desplazarse y anclaje al formulario. & 2 & Said Conde, Yazid & Done \\
+\hline
+US-04 & Respaldo de clínicas e instituciones & WI-06 & Franja de respaldo institucional & Maquetar la franja de logotipos de clínicas e instituciones aliadas y el testimonio de un profesional de la salud. & 3 & Rodriguez Gonzales, Leonel German & Done \\
+\hline
+US-05 & Botón para unirse como proveedor de salud & WI-07 & Botón de registro para proveedores de salud & Incorporar el botón "Unirme como proveedor de salud" en el encabezado y enlazarlo al flujo de registro médico. & 3 & Rodriguez Gonzales, Leonel German & Done \\
+\hline
+US-06 & Ejemplo visual de una alerta & WI-08 & Mockup ilustrativo del panel de alertas & Maquetar el ejemplo visual de una alerta dentro del panel médico, empleando datos claramente ficticios y los colores de urgencia definidos en 4.1. & 4 & Osorio Ramírez, Eduardo Jesús & Done \\
+\hline
+--- & Tarea transversal del sprint & WI-09 & Despliegue de la Landing Page & Configurar el despliegue continuo de la Landing Page en el servicio de hosting estático y verificar la accesibilidad de la URL pública. & 3 & Benigno Montero, Harold Fauskorp & Done \\
+\hline
+--- & Tarea transversal del sprint & WI-10 & Revisión de responsividad y verificación cruzada & Verificar la correcta visualización en los puntos de quiebre definidos y revisar el cumplimiento de los criterios de aceptación de las seis historias comprometidas. & 3 & Salon Puerta, Merly & Done \\
+\hline
+
+\end{longtable}
+\endgroup
 
 Table: Sprint Backlog 1
 
