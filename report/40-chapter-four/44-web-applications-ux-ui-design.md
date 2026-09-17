@@ -186,15 +186,15 @@ Wireflow Diagrams-Vista Medico
     width=\linewidth,
     height=1.00\textheight,
     keepaspectratio
-]{assets/Wireflow Diagrams.png}
+]{assets/web-flow-med.png}
 \par
 
-Wireflow Diagrams-Vista Medico
+Wireflow Diagrams-Vista familiar
 \par
 \noindent
 \includegraphics[
     width=\linewidth,
     height=1.00\textheight,
     keepaspectratio
-]{assets/Wireflow-Paciente.png}
+]{assets/web-flow-fam.png}
 \par
