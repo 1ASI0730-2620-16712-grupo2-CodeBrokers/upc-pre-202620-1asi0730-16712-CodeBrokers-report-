@@ -31,6 +31,26 @@ Los mockups de la Landing Page reflejan la alta fidelidad visual del producto, a
 
 *   **Mock-up Mobile Web Browser:** Muestra la adaptación responsive de la interfaz a dispositivos móviles, manteniendo la consistencia de marca, legibilidad de textos y accesibilidad de los botones de acción (CTAs).
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-mobile-fam-mockup.png}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m1.png}
+\end{center}
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-mobile-pro-mockup.png}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m2.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m3.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m4.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m5.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m6.png}
+\end{center}
