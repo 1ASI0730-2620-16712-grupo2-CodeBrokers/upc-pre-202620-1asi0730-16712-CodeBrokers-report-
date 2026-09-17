@@ -32,20 +32,33 @@ Los mockups de la Landing Page reflejan la alta fidelidad visual del producto, a
 
 *   **Mock-up Desktop Web Browser:** Presenta la interfaz completa con la aplicación de la identidad visual de la marca, contrastes óptimos para cumplimiento WCAG y mockups visuales del producto integrado.
   
-\begin{center}
-\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-desktop-fam-mockup.png}
-\end{center}
 
-\begin{center}
-\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-desktop-pro-mockup.png}
-\end{center}
+\includegraphics[width=0.7\linewidth]{assets/land1.png}
+
+\includegraphics[width=0.7\linewidth]{assets/land2.png}
 
 *   **Mock-up Mobile Web Browser:** Muestra la adaptación responsive de la interfaz a dispositivos móviles, manteniendo la consistencia de marca, legibilidad de textos y accesibilidad de los botones de acción (CTAs).
 
 \begin{center}
-\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-mobile-fam-mockup.png}
+    \includegraphics[width=0.5\linewidth]{assets/m1.png}
 \end{center}
 
 \begin{center}
-\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-mobile-pro-mockup.png}
+    \includegraphics[width=0.5\linewidth]{assets/m2.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m3.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m4.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m5.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{assets/m6.png}
 \end{center}
