@@ -8,15 +8,23 @@ Los wireframes representan la estructura esquelética inicial de la Landing Page
 
 *   **Wireframe Desktop Web Browser:** Distribución en múltiples columnas para aprovechar el espacio horizontal, organizando la información mediante bloques diferenciados por fondos neutros y contenedores estructurados.
   
-\includegraphics[width=\linewidth]{assets/43-landing-page-desktop-fam-wireframe.png}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-desktop-fam-wireframe.png}
+\end{center}
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-desktop-pro-wireframe.png}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-desktop-pro-wireframe.png}
+\end{center}
 
 *   **Wireframe Mobile Web Browser:** Reorganización vertical de los componentes, adaptando el menú de navegación a un formato de tipo hamburguesa y apilando las tarjetas de contenido para asegurar una lectura fluida en pantallas reducidas.
 
-\includegraphics[width=0.7\linewidth]{assets/43-landing-page-mobile-fam-wireframe.png}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-mobile-fam-wireframe.png}
+\end{center}
 
-\includegraphics[width=0.7\linewidth]{assets/43-landing-page-mobile-pro-wireframe.png}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/43-landing-page-mobile-pro-wireframe.png}
+\end{center}
 
 ### 4.3.2. Landing Page Mock-up
 

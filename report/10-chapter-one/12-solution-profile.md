@@ -8,7 +8,6 @@ El envejecimiento de la población representa un desafío cada vez más importan
 
 Frente a esta realidad surge **VitaLink**,  orientada al monitoreo preventivo y acompañamiento de adultos mayores. La plataforma busca centralizar información relevante, identificar posibles situaciones de riesgo y facilitar la comunicación entre el adulto mayor, sus familiares y proveedores de atención.
 
----
 
 #### Problemática
 
@@ -23,7 +22,6 @@ Entre las principales problemáticas identificadas se encuentran:
 
 Estas dificultades pueden generar preocupación en los familiares, retrasos en la atención y una mayor exposición del adulto mayor ante situaciones que podrían ser detectadas de manera temprana.
 
----
 
 #### 5W y 2H
 
@@ -160,7 +158,6 @@ Supuesto 4: La centralizacion de la informacion de salud permitira anticipar sit
 
 
 #### 1.2.2.4. Lean UX Canvas
-```{=latex}
 \begingroup
 \centering
 \small
@@ -173,7 +170,6 @@ Supuesto 4: La centralizacion de la informacion de salud permitira anticipar sit
 \textbf{2. Business Outcomes} &
 \textbf{3. Users} \\
 \hline
-
 El cuidado de adultos mayores depende de registros manuales y respuestas reactivas ante emergencias de salud, generando demoras críticas y desconexión entre el monitoreo diario del hogar y los centros de atención médica.
 &
 - Reducción del 50\% en el tiempo para coordinar una cita ante anomalías.\newline
@@ -186,17 +182,10 @@ El cuidado de adultos mayores depende de registros manuales y respuestas reactiv
 - Centros de salud y profesionales médicos independientes.
 \\
 \hline
-\end{tabular}
-
-\par\vspace{0.6cm}
-
-\begin{tabular}{|p{0.26\textwidth}|p{0.26\textwidth}|p{0.26\textwidth}|}
-\hline
 \textbf{4. User Outcomes \& Benefits} &
 \textbf{5. Solutions} &
 \textbf{6. Hypotheses} \\
 \hline
-
 - Detección temprana de anomalías biométricas y tranquilidad familiar continua.\newline
 - Atención médica rápida sin búsqueda manual de proveedores en crisis.\newline
 - Historial clínico y triaje previo disponible para el médico antes de la consulta.\newline
@@ -215,19 +204,14 @@ El cuidado de adultos mayores depende de registros manuales y respuestas reactiv
 - Creemos que la tarifa social logrará un 35\% de adopción en hogares sin seguro privado.
 \\
 \hline
-\end{tabular}
-
-\par\vspace{0.6cm}
-
-\begin{tabular}{|p{0.39\textwidth}|p{0.39\textwidth}|}
-\hline
-\textbf{7. What is the most important thing we need to learn first?} &
+\multicolumn{2}{|p{0.55\textwidth}|}{\textbf{7. What is the most important thing we need to learn first?}} &
 \textbf{8. What is the least amount of work we need to do to learn the next most important thing?} \\
 \hline
-
+\multicolumn{2}{|p{0.55\textwidth}|}{
 - Validar si los cuidadores familiares aceptan y confían en el auto-agendamiento ante una anomalía detectada.\newline
 - Confirmar la disposición de las clínicas para publicar y gestionar sus cupos de atención dentro del SaaS.\newline
 - Identificar el rango de precio mensual aceptable para los planes familiares de suscripción.
+}
 &
 - Desplegar la Landing Page con la propuesta de valor y medir el interés de registro de cuidadores y clínicas.\newline
 - Probar prototipos interactivos en Figma con cuidadores para validar el flujo de confirmación de citas en un clic.\newline
@@ -237,4 +221,3 @@ El cuidado de adultos mayores depende de registros manuales y respuestas reactiv
 \end{tabular}
 
 \endgroup
-```

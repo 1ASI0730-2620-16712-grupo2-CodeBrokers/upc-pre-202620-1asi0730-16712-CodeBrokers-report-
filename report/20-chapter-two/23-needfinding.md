@@ -10,13 +10,18 @@ Se desarrollaron dos User Personas principales: Dafne Cabrera Sánchez, como rep
 
 #### 2.3.1.1 User Persona – Clínicas y hospitales
 
-![User Persona – Clínicas y hospitales](assets/User Persona - Dafne Cabrera.png){width=90%}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.85\textheight, keepaspectratio]{assets/User Persona - Dafne Cabrera.png}
+\end{center}
 
 #### 2.3.1.2 User Persona – Familiares y adultos mayores
 
-![User Persona – Familiares y adultos mayores](assets/User Persona - Samir Choquehuanca.png){width=90%}
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.85\textheight, keepaspectratio]{assets/User Persona - Samir Choquehuanca.png}
+\end{center}
 
 ### 2.3.2. User Task Matrix
+
 La User Task Matrix permite identificar las principales tareas que los usuarios realizan actualmente dentro del proceso de cuidado y seguimiento de adultos mayores, independientemente de la existencia de VitaLink.
 Las tareas fueron identificadas a partir de las entrevistas realizadas y se clasificaron según los usuarios involucrados, su frecuencia y su nivel de importancia.
 
