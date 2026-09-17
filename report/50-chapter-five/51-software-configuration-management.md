@@ -145,5 +145,5 @@ sus certificados propios.
 
 
 El entorno de producción de la Landing Page de VitaLink está accesible públicamente en la
-siguiente URL: https://codebrokers-web-app-1asi0730-2620-16712.github.io/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page/
+siguiente URL: https://1asi0730-2620-16712-grupo2-codebrokers.github.io/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page/
 

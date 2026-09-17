@@ -42,6 +42,8 @@ US-05 & Interfaz de captura de leads (Botones de acción) & Como visitante, quie
 \hline
 US-06 & Mockups visuales del producto & Como visitante, quiero ver ejemplos de la interfaz real, para entender rápidamente cómo se recibe la información. & \textbf{Dado} que un visitante revisa las funcionalidades, \textbf{Cuando} observa las imágenes ilustrativas, \textbf{Entonces} el médico debe ver un dashboard clínico en monitor, y el familiar una notificación de alerta en su smartphone. & EP-01 \\
 \hline
+TS-01 & Configuración del entorno y despliegue de la Landing Page & Como Developer, quiero configurar el repositorio de la Landing Page y su publicación continua en un servicio de hosting estático, para que cada incremento consolidado quede accesible mediante una URL pública. & \textbf{Dado} que el repositorio contiene los archivos estáticos del sitio en la rama de despliegue, \textbf{Cuando} se consolida un incremento en dicha rama, \textbf{Entonces} el servicio de hosting debe publicar la versión actualizada y responder en la URL pública sobre HTTPS. & EP-01 \\
+\hline
 
 % ============================================================
 % EPICA 2
