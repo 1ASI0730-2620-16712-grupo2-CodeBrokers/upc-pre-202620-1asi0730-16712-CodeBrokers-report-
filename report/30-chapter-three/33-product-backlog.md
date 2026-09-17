@@ -1,5 +1,6 @@
 ## 3.3. Product Backlog.
 
+<<<<<<< HEAD
 \begingroup
 \centering
 \small
@@ -72,3 +73,4 @@
 
 \end{longtable}
 \endgroup
+
