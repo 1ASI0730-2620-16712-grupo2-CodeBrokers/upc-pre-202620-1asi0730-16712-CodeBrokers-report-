@@ -310,7 +310,6 @@
 ### 8. Adopción de la Aplicación
 * **100%** dispuesto a adoptarla si es simple y no representa una curva de aprendizaje alta, dada su carga de trabajo actual.
 
----
 
 ### Segmento Objetivo: Familiares y Adultos mayores
 

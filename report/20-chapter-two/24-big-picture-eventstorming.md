@@ -4,8 +4,9 @@ El Big Picture EventStorming de SeniorCare representa de manera general los prin
 
 Para organizar el dominio se identificaron cuatro procesos principales: incorporación, monitoreo preventivo, detección de riesgos, y coordinación y seguimiento. Estos procesos se encuentran relacionados entre sí y muestran el recorrido desde el registro del adulto mayor hasta el seguimiento posterior a una atención.
 
-![SeniorCare Big Picture EventStorming](../../assets/big-picture-eventstorming.png)
-link: https://www.figma.com/board/sZIcar8MezvXEirlcsNvJB/SeniorCare---Big-Picture-EventStorming?node-id=0-1&t=06eS87GIygyLUB1v-1
+\begin{center}
+\includegraphics[width=0.85\textwidth, height=0.45\textheight, keepaspectratio]{assets/big-picture-eventstorming.png}
+\end{center}
 
 En el modelo, los actores representan a las personas que participan en los diferentes procesos, mientras que los comandos corresponden a las acciones realizadas y los eventos de dominio muestran los resultados relevantes que se producen a partir de ellas. También se incluyeron políticas para representar acciones que se generan como respuesta a determinados eventos.
 

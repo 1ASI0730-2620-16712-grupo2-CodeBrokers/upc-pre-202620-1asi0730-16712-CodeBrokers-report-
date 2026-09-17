@@ -1,13 +1,28 @@
 ## 3.2. Impact Mapping
 
-\begin{table}[h!]
+\begingroup
 \centering
 \small
+\setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{|p{0.24\textwidth}|p{0.18\textwidth}|p{0.27\textwidth}|p{0.21\textwidth}|}
+
+\begin{longtable}{|p{0.24\textwidth}|p{0.18\textwidth}|p{0.27\textwidth}|p{0.21\textwidth}|}
 \hline
 \textbf{Objetivo de Negocio (Why)} & \textbf{Actores (Who)} & \textbf{Impacto (How)} & \textbf{Entregables (What)} \\
 \hline
+\endfirsthead
+
+\hline
+\textbf{Objetivo de Negocio (Why)} & \textbf{Actores (Who)} & \textbf{Impacto (How)} & \textbf{Entregables (What)} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
 Reducir el tiempo de respuesta ante situaciones de riesgo detectadas, sustituyendo la dependencia de la supervisión presencial constante. & Familiares y cuidadores & Obtener información oportuna ante una situación que requiera intervención, mediante notificaciones automáticas. & Sistema de alertas automáticas \\
 \hline
 Incrementar la adopción de mecanismos de monitoreo preventivo entre familias con adultos mayores durante los primeros meses de operación. & Familiares y cuidadores responsables del adulto mayor & Obtener acceso continuo a información relevante sobre el estado del adulto mayor, incluso sin estar presentes físicamente. & Funcionalidad de monitoreo preventivo de indicadores relevantes \\
@@ -20,6 +35,5 @@ Brindar mayor seguridad y acompañamiento al adulto mayor durante sus actividade
 \hline
 Incrementar la frecuencia de uso de la plataforma por parte de familiares y cuidadores. & Familiares y cuidadores & Obtener una visión clara y rápida del estado general del adulto mayor sin necesidad de encontrarse físicamente con él. & Panel de seguimiento remoto \\
 \hline
-\end{tabular}
-\caption{Impact Mapping de VitaLink}
-\end{table}
+\end{longtable}
+\endgroup

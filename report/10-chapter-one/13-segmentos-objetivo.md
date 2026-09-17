@@ -15,7 +15,6 @@ A diferencia del primer segmento, este grupo puede estar compuesto por familias 
 * **Pueden estar asociados a una clínica, hospital o profesional de salud.**
 * **Tanto el adulto mayor como sus familiares pueden interactuar con la plataforma.**
 
----
 
 ### 2. Clínicas y hospitales
 

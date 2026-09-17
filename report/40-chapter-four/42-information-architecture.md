@@ -201,7 +201,6 @@ Se considerará:
 
 - **Datos estructurados:** a futuro se podrá incorporar Schema.org para representar información relevante de VitaLink como producto, organización o servicio, siempre que corresponda con la información definitiva publicada.
 
----
 
 ### Web Application
 

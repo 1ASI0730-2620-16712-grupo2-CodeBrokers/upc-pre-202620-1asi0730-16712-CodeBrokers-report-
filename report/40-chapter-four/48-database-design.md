@@ -6,15 +6,44 @@ El diseño de la base de datos traduce el modelo de dominio de la sección 4.7 a
 
 El mapeo del modelo de clases al esquema relacional sigue reglas consistentes en los siete contextos:
 
-| Concepto del modelo de dominio | Representación en la base de datos |
-| :--- | :--- |
-| **Aggregate Root** | Tabla principal con llave primaria propia |
-| **Entidad interna** | Tabla hija con llave foránea hacia la raíz y borrado en cascada |
-| **Value Object** | Columnas embebidas con prefijo, nunca una tabla independiente |
-| **Referencia entre agregados** | Columna de llave foránea, sin navegación de objetos |
-| **Enumeración** | `VARCHAR` con restricción `CHECK`, nunca valores ordinales |
-| **Especificación del dominio** | Restricción `CHECK` cuando la regla es expresable en SQL |
-| **Marca de tiempo** | `TIMESTAMPTZ`, para preservar la zona horaria |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.35\textwidth}|p{0.60\textwidth}|}
+\hline
+\textbf{Concepto del modelo de dominio} & \textbf{Representación en la base de datos} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Concepto del modelo de dominio} & \textbf{Representación en la base de datos} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\textbf{Aggregate Root} & Tabla principal con llave primaria propia \\
+\hline
+\textbf{Entidad interna} & Tabla hija con llave foránea hacia la raíz y borrado en cascada \\
+\hline
+\textbf{Value Object} & Columnas embebidas con prefijo, nunca una tabla independiente \\
+\hline
+\textbf{Referencia entre agregados} & Columna de llave foránea, sin navegación de objetos \\
+\hline
+\textbf{Enumeración} & \texttt{VARCHAR} con restricción \texttt{CHECK}, nunca valores ordinales \\
+\hline
+\textbf{Especificación del dominio} & Restricción \texttt{CHECK} cuando la regla es expresable en SQL \\
+\hline
+\textbf{Marca de tiempo} & \texttt{TIMESTAMPTZ}, para preservar la zona horaria \\
+\end{longtable}
+\endgroup
 
 Las llaves primarias son de tipo **`UUID`**, en correspondencia con los Value Objects de identidad definidos en los diagramas de clases. Esta decisión permite generar el identificador antes de persistir el agregado, lo que simplifica la publicación de eventos de dominio dentro de la misma transacción, y evita exponer en las URL el volumen de pacientes y alertas que maneja la plataforma.
 

@@ -4,14 +4,42 @@ La arquitectura de software de VitaLink se construye sobre los principios de Dom
 
 A partir del Big Picture EventStorming (sección 2.4) y del Ubiquitous Language (sección 2.5) se delimitaron seis bounded contexts, cada uno responsable de un conjunto cohesionado de reglas de negocio y de un único Aggregate Root:
 
-| Bounded Context | Responsabilidad | Aggregate Root | User Stories |
-|---|---|---|---|
-| **Identity and Access Management** | Registro, autenticación y ciclo de vida de la cuenta de usuario; emisión y validación de tokens JWT. | `User` | US-06 |
-| **Elder Care** | Perfiles del adulto mayor, del familiar y del proveedor de salud, y la vinculación entre ellos. | `OlderAdult` | US-20, US-21 |
-| **Preventive Monitoring** | Registro de la información de salud, construcción del historial cronológico y evaluación de las reglas de monitoreo. | `HealthRecord` | US-11, US-15, US-17 |
-| **Alerting** | Creación de la alerta, asignación del nivel de gravedad y ciclo de vida de sus estados. | `Alert` | US-08, US-09, US-15, US-16, US-19 |
-| **Care Coordination** | Atención de la alerta, observaciones del profesional y trazabilidad de la intervención. | `CareRecord` | US-12, US-13, US-14, US-18 |
-| **Notification** | Traducción de los eventos de dominio en notificaciones multicanal al familiar o al proveedor de salud. | `Notification` | — |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.22\textwidth}|p{0.40\textwidth}|p{0.15\textwidth}|p{0.13\textwidth}|}
+\hline
+\textbf{Bounded Context} & \textbf{Responsabilidad} & \textbf{Aggregate Root} & \textbf{User Stories} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Bounded Context} & \textbf{Responsabilidad} & \textbf{Aggregate Root} & \textbf{User Stories} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\textbf{Identity and Access Management} & Registro, autenticación y ciclo de vida de la cuenta de usuario; emisión y validación de tokens JWT. & \texttt{User} & US-06 \\
+\hline
+\textbf{Elder Care} & Perfiles del adulto mayor, del familiar y del proveedor de salud, y la vinculación entre ellos. & \texttt{OlderAdult} & US-20, US-21 \\
+\hline
+\textbf{Preventive Monitoring} & Registro de la información de salud, construcción del historial cronológico y evaluación de las reglas de monitoreo. & \texttt{HealthRecord} & US-11, US-15, US-17 \\
+\hline
+\textbf{Alerting} & Creación de la alerta, asignación del nivel de gravedad y ciclo de vida de sus estados. & \texttt{Alert} & US-08, US-09, US-15, US-16, US-19 \\
+\hline
+\textbf{Care Coordination} & Atención de la alerta, observaciones del profesional y trazabilidad de la intervención. & \texttt{CareRecord} & US-12, US-13, US-14, US-18 \\
+\hline
+\textbf{Notification} & Traducción de los eventos de dominio en notificaciones multicanal al familiar o al proveedor de salud. & \texttt{Notification} & --- \\
+\end{longtable}
+\endgroup
 
 La comunicación entre contextos no se realiza mediante llamadas directas entre servicios, sino a través de un **Domain Event Publisher** que actúa como Shared Kernel: cada contexto publica sus eventos de dominio (`RiskSituationDetected`, `AlertRaised`, `AlertStatusChanged`, `AlertAttended`, `UserRegistered`) y los contextos interesados se suscriben a ellos. Este mecanismo mantiene el bajo acoplamiento entre bounded contexts y refleja directamente las políticas identificadas durante el EventStorming.
 
