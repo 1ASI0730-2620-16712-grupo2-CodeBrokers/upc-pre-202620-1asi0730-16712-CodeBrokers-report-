@@ -16,6 +16,52 @@ A partir del Big Picture EventStorming (sección 2.4) y del Ubiquitous Language 
 La comunicación entre contextos no se realiza mediante llamadas directas entre servicios, sino a través de un **Domain Event Publisher** que actúa como Shared Kernel: cada contexto publica sus eventos de dominio (`RiskSituationDetected`, `AlertRaised`, `AlertStatusChanged`, `AlertAttended`, `UserRegistered`) y los contextos interesados se suscriben a ellos. Este mecanismo mantiene el bajo acoplamiento entre bounded contexts y refleja directamente las políticas identificadas durante el EventStorming.
 
 ### 4.6.1. Design-Level Event Storming
+```{=latex}
+\begin{center}
+\textbf{Step 01 - Unstructured Exploration}
+
+\vspace{0.2cm}
+\includegraphics[width=0.90\textwidth]{assets/461-es-step01-unstructured-exploration.png}
+\vspace{0.15cm}
+{\small Figura X: Step 01 - Unstructured Exploration}
+
+\vspace{0.6cm}
+
+\textbf{Step 02 - Chronology}
+
+\vspace{0.2cm}
+\includegraphics[width=0.90\textwidth]{assets/461-es-step02-chronology.png}
+\vspace{0.15cm}
+{\small Figura X+1: Step 02 - Chronology}
+
+\vspace{0.6cm}
+
+\textbf{Step 03 - Pain Points}
+
+\vspace{0.2cm}
+\includegraphics[width=0.90\textwidth]{assets/461-es-step03-pain-points.png}
+\vspace{0.15cm}
+{\small Figura X+2: Step 03 - Pain Points}
+
+\vspace{0.6cm}
+
+\textbf{Step 04 - Pivotal Points}
+
+\vspace{0.2cm}
+\includegraphics[width=0.90\textwidth]{assets/461-es-step04-pivotal-points.png}
+\vspace{0.15cm}
+{\small Figura X+3: Step 04 - Pivotal Points}
+
+\vspace{0.6cm}
+
+\textbf{Step 05 - Commands}
+
+\vspace{0.2cm}
+\includegraphics[width=0.90\textwidth]{assets/461-es-step05-commands.png}
+\vspace{0.15cm}
+{\small Figura X+4: Step 05 - Commands}
+\end{center}
+```
 
 ### 4.6.2. Software Architecture Context Diagram
 
