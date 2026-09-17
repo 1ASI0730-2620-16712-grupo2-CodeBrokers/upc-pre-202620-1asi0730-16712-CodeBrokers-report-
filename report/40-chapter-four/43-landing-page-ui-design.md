@@ -14,9 +14,9 @@ Los wireframes representan la estructura esquelética inicial de la Landing Page
 
 *   **Wireframe Mobile Web Browser:** Reorganización vertical de los componentes, adaptando el menú de navegación a un formato de tipo hamburguesa y apilando las tarjetas de contenido para asegurar una lectura fluida en pantallas reducidas.
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-mobile-fam-wireframe.png}
+\includegraphics[width=0.7\linewidth]{assets/43-landing-page-mobile-fam-wireframe.png}
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-mobile-pro-wireframe.png}
+\includegraphics[width=0.7\linewidth]{assets/43-landing-page-mobile-pro-wireframe.png}
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -24,9 +24,10 @@ Los mockups de la Landing Page reflejan la alta fidelidad visual del producto, a
 
 *   **Mock-up Desktop Web Browser:** Presenta la interfaz completa con la aplicación de la identidad visual de la marca, contrastes óptimos para cumplimiento WCAG y mockups visuales del producto integrado.
   
-\includegraphics[width=\linewidth]{assets/43-landing-page-desktop-fam-mockup.png}
 
-\includegraphics[width=\linewidth]{assets/43-landing-page-desktop-pro-mockup.png}
+\includegraphics[width=0.7\linewidth]{assets/land1.png}
+
+\includegraphics[width=0.7\linewidth]{assets/land2.png}
 
 *   **Mock-up Mobile Web Browser:** Muestra la adaptación responsive de la interfaz a dispositivos móviles, manteniendo la consistencia de marca, legibilidad de textos y accesibilidad de los botones de acción (CTAs).
 
