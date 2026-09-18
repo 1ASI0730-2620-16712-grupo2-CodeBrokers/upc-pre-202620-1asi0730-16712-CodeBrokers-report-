@@ -6,6 +6,8 @@ La gestión del Product Backlog se realiza en **Jira**, en el proyecto CodeBroke
 
 **URL del Product Backlog:** \href{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}
 
+\includegraphics[width=0.95\linewidth]{assets/33-product-backlog-jira.png}
+
 Las seis historias del épico EP-01 (Landing Page), junto con la historia técnica TS-01, se encuentran comprometidas en el Sprint 1, mientras que las diecisiete restantes permanecen en el backlog a la espera de su planificación en los sprints siguientes.
 
 
