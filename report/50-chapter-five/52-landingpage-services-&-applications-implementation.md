@@ -102,13 +102,18 @@ Tello Quispe, Luis German & luistello1739-web & --- & --- & --- & --- & C & L & 
 
 Table: Leadership-and-Collaboration Matrix (LACX) del Sprint 1
 
+
 #### 5.2.1.3. Sprint Backlog 1
+
 
 El objetivo principal del Sprint 1 es entregar la primera versión desplegada de la Landing Page de VitaLink, cubriendo las seis historias de usuario del épico EP-01 y la historia técnica TS-01 correspondiente a la configuración del repositorio y del entorno de publicación. En esta sección se descomponen dichas historias en work-items ejecutables. La gestión del Sprint Backlog se realiza en Jira, dentro del tablero Scrum del proyecto `VTL` (CodeBrokers), en el sprint denominado **Sprint 1 - Landing Page**, con fechas del 24/08/2026 al 15/09/2026.
 
+
 **URL del Sprint Backlog en Jira:** \href{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}
 
+
 \includegraphics[width=0.9\linewidth]{assets/521-sprint-backlog-jira.png}
+
 
 \begingroup
 \centering
@@ -169,9 +174,12 @@ El esfuerzo total estimado para el Sprint 1 asciende a **40 horas**, distribuida
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
+
 Durante el Sprint 1 el equipo CodeBrokers implementó la totalidad de la Landing Page de VitaLink en el repositorio `upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page`. El trabajo se organizó en ramas de característica integradas a `develop` mediante Pull Request revisado por un par, y consolidadas finalmente en `main`, rama que alimenta el despliegue en GitHub Pages. La tabla siguiente recoge los commits integrados en `main` durante el periodo del sprint, obtenidos directamente del historial del repositorio.
 
+
 **Repositorio:** \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page}{upc-pre-202620-1asi0730-16712-CodeBrokers-Landing\_Page}
+
 
 \begingroup
 \centering
@@ -256,14 +264,42 @@ Table: Development Evidence del Sprint 1
 
 **Resumen de la actividad de desarrollo**
 
-| Métrica | Valor |
-| :--- | :--- |
-| Commits integrados en `main` | 27 |
-| Ramas de característica creadas | 6 |
-| Pull Requests integrados | 6 |
-| Periodo cubierto | 10/09/2026 – 15/09/2026 |
-| Integrantes con contribuciones registradas | 6 de 6 |
-| Commit de cierre del incremento | 74acdf0 (15/09/2026) |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.45\textwidth}|p{0.40\textwidth}|}
+\hline
+\textbf{Métrica} & \textbf{Valor} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Métrica} & \textbf{Valor} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Commits integrados en \texttt{main} & 27 \\
+\hline
+Ramas de característica creadas & 6 \\
+\hline
+Pull Requests integrados & 6 \\
+\hline
+Periodo cubierto & 10/09/2026 – 15/09/2026 \\
+\hline
+Integrantes con contribuciones registradas & 6 de 6 \\
+\hline
+Commit de cierre del incremento & \texttt{74acdf0} (15/09/2026) \\
+\end{longtable}
+\endgroup
 
 Table: Resumen de la actividad de desarrollo del Sprint 1
 
@@ -298,13 +334,40 @@ El alcance comprometido en el Sprint 1 corresponde al épico EP-01 (Landing Page
 
 La documentación de servicios mediante **OpenAPI/Swagger** se incorporará a partir del Sprint 2, cuando comience la implementación de los servicios RESTful en ASP.NET Core correspondientes a los épicos EP-02 (Frontend) y EP-03 (Backend). El contrato de dichos servicios se derivará de los bounded contexts y agregados definidos en la sección 4.6 y del esquema de base de datos especificado en la sección 4.8. La siguiente tabla anticipa la cobertura prevista:
 
-| Bounded Context | Endpoints previstos | Sprint de implementación |
-| :--- | :--- | :--- |
-| Profiles | `/api/v1/older-adults`, `/api/v1/care-providers`, `/api/v1/family-caregivers` | Sprint 2 |
-| Monitoring | `/api/v1/health-records`, `/api/v1/record-types` | Sprint 2 |
-| Alerting | `/api/v1/alerts`, `/api/v1/alerts/{id}/status` | Sprint 2 |
-| Care Assignment | `/api/v1/assignments` | Sprint 3 |
-| Notification | `/api/v1/notifications` | Sprint 3 |
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.20\textwidth}|p{0.55\textwidth}|p{0.18\textwidth}|}
+\hline
+\textbf{Bounded Context} & \textbf{Endpoints previstos} & \textbf{Sprint de implementación} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Bounded Context} & \textbf{Endpoints previstos} & \textbf{Sprint de implementación} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Profiles & \texttt{/api/v1/older-adults}, \texttt{/api/v1/care-providers}, \texttt{/api/v1/family-caregivers} & Sprint 2 \\
+\hline
+Monitoring & \texttt{/api/v1/health-records}, \texttt{/api/v1/record-types} & Sprint 2 \\
+\hline
+Alerting & \texttt{/api/v1/alerts}, \texttt{/api/v1/alerts/\{id\}/status} & Sprint 2 \\
+\hline
+Care Assignment & \texttt{/api/v1/assignments} & Sprint 3 \\
+\hline
+Notification & \texttt{/api/v1/notifications} & Sprint 3 \\
+\end{longtable}
+\endgroup
 
 Table: Cobertura prevista de documentación de servicios
 
@@ -312,7 +375,9 @@ Table: Cobertura prevista de documentación de servicios
 
 Durante este Sprint el equipo completó la implementación de la Landing Page y llevó a cabo su publicación mediante **GitHub Pages**, aprovechando su integración directa con el repositorio y la disponibilidad de HTTPS sin configuración adicional de infraestructura.
 
+
 Las actividades realizadas fueron las siguientes:
+
 
 1. Se creó la organización de GitHub del equipo: \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers}{1ASI0730-2620-16712-grupo2-CodeBrokers}, y dentro de ella el repositorio de la Landing Page.
 2. Se cargó el código fuente de la Landing Page, incorporando los archivos `index.html`, `styles.css`, `script.js` y el directorio `assets/` con los recursos gráficos del sitio.
@@ -321,17 +386,24 @@ Las actividades realizadas fueron las siguientes:
 5. Se etiquetó el incremento como **v1.0.0**, siguiendo la política de versionado semántico establecida en la sección 5.1.2, y se publicó el Release correspondiente en GitHub.
 6. Se validó la disponibilidad de la publicación accediendo a la URL pública y verificando la correcta visualización en escritorio y en dispositivo móvil.
 
+
 **Landing Page desplegada:** \href{https://1asi0730-2620-16712-grupo2-codebrokers.github.io/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing_Page/}{https://1asi0730-2620-16712-grupo2-codebrokers.github.io/upc-pre-202620-1asi0730-16712-CodeBrokers-Landing\_Page/}
+
 
 **Evidencia del despliegue:**
 
+
 \includegraphics[width=0.8\linewidth]{assets/vista-page.png}
+
 
 \includegraphics[width=0.8\linewidth]{assets/527-deployment-landing-publicada.png}
 
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
+
 En esta sección se presenta la participación de cada integrante en el repositorio de la Landing Page durante el Sprint 1. Los seis miembros del equipo registraron commits y Pull Requests, cubriendo en conjunto la totalidad de las secciones comprometidas. La organización del trabajo siguió la asignación de aspectos definida en la sección 5.2.1.2, de modo que cada integrante lideró al menos una sección del sitio y colaboró en la revisión de las restantes.
+
 
 \begingroup
 \centering
@@ -372,9 +444,12 @@ Tello Quispe, Luis German & luistello1739-web & Testimonios, grid de seguridad y
 
 Table: Contribuciones por integrante durante el Sprint 1
 
+
 **Capturas de Insights del repositorio:**
 
+
 \includegraphics[width=0.8\linewidth]{assets/insigh.png}
+
 
 \includegraphics[width=0.8\linewidth]{assets/528-insights-commits.png}
 
