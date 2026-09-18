@@ -325,7 +325,7 @@ Las actividades realizadas fueron las siguientes:
 
 **Evidencia del despliegue:**
 
-\includegraphics[width=0.8\linewidth]{assets/527-deployment-pages-settings.png}
+\includegraphics[width=0.8\linewidth]{assets/vista-page.png}
 
 \includegraphics[width=0.8\linewidth]{assets/527-deployment-landing-publicada.png}
 
@@ -374,7 +374,7 @@ Table: Contribuciones por integrante durante el Sprint 1
 
 **Capturas de Insights del repositorio:**
 
-\includegraphics[width=0.8\linewidth]{assets/528-insights-contributors.png}
+\includegraphics[width=0.8\linewidth]{assets/insigh.png}
 
 \includegraphics[width=0.8\linewidth]{assets/528-insights-commits.png}
 
