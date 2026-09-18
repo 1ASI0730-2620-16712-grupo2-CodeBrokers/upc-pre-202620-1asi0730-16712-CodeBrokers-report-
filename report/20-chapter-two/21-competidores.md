@@ -10,33 +10,21 @@ Los competidores identificados son:
 
 \par
 \noindent
-\includegraphics[
-    width=\linewidth,
-    height=0.1\textheight,
-    keepaspectratio
-]{assets/21-competidores-cuydo.png}
+\includegraphics[width=\linewidth, height=0.1\textheight, keepaspectratio]{assets/21-competidores-cuydo.png}
 \par
 
 2. **CuidApp** (Argentina) — aplicación orientada a coordinar el cuidado de un adulto mayor entre un "cuidador principal" y un grupo de "ayudantes" (familiares/cuidadores secundarios).
 
 \par
 \noindent
-\includegraphics[
-    width=\linewidth,
-    height=0.1\textheight,
-    keepaspectratio
-]{assets/21-competidores-cuidapp.png}
+\includegraphics[width=\linewidth, height=0.1\textheight, keepaspectratio]{assets/21-competidores-cuidapp.png}
 \par
 
 3. **Silver-Digi** (España) — aplicación que facilita la independencia de adultos mayores mediante videollamadas automáticas con cuidadores/familiares y monitoreo remoto de datos de sensores.
 
 \par
 \noindent
-\includegraphics[
-    width=\linewidth,
-    height=0.1\textheight,
-    keepaspectratio
-]{assets/21-competidores-silverdigi.png}
+\includegraphics[width=\linewidth, height=0.1\textheight, keepaspectratio]{assets/21-competidores-silverdigi.png}
 \par
 
 
@@ -106,11 +94,7 @@ Los competidores identificados son:
 
 \vspace{3pt}
 
-\includegraphics[
-    width=1.7cm,
-    height=0.75cm,
-    keepaspectratio
-]{assets/logo-vitalink.png}
+\includegraphics[width=1.7cm, height=0.75cm, keepaspectratio]{assets/logo-vitalink.png}
 \end{minipage}
 }
 &
@@ -121,11 +105,7 @@ Los competidores identificados son:
 
 \vspace{3pt}
 
-\includegraphics[
-    width=1.7cm,
-    height=0.75cm,
-    keepaspectratio
-]{assets/21-competidores-cuydo.png}
+\includegraphics[width=1.7cm, height=0.75cm, keepaspectratio]{assets/21-competidores-cuydo.png}
 \end{minipage}
 }
 &
@@ -136,11 +116,7 @@ Los competidores identificados son:
 
 \vspace{3pt}
 
-\includegraphics[
-    width=1.7cm,
-    height=0.75cm,
-    keepaspectratio
-]{assets/21-competidores-cuidapp.png}
+\includegraphics[width=1.7cm, height=0.75cm, keepaspectratio]{assets/21-competidores-cuidapp.png}
 \end{minipage}
 }
 &
@@ -151,11 +127,7 @@ Los competidores identificados son:
 
 \vspace{3pt}
 
-\includegraphics[
-    width=1.7cm,
-    height=0.75cm,
-    keepaspectratio
-]{assets/21-competidores-silverdigi.png}
+\includegraphics[width=1.7cm, height=0.75cm, keepaspectratio]{assets/21-competidores-silverdigi.png}
 \end{minipage}
 }
 \\
