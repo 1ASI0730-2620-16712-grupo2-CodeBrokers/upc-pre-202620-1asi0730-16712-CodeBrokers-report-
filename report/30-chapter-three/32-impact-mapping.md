@@ -1,5 +1,7 @@
 ## 3.2. Impact Mapping
 
+El objetivo de negocio de esta etapa es de validación temprana y se mide con las señales definidas en las hipótesis de la sección 1.2.2.3. Las metas de optimización, como la reducción del tiempo de coordinación, el aumento de la retención o las alianzas con centros de salud, se mantienen como aspiraciones futuras hasta contar con una línea base obtenida en un piloto.
+
 \begingroup
 \centering
 \small
@@ -23,17 +25,17 @@
 \hline
 \endlastfoot
 
-Reducir el tiempo de respuesta ante situaciones de riesgo detectadas, sustituyendo la dependencia de la supervisión presencial constante. & Familiares y cuidadores & Obtener información oportuna ante una situación que requiera intervención, mediante notificaciones automáticas. & Sistema de alertas automáticas \\
+Validar en una primera ronda que el prototipo resulta comprensible y que al menos tres de cinco participantes por segmento aceptan una segunda sesión (H5). & Familiares y cuidadores & Identifican sin ayuda la última actualización del adulto mayor y si existe una alerta pendiente (H1). & Panel visual del estado general (US-21) \\
 \hline
-Incrementar la adopción de mecanismos de monitoreo preventivo entre familias con adultos mayores durante los primeros meses de operación. & Familiares y cuidadores responsables del adulto mayor & Obtener acceso continuo a información relevante sobre el estado del adulto mayor, incluso sin estar presentes físicamente. & Funcionalidad de monitoreo preventivo de indicadores relevantes \\
+Mismo objetivo de validación temprana. & Familiares y cuidadores & Identifican quién está atendiendo un caso y qué acción queda pendiente (H4). & Visualización de información centralizada del caso (US-23) \\
 \hline
-Consolidar alianzas con clínicas, hospitales y profesionales de salud que se integren como proveedores de atención dentro del ecosistema. & Clínicas y hospitales & Recibir alertas y datos relevantes de manera oportuna, facilitando una gestión de atención más ágil y mejor informada. & Canal de comunicación familiar-proveedor \\
+Mismo objetivo de validación temprana. & Profesionales de salud & Identifican el caso prioritario entre sus alertas pendientes y justifican su elección (H2). & Resumen de alertas pendientes (US-07) y nivel de urgencia visual (US-08) \\
 \hline
-Mejorar el seguimiento del estado del adulto mayor y facilitar la toma de decisiones ante un incidente. & Familiares, cuidadores y proveedores de atención & Obtener acceso organizado a la información del adulto mayor desde un único lugar, actualmente dispersa entre distintos actores. & Centralización de información de salud \\
+Mismo objetivo de validación temprana. & Profesionales de salud & Localizan sin ayuda los antecedentes de un paciente asignado (H3). & Búsqueda de pacientes (US-28), detalle del paciente (US-09) e historial ordenado por fecha (US-10) \\
 \hline
-Brindar mayor seguridad y acompañamiento al adulto mayor durante sus actividades cotidianas, incluso sin compañía física. & Adultos mayores & Contar con un sistema que identifique de manera temprana posibles situaciones de riesgo. & Monitoreo preventivo y sistema de alertas \\
+Mismo objetivo de validación temprana. & Profesionales de salud & Reconocen si otro profesional ya revisó un caso antes de intervenir (Supuesto 4). & Visibilidad de revisión previa (US-13) \\
 \hline
-Incrementar la frecuencia de uso de la plataforma por parte de familiares y cuidadores. & Familiares y cuidadores & Obtener una visión clara y rápida del estado general del adulto mayor sin necesidad de encontrarse físicamente con él. & Panel de seguimiento remoto \\
+Validar en una ronda posterior la aceptación de la herramienta por parte de los adultos mayores (Supuesto 2). & Adultos mayores & Consultan su resumen en su idioma de preferencia con una interfaz accesible. & Preferencias de idioma y notificaciones (US-33) e internacionalización y accesibilidad (TS-05) \\
 \hline
 \end{longtable}
 \endgroup
