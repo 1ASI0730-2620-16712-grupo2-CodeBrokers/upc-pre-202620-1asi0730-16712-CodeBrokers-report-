@@ -458,34 +458,378 @@ Table: Contribuciones por integrante durante el Sprint 1
 
 #### 5.2.2.1. Sprint Planning 2
 
+El Sprint 2 tuvo como propósito construir la primera versión funcional de la Frontend Web Application de VitaLink. El alcance se concentró en las experiencias de profesionales de la salud y familiares cuidadores, empleando Vue 3 y un servicio REST simulado para representar la información de pacientes, alertas, registros de salud e intervenciones. El equipo seleccionó once elementos del Product Backlog y acordó integrarlos mediante ramas de característica y Pull Requests hacia `develop`.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.67\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\textbf{Sprint \#} & Sprint 2 \\
+\hline
+\textbf{Date} & 2026-10-02 \\
+\hline
+\textbf{Time} & 19:00 (GMT-5) \\
+\hline
+\textbf{Location} & Reunión remota vía Discord \\
+\hline
+\textbf{Prepared By} & Benigno Montero, Harold Fauskorp \\
+\hline
+\textbf{Attendees (to planning meeting)} & Osorio Ramírez, Eduardo Jesús; Said Conde, Yazid; Tello Quispe, Luis German; Rodriguez Gonzales, Leonel German; Salon Puerta, Merly; Benigno Montero, Harold Fauskorp \\
+\hline
+\textbf{Sprint 1 Review Summary} & El Sprint 1 concluyó con la Landing Page de VitaLink implementada y publicada. El Product Backlog, los diseños de las aplicaciones web y la arquitectura de software quedaron preparados como base para iniciar el primer incremento de la Frontend Web Application. \\
+\hline
+\textbf{Sprint 1 Retrospective Summary} & El equipo acordó reducir las integraciones de último momento, mantener una rama por elemento del backlog, revisar cada Pull Request antes del merge y conservar trazabilidad entre Jira, los commits y las evidencias del informe. \\
+\hline
+\textbf{Sprint 2 Goal} & \textbf{Our focus is on} implementar la primera versión navegable de la aplicación web para profesionales de la salud y familiares cuidadores. \newline\newline \textbf{We believe it delivers} acceso centralizado a alertas, detalle e historial de pacientes, seguimiento familiar y preferencias de comunicación. \newline\newline \textbf{This will be confirmed when} los usuarios puedan cambiar de rol, navegar entre las vistas comprometidas, consultar los datos expuestos por el servicio REST simulado y utilizar la interfaz en inglés o español con soporte básico de accesibilidad. \\
+\hline
+\textbf{Sprint 2 Velocity} & 37 Story Points \\
+\hline
+\textbf{Sum of Story Points} & 37 Story Points \\
+\end{longtable}
+\endgroup
+
+Table: Sprint Planning 2
+
+El sprint se ejecutó del 2 al 5 de octubre de 2026. Los 37 Story Points comprometidos alcanzaron el estado **Finalizado** al cierre, incluyendo dos historias técnicas transversales y nueve historias de usuario distribuidas entre los perfiles profesional y familiar.
 
 
-#### 5.2.2.2. Aspect Leaders and Collaborrators
+#### 5.2.2.2. Aspect Leaders and Collaborators
 
+Los aspectos se organizaron según las capacidades funcionales y transversales del incremento: **A1.** Fundamentos y capa compartida, **A2.** Alertas y detalle profesional, **A3.** Historial y revisiones, **A4.** Panel y seguimiento familiar, **A5.** Pacientes asignados y preferencias, y **A6.** Internacionalización y accesibilidad. La letra L identifica al líder del aspecto y la letra C a quienes colaboraron en su implementación o revisión.
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.17\textwidth}|c|c|c|c|c|c|}
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Benigno Montero, Harold Fauskorp & harold-11 & L & L & C & --- & --- & C \\
+\hline
+Said Conde, Yazid & BL4Z3K4D & C & C & --- & --- & --- & --- \\
+\hline
+Salon Puerta, Merly & MerlySalonP & --- & C & L & --- & --- & --- \\
+\hline
+Osorio Ramírez, Eduardo Jesús & Iron819 & --- & --- & --- & L & C & --- \\
+\hline
+Tello Quispe, Luis German & luistello1739-web & --- & --- & --- & C & L & C \\
+\hline
+Rodriguez Gonzales, Leonel German & leokiss15 & C & --- & C & --- & C & L \\
+\end{longtable}
+\endgroup
+
+Table: Leadership-and-Collaboration Matrix (LACX) del Sprint 2
 
 
 #### 5.2.2.3. Sprint Backlog 2
 
+El Sprint Backlog 2 reúne once actividades asociadas a los épicos de Frontend Web Application. La planificación y el control de estados se realizaron en Jira, en el sprint **Sprint 2 - Frontend** del proyecto VTL. La captura siguiente registra las once actividades en estado finalizado; la tabla posterior transcribe su contenido para mantener el artefacto legible y trazable dentro del informe.
+
+**URL del Sprint Backlog en Jira:** \href{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1/backlog}
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-completed-items.png}
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{longtable}{|p{0.07\textwidth}|p{0.23\textwidth}|p{0.07\textwidth}|p{0.30\textwidth}|p{0.06\textwidth}|p{0.15\textwidth}|p{0.07\textwidth}|}
+\hline
+\textbf{Story Id} & \textbf{Story Title} & \textbf{Work Item} & \textbf{Description} & \textbf{Est. (SP)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Story Id} & \textbf{Story Title} & \textbf{Work Item} & \textbf{Description} & \textbf{Est. (SP)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+TS-02 & Configuración base de la Frontend Web Application & VTL-66 & Configurar Vue, Vite, PrimeVue, Router, Pinia, Axios, i18n, variables de entorno y la capa compartida. & 3 & Benigno Montero, Harold Fauskorp & Done \\
+\hline
+US-07 & Resumen inicial de alertas pendientes & VTL-36 & Presentar el resumen profesional con alertas pendientes y sus datos principales. & 5 & Benigno Montero, Harold Fauskorp & Done \\
+\hline
+US-08 & Nivel de urgencia visual en cada alerta & VTL-38 & Mostrar y ordenar alertas según prioridad alta, media o baja. & 3 & Said Conde, Yazid & Done \\
+\hline
+US-09 & Acceso al detalle de paciente desde el resumen & VTL-39 & Permitir la navegación desde una alerta hacia el detalle del paciente relacionado. & 3 & Said Conde, Yazid & Done \\
+\hline
+US-13 & Visibilidad de revisión previa por otro profesional & VTL-44 & Presentar el historial de intervenciones y la revisión profesional asociada a la alerta. & 2 & Salon Puerta, Merly & Done \\
+\hline
+US-10 & Historial de registros del paciente ordenado por fecha & VTL-48 & Consultar y filtrar registros de salud ordenados desde el más reciente. & 5 & Salon Puerta, Merly & Done \\
+\hline
+US-21 & Panel visual del estado general & VTL-50 & Mostrar al familiar las últimas mediciones y alertas abiertas del adulto mayor. & 3 & Osorio Ramírez, Eduardo Jesús & Done \\
+\hline
+US-23 & Visualización de información centralizada & VTL-52 & Centralizar mediciones y casos que requieren seguimiento en la vista familiar. & 2 & Osorio Ramírez, Eduardo Jesús & Done \\
+\hline
+US-28 & Búsqueda y selección de pacientes asignados & VTL-59 & Permitir al profesional buscar y abrir los pacientes bajo su responsabilidad. & 3 & Tello Quispe, Luis German & Done \\
+\hline
+US-33 & Preferencias de idioma y notificaciones & VTL-64 & Configurar idioma y canales de notificación guardados en el navegador. & 3 & Tello Quispe, Luis German & Done \\
+\hline
+TS-05 & Internacionalización y accesibilidad de la Web Application & VTL-69 & Incorporar locales en\_US y es\_419, atributos ARIA, estados accesibles y soporte de navegación por teclado. & 5 & Rodriguez Gonzales, Leonel German & Done \\
+\end{longtable}
+\endgroup
+
+Table: Sprint Backlog 2
+
+El esfuerzo total comprometido y completado fue de **37 Story Points**. La trazabilidad se conserva mediante las claves VTL de Jira, las ramas de característica y los commits incluidos en la sección siguiente.
 
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
+La Frontend Web Application se implementó en el repositorio público `upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application`. El equipo creó una rama por capacidad, integró once Pull Requests en `develop` y posteriormente consolidó el incremento en `main` mediante el Pull Request \#12. El historial de `main` contiene 24 commits del Sprint 2; la tabla siguiente recoge los commits funcionales que identifican cada aporte y el commit de integración de la entrega.
+
+**Repositorio:** \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application}{upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application}
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{longtable}{|p{0.19\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.35\textwidth}|p{0.09\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Frontend Application & feature/frontend-foundation & 0060569 & chore(frontend): configure Vue application foundation & 04/10/2026 \\
+\hline
+Frontend Application & feature/frontend-foundation & a4c53b4 & fix(frontend): align foundation and add shared layer & 05/10/2026 \\
+\hline
+Frontend Application & feature/pending-alerts-summary & b13b231 & feat(alerting): add pending alerts overview & 05/10/2026 \\
+\hline
+Frontend Application & feature/alert-priority & 02f8398 & feat(alerting): display and sort alert priorities & 05/10/2026 \\
+\hline
+Frontend Application & feature/patient-detail & 5111528 & feat(elder-care): open patient details from alerts & 05/10/2026 \\
+\hline
+Frontend Application & feature/review-visibility & 1af0de3 & feat(care-coordination): show previous professional reviews & 04/10/2026 \\
+\hline
+Frontend Application & feature/patient-health-history & f48f212 & feat(preventive-monitoring): add ordered patient history & 04/10/2026 \\
+\hline
+Frontend Application & feature/family-overview & 59823ce & feat(elder-care): add family care overview & 05/10/2026 \\
+\hline
+Frontend Application & feature/family-case-follow-up & 901ea93 & feat(care-coordination): add family case follow-up & 05/10/2026 \\
+\hline
+Frontend Application & feature/assigned-patient-search & 753b4bb & feat(elder-care): add assigned patient search & 05/10/2026 \\
+\hline
+Frontend Application & feature/notification-preferences & 3df9516 & feat(notification): add language and notification preferences & 05/10/2026 \\
+\hline
+Frontend Application & feature/i18n-accessibility & b7c5007 & feat(shared): strengthen i18n and accessibility support & 05/10/2026 \\
+\hline
+Frontend Application & main & 630720e & Merge pull request \#12 from develop & 05/10/2026 \\
+\end{longtable}
+\endgroup
+
+Table: Development Evidence del Sprint 2
+
+La revisión final confirmó que las diez primeras ramas de característica ya estaban contenidas en `develop` y que `feature/i18n-accessibility` fue integrada mediante el Pull Request \#11 antes de consolidar `develop` en `main`.
+
+El incremento se publicó como el release estable **v0.2.11 — TB1**, asociado a `main`: \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application/releases/tag/v0.2.11}{VitaLink Frontend v0.2.11 — TB1}.
 
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
+La aplicación se ejecutó localmente con Vite 7.3.6 y consumió el servicio REST simulado mediante Axios. La verificación de producción se realizó con `npm run build`: Vite transformó 264 módulos y generó correctamente el directorio `dist` en 1.74 segundos, sin errores de compilación.
+
+Las principales capacidades verificadas fueron las siguientes:
+
+- **Resumen profesional de cuidado.** Presenta contadores de alertas, filtros por estado y prioridad, y navegación hacia el paciente relacionado.
+- **Detalle e historial del paciente.** Muestra alertas, prioridad, estado, fecha, historial de intervenciones y registros clínicos ordenados por fecha.
+- **Panel familiar.** Permite seleccionar al adulto mayor, consultar sus últimas mediciones y revisar casos pendientes o en seguimiento.
+- **Pacientes asignados.** Permite buscar y seleccionar pacientes bajo responsabilidad del profesional.
+- **Preferencias e internacionalización.** Conserva idioma y preferencias de notificación en el navegador, con soporte para English (`en_US`) y Latin American Spanish (`es_419`).
+- **Accesibilidad.** Incorpora atributos ARIA, foco visible, navegación por teclado, estados de carga y vacío anunciables, y etiquetas de idioma equivalentes para el navegador.
+
+**Resumen profesional de alertas:**
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-professional-dashboard.png}
+
+**Detalle del paciente e historial de intervenciones:**
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-patient-detail.png}
+
+**Historial de salud ordenado y filtrable:**
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-health-history.png}
+
+**Panel del familiar cuidador:**
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-family-dashboard.png}
+
+**Preferencias de idioma y notificaciones:**
+
+\includegraphics[width=0.82\linewidth]{assets/522-sprint2-preferences.png}
 
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
+El alcance del TB1 corresponde a la primera Frontend Web Application; los Web Services propios en ASP.NET Core se implementarán en un sprint posterior. Para permitir la ejecución integrada del frontend, el equipo configuró un servicio REST local mediante JSON Server 0.17.4. El archivo `server/routes.json` expone los recursos bajo el prefijo `/api/v1`, mientras `server/db.json` conserva la información empleada por las vistas.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.16\textwidth}|p{0.30\textwidth}|p{0.45\textwidth}|}
+\hline
+\textbf{Method} & \textbf{Endpoint} & \textbf{Uso en la aplicación} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Method} & \textbf{Endpoint} & \textbf{Uso en la aplicación} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+GET & /api/v1/patients & Lista, búsqueda, selección y detalle de pacientes. \\
+\hline
+GET & /api/v1/patients/:id & Consulta individual del paciente seleccionado. \\
+\hline
+GET & /api/v1/alerts & Alertas de cuidado, prioridad, estado y asociación con pacientes. \\
+\hline
+GET & /api/v1/records & Historial de mediciones y registros de salud. \\
+\hline
+GET & /api/v1/interventions & Revisiones e intervenciones asociadas a las alertas. \\
+\end{longtable}
+\endgroup
+
+Table: Recursos del servicio REST simulado del Sprint 2
+
+El servicio se inicia desde el directorio `server` mediante `sh start.sh`, cuyo comando ejecuta `npx json-server --watch db.json --routes routes.json`. Esta evidencia no reemplaza la documentación OpenAPI requerida para los Web Services definitivos; documenta únicamente el contrato simulado utilizado por el frontend durante el Sprint 2.
 
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+El incremento se consolidó en la rama `main` mediante el commit `630720e` y se etiquetó con la versión semántica `v0.2.11`. La publicación del release estable permite identificar de forma inmutable el código correspondiente al TB1 y descargar sus artefactos fuente desde GitHub.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.27\textwidth}|p{0.64\textwidth}|}
+\hline
+\textbf{Elemento} & \textbf{Evidencia} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Elemento} & \textbf{Evidencia} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Repositorio & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application}{Frontend Web Application} \\
+\hline
+Rama de entrega & `main`, commit `630720e` \\
+\hline
+Release & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application/releases/tag/v0.2.11}{v0.2.11 — TB1} \\
+\hline
+Validación de build & `npm run build`: 264 módulos transformados; compilación completada en 1.74 s. \\
+\hline
+Frontend desplegado & \textit{Pendiente de incorporar la URL pública proporcionada por el responsable del despliegue.} \\
+\hline
+Servicio REST simulado desplegado & \textit{Pendiente de incorporar la URL pública de JSON Server.} \\
+\end{longtable}
+\endgroup
+
+Table: Evidencias de release y despliegue del Sprint 2
+
+La aplicación está preparada para consumir una URL configurable mediante `VITE_API_BASE_URL`. Para la publicación, el frontend se despliega como sitio estático generado por Vite y el JSON Server se publica en un servicio capaz de ejecutar procesos Node.js. Las dos URL públicas deben reemplazar los campos pendientes de la tabla antes de exportar la versión final del informe TB1.
 
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
+La colaboración se evidenció mediante ramas individuales, once Pull Requests hacia `develop`, una integración de `develop` a `main` y un release estable. Los seis integrantes registraron aportes identificables en el historial. La autoría de commits y la asignación en Jira no siempre coinciden de forma individual, debido a revisiones, integración y apoyo cruzado entre responsables; por ello, la evaluación considera tanto el liderazgo funcional como la evidencia registrada en GitHub.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.26\textwidth}|p{0.18\textwidth}|p{0.48\textwidth}|}
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{Contribución principal en el Sprint 2} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{Contribución principal en el Sprint 2} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Benigno Montero, Harold Fauskorp & harold-11 & Capa compartida, resumen y prioridad de alertas, detalle de pacientes, integración de ramas, verificación y release del incremento. \\
+\hline
+Said Conde, Yazid & BL4Z3K4D & Inicialización del repositorio y configuración base de la aplicación Vue. \\
+\hline
+Salon Puerta, Merly & MerlySalonP & Visibilidad de revisiones profesionales e historial de salud ordenado por fecha. \\
+\hline
+Osorio Ramírez, Eduardo Jesús & Iron819 & Panel de estado general para familiares y seguimiento centralizado de casos. \\
+\hline
+Tello Quispe, Luis German & luistello1739-web & Búsqueda de pacientes asignados y preferencias de idioma y notificaciones. \\
+\hline
+Rodriguez Gonzales, Leonel German & leokiss15 & Internacionalización, accesibilidad, documentación técnica y revisión final de la experiencia compartida. \\
+\end{longtable}
+\endgroup
+
+Table: Contribuciones por integrante durante el Sprint 2
+
+**Captura de Insights del repositorio:**
+
+\includegraphics[width=0.82\linewidth]{assets/522-sprint2-github-insights.png}
+
+La analítica de GitHub confirma contribuciones de los seis integrantes durante octubre de 2026. Esta evidencia complementa la tabla anterior al mostrar la cantidad de commits y el volumen de líneas agregadas y eliminadas asociado a cada cuenta del equipo.
+
+**Evolución del trabajo pendiente:**
+
+\includegraphics[width=0.92\linewidth]{assets/522-sprint2-burndown.png}
+
+La gráfica registra el cierre de los 37 Story Points al finalizar el sprint. También evidencia que la actualización de estados se concentró al final del periodo, en lugar de reflejar una reducción progresiva diaria. Como acción de mejora, el equipo acordó actualizar Jira al completar cada actividad y no únicamente durante el cierre, de modo que el siguiente burndown represente con mayor fidelidad el avance real y facilite la detección temprana de bloqueos.
 
 
 ### 5.2.3. Sprint 3
