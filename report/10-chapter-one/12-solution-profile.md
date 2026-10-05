@@ -81,80 +81,110 @@ Por ello, el impacto del problema puede observarse en tres dimensiones principal
 ### 1.2.2 Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
-Problem Statement 1: Monitoreo Preventivo y Seguridad del Adulto Mayor
-La seguridad y el bienestar del adulto mayor se ven comprometidos debido a la ausencia de un sistema digital que permita un monitoreo continuo y la deteccion oportuna de situaciones de riesgo cuando no se encuentra acompañado. Actualmente el acompañamiento depende en gran medida de la supervision presencial y de comunicaciones manuales (llamadas, mensajes o visitas), lo que puede provocar que una caida, una alteracion de signos vitales u otra situacion de riesgo pase desapercivida hasta que el problema se agrava. ¿Como podemos diseñar una solucion tecnologica que permita monitorear de forma preventiva el estado del aadulto mayor y generar alertas oportunas ante posibles situacioens de riesgo?
 
-Problem Statement 2: Comunicacion y Conexion entre Familiares y  Proveedores de Salud
-La tranquilidad y capacidad de respuesta de los familiares y cuidadores se ven limitadas debido a la falta de un canal centralizado que conecte al adulto mayor, su red familiar y los proveedores de atencion en salud. La informacion relacionada con la salud del adulto mayor suele encontrarse dispersa entre familiares, documentos y distintos proveedores, lo que dificulta el seguimiento y retrasa la toma de decisiones ante un incidente. Esta dispersion, sumada a la flata de un mecanismo de contacto inmediato con clinicas y hospitales genera demoras entre la aparicion de una situacion de riesgo y el inicio de la atencion correspondiente. ¿Como podemos diseñar una plataforma que centralice la informacion de salud del adulto mayor y facilite una comunicacion eficiente entre familiares, cuidadores y proveedores de servicios de salud?
+Problem Statement 1: Conocimiento oportuno del estado del adulto mayor
+
+Actualmente, el seguimiento cotidiano de los adultos mayores se realiza mediante llamadas, mensajes, visitas presenciales y registros separados, como se describe en el análisis 5W+2H. Los familiares y cuidadores que no se encuentran físicamente con el adulto mayor pueden tener dificultades para conocer cuál es la última información disponible sobre su estado y si existe alguna situación pendiente de atención. Esto les obliga a depender de la comunicación manual y puede generar incertidumbre o demoras en su reacción. Queremos explorar cómo facilitar que familiares y cuidadores consulten de forma rápida y comprensible el estado más reciente del adulto mayor, considerando sus distintas habilidades digitales, su disponibilidad de tiempo y que, en la etapa actual, la información proviene de registros manuales o datos simulados, no de un monitoreo clínico continuo. ¿Cómo podríamos ayudar a familiares y cuidadores a conocer el estado más reciente del adulto mayor y reconocer si requiere atención, sin depender exclusivamente de la comunicación manual?
+
+Problem Statement 2: Coordinación entre familiares y profesionales ante un incidente
+
+Cuando se presenta una situación que requiere atención, la información relacionada con el adulto mayor suele encontrarse dispersa entre familiares, documentos y distintos profesionales de salud. Los profesionales pueden tener dificultades para priorizar los casos pendientes y consultar los antecedentes de un paciente, mientras que los familiares no siempre saben quién está atendiendo un incidente ni qué acción queda pendiente. Esta falta de visibilidad compartida puede duplicar esfuerzos y retrasar la toma de decisiones. Queremos explorar cómo facilitar la consulta de antecedentes y la coordinación del seguimiento de un caso entre familiares y profesionales, respetando la confidencialidad de la información clínica y sin reemplazar el criterio profesional. ¿Cómo podríamos ayudar a familiares y profesionales a compartir una visión clara del estado de un caso, de sus antecedentes y de su responsable?
 
 
 #### 1.2.2.2. Lean UX Assumptions
-Los siguientes supuestos establecen las creencias iniciales del equipo sobre los factores que influenciarán en el exito de VitaLink.
+
+Los siguientes supuestos establecen las creencias iniciales del equipo sobre los factores que influirán en el éxito de VitaLink. Al tratarse de una iniciativa nueva en etapa de descubrimiento, no se cuenta todavía con una línea base que permita comprometer metas de optimización; por ello, los resultados se plantean primero como señales de validación temprana.
 
 Business Outcomes (Resultados de Negocio)
-Reducir el tiempo de respuesta ante situaciones de riesgo detectadas al contar con un sistema de alertas que sustituya la dependencia de la supervision presencial constante.
-Incrementar la adopcion de mecanismos de monitoreo preventivo entre familias con adultos mayores durante los primeros meses  de operacion dado que actualmente el seguimiento depende de mecanismos manuales e informales.
-Consolidar alianzas con clinicas, hospitales y profesionales de saud que se integren como proveedores de atencion dentro del ecosistema, mejorando la eficiencia en la gestion de incidentes.
+
+Resultado temprano: obtener evidencia de que familiares y profesionales de salud calificados están dispuestos a continuar participando en un piloto de VitaLink, medida mediante una acción concreta de seguimiento, como aceptar una segunda sesión y acordar un medio de contacto.
+
+Aspiraciones a futuro: reducir el tiempo de coordinación ante un incidente, aumentar la retención de familias y establecer alianzas con centros de salud. Estas aspiraciones no constituyen compromisos demostrados; sus metas se definirán cuando se disponga de una línea base obtenida en un piloto.
 
 User & User Outcomes (Usuarios y Resultados esperados)
-Adultos mayores contaran con mayor seguridad y acompañamiento durante sus actividades cotidianes incluso cuando no esten acompañados fisicamente.
-Familiares y cuidadores podran acceder a informacion oportuna sobre el estado del adulto mayor y actuar con rapidez ante una alerta, reduciendo la incertidumbre y la dependencia de la comunicacion manual.
-Clinicas y hospitales podran recibir alertas y datos relevantes de manera oportuna facilitando una gestion de atencion mas agil y mejor informada.
 
-Features (Caracteristicas de la solucion)
-Las propuestas de VitaLink se sustentan en las siguientes funciones:
-Monitoreo preventivo: Seguimiento de indicadores relevantes del adulto mayor para identificar posibles situaciones de riesgo de manera temprana.
-Sistema de alertas: Notificaciones automaticas a familiares y/o proveedores de salud ante la deteccion de una situacion que requiera atencion.
-Centralizacion de informacion: Un espacio unico donde se consolide la informacion de salud del adulto mayor, actualmente dispersa entre distintos actores.
-Canal de comunicacion familiar-proveedor: Mecanismo que conecte de forma directa y eficiente a los familiares con clinicas, hospitales o profesionales de salud disponibles.
-Panel de seguimiento: Interfaz que permita a los familiares y/o cuidadores visualizar el estado general del adulto mayor de forma remota.
+Familiares y cuidadores podrán comprender el estado más reciente del adulto mayor, identificar si existe una alerta pendiente y reconocer quién está atendiendo un caso.
+
+Profesionales de salud podrán identificar los casos prioritarios entre sus alertas pendientes y localizar los antecedentes de un paciente asignado.
+
+Adultos mayores podrán consultar su información en una interfaz simple y accesible, con su idioma de preferencia.
+
+Features (Características de la solución)
+
+Las propuestas de VitaLink en su alcance actual se sustentan en las siguientes funciones:
+
+Resumen de alertas con prioridad: lista de alertas pendientes con su nivel de urgencia representado de forma textual y visual.
+
+Detalle e historial del paciente: acceso a los datos del paciente y a sus registros ordenados por fecha, con valor, unidad y origen.
+
+Trazabilidad del caso: visibilidad del profesional responsable, de las revisiones previas y del estado del seguimiento de un caso.
+
+Panel de seguimiento familiar: vista del estado general del adulto mayor con sus últimas mediciones y alertas abiertas.
+
+Preferencias y accesibilidad: selección de idioma, preferencias de notificación y soporte de accesibilidad para todos los roles.
+
+El autoagendamiento de citas, el triaje automático, la tarifa social y la integración con dispositivos IoT quedan registrados como ideas futuras. No forman parte del alcance actual y requieren investigación e historias de usuario propias antes de incorporarse.
 
 Risk & Assumptions (Riesgos y Supuestos)
 
-Supuesto 1: Los familiares adoptaran la aplicacion si perciben que reduce de forma significativa su incertidumbre respecto al bienestar del adulto mayor.
+Supuesto 1: Los familiares encontrarán valor en la aplicación si pueden interpretar sin ayuda el estado más reciente del adulto mayor. Se validará con la Hipótesis 1.
 
-Supuesto 2: Los adultos mayores aceptaran el uso de herramientas digitales de monitoreo si la interfaz es simple y accesible.
+Supuesto 2: Los adultos mayores aceptarán el uso de la herramienta si la interfaz es simple y accesible. Este supuesto se validará en una ronda posterior con participantes de este segmento.
 
-Supuesto 3: Las clinicas y hospitales estaran dispuestos a intregrarse dentro del ecosistema si el sistema de alertas es confiable y reduce tiempos de gestion.
+Supuesto 3: Los profesionales de salud estarán dispuestos a utilizar la plataforma si les ayuda a priorizar alertas y consultar antecedentes sin pasos adicionales. Se validará con las Hipótesis 2 y 3.
 
-Supuesto 4: La centralizacion de la informacion de salud permitira anticipar situaciones de riesgo que hoy pasan desapercibidas por la dispersion de datos entre distintos actores.
+Supuesto 4: Hacer visible quién atiende un caso y qué queda pendiente reducirá la confusión en la coordinación. Se validará con la Hipótesis 4.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Declaracion de Hipotesis 1:**
+Las siguientes hipótesis se evaluarán mediante sesiones moderadas con el prototipo web y casos simulados. Los umbrales son señales iniciales propuestas por el equipo, no resultados obtenidos. Por cada participante se registrará la fecha, el guion utilizado, los intentos, las ayudas recibidas, los errores y el resultado. Los resultados se reportarán en cantidades además de porcentajes; al tratarse de una muestra exploratoria, no permiten generalizar al mercado.
 
-  * **Creemos que lograremos** una mayor adopcion del monitoreo preventivo y una reduccion de situaciones de riesgo detectadas tardíamente
+* **Declaración de Hipótesis 1:**
+
+  * **Creemos que lograremos** aumentar la disposición de los familiares a participar en un piloto
   * **Si** los familiares y cuidadores responsables de adultos mayores
-  * **Obtienen** acceso continuo a informacion relevante sobre el estado del adulto mayor, incluso cuando no se encuentran fisicamente con el
-  * **Con** una funcionalidad de monitoreo preventivo que permita realizar el seguimiento de indicadores relevantes e identificar posibles situaciones de riesgo.
+  * **Obtienen** una comprensión clara del estado más reciente del adulto mayor sin necesidad de llamarlo o visitarlo
+  * **Con** un panel de seguimiento familiar que muestre sus últimas mediciones, alertas abiertas y fechas.
+  * **Experimento:** cinco familiares consultan un caso simulado en el panel durante la primera ronda de validación.
+  * **Sabremos que es cierto cuando** al menos cuatro de cinco participantes identifiquen la última actualización y expliquen si existe una alerta pendiente sin ayuda.
 
-* **Declaracion de Hipotesis 2:**
+* **Declaración de Hipótesis 2:**
 
-  * **Creemos que lograremos** reducir el tiempo de respuesta ante posibles situaciones de riesgo
-  * **Si** los familiares, cuidadores y proveedores de atencion
-  * **Obtienen** informacion oportuna sobre una situacion que pueda requerir su intervencion
-  * **Con** un sistema de alertas automaticas que notifique a los responsables cuando se detecte una posible situacion de riesgo.
+  * **Creemos que lograremos** que los profesionales de salud prioricen correctamente su atención
+  * **Si** los profesionales de salud con pacientes asignados
+  * **Obtienen** una visión ordenada de las alertas pendientes según su urgencia
+  * **Con** un resumen de alertas que represente de forma textual y visual la prioridad de cada una.
+  * **Experimento:** cinco profesionales revisan casos simulados con distinta prioridad durante la primera ronda de validación.
+  * **Sabremos que es cierto cuando** al menos cuatro de cinco participantes identifiquen el caso prioritario y justifiquen su elección.
 
-* **Declaracion de Hipotesis 3:**
+* **Declaración de Hipótesis 3:**
 
-  * **Creemos que lograremos** mejorar el seguimiento del estado del adulto mayor y facilitar el acceso a información para la toma de decisisones
-  * **Si** los familiares, cuidadores y proveedores de atencion
-  * **Obtienen** acceso organizado a la informacion relevante del adulto mayor desde un unico lugar
-  * **Con** una funcionalidad que centralice la informacion que actualmente se encuentra distribuida entre diferentes actores.
+  * **Creemos que lograremos** facilitar la consulta de antecedentes para la toma de decisiones
+  * **Si** los profesionales de salud
+  * **Obtienen** acceso organizado a los registros de un paciente desde un único lugar
+  * **Con** un historial de registros ordenado por fecha y filtrable por rango y tipo.
+  * **Experimento:** cinco profesionales buscan un registro previamente definido en el historial de un paciente simulado durante la primera ronda de validación.
+  * **Sabremos que es cierto cuando** al menos cuatro de cinco participantes localicen el registro correcto sin ayuda.
 
-* **Declaracion de Hipotesis 4:**
+* **Declaración de Hipótesis 4:**
 
-  * **Creemos que lograremos** reducir el tiempo necesario para establecer contacto con un proveedor de atencion ante una situacion que requiera asistencia
-  * **Si** los familiares y cuidadores responsables del adulto mayor
-  * **Obtienen** una forma directa de comunicarse con clinicas, hospitales o profesionales disponibles
-  * **Con** un canal de comunicacion que conecte a los familiares con los proveedores de atencion integrados en la plataforma.
-
-* **Declaracion de Hipotesis 5:**
-
-  * **Creemos que lograremos** incrementar la frecuencia de uso de la plataforma por parte de familiares y cuidadores
+  * **Creemos que lograremos** reducir la confusión en la coordinación de un caso
   * **Si** los familiares y cuidadores
-  * **Obtienen** una vision clara y rapida del estado general del adulto mayor sin necesidad de encontrarse fisicamente con el
-  * **Con** un panel de seguimiento que presente de manera accesible la informacion relevante sobre su estado.
+  * **Obtienen** visibilidad sobre quién está atendiendo un caso y qué acción queda pendiente
+  * **Con** una vista de seguimiento del caso que muestre su estado, el último responsable y la secuencia de actuaciones autorizadas.
+  * **Experimento:** cinco familiares revisan un caso simulado con responsable y estado durante la primera ronda de validación.
+  * **Sabremos que es cierto cuando** al menos cuatro de cinco participantes identifiquen quién está atendiendo el caso y qué sigue pendiente.
+
+* **Declaración de Hipótesis 5:**
+
+  * **Creemos que lograremos** obtener interés en continuar explorando VitaLink
+  * **Si** los familiares y profesionales de salud que participan en las sesiones
+  * **Obtienen** una experiencia comprensible con el prototipo
+  * **Con** el conjunto de funcionalidades evaluadas en las hipótesis anteriores.
+  * **Experimento:** al finalizar cada sesión de la primera ronda, se invita a los participantes a una segunda sesión.
+  * **Sabremos que es cierto cuando** al menos tres de cinco participantes por segmento acepten la segunda sesión y acuerden un medio de contacto.
+
+La intención declarada de uso se considera una señal exploratoria; no equivale a adopción, retención ni beneficio clínico demostrado. Los resultados se documentarán únicamente después de ejecutar las sesiones.
 
 
 #### 1.2.2.4. Lean UX Canvas
@@ -170,52 +200,51 @@ Supuesto 4: La centralizacion de la informacion de salud permitira anticipar sit
 \textbf{2. Business Outcomes} &
 \textbf{3. Users} \\
 \hline
-El cuidado de adultos mayores depende de registros manuales y respuestas reactivas ante emergencias de salud, generando demoras críticas y desconexión entre el monitoreo diario del hogar y los centros de atención médica.
+El seguimiento de adultos mayores se realiza mediante llamadas, mensajes y registros separados. Familiares y profesionales pueden tener dificultades para conocer la última información disponible, priorizar los casos pendientes y saber quién atiende un incidente.
 &
-- Reducción del 50\% en el tiempo para coordinar una cita ante anomalías.\newline
-- Tasa mínima del 70\% de aceptación en citas pre-agendadas.\newline
-- Afiliación de al menos 15 centros de salud a la red.\newline
-- Incremento del 30\% en la retención mensual de familias suscriptoras.
+- Temprano: al menos tres de cinco participantes por segmento aceptan una segunda sesión y acuerdan un medio de contacto.\newline
+- Aspiraciones futuras, sin línea base: reducir el tiempo de coordinación, aumentar la retención y establecer alianzas con centros de salud.
 &
-- Cuidadores familiares principales (hijos, tutores).\newline
-- Adultos mayores con enfermedades crónicas.\newline
-- Centros de salud y profesionales médicos independientes.
+- Familiares y cuidadores principales (hijos, tutores).\newline
+- Profesionales de salud con pacientes asignados.\newline
+- Adultos mayores.
 \\
 \hline
 \textbf{4. User Outcomes \& Benefits} &
 \textbf{5. Solutions} &
 \textbf{6. Hypotheses} \\
 \hline
-- Detección temprana de anomalías biométricas y tranquilidad familiar continua.\newline
-- Atención médica rápida sin búsqueda manual de proveedores en crisis.\newline
-- Historial clínico y triaje previo disponible para el médico antes de la consulta.\newline
-- Acceso a consultas a tarifa social para adultos mayores sin seguro.
+- Comprender el estado más reciente del adulto mayor sin llamarlo.\newline
+- Identificar el caso prioritario entre las alertas pendientes.\newline
+- Localizar los antecedentes de un paciente.\newline
+- Reconocer quién atiende un caso y qué queda pendiente.
 &
-- Plataforma SaaS con tablero de telemetría IoT simulada en tiempo real.\newline
-- Sistema inteligente de triaje y pre-agendamiento automático de consultas.\newline
-- Historial biométrico centralizado y ficha de triaje exportable.\newline
-- Módulo de atención a tarifa social conectado con policlínicos y ONGs.\newline
-- Notificaciones automatizadas vía SMS y mensajería de emergencia.
+- Prototipo web con datos simulados.\newline
+- Resumen de alertas con prioridad.\newline
+- Detalle e historial del paciente.\newline
+- Trazabilidad de revisiones y seguimiento del caso.\newline
+- Panel de seguimiento familiar.\newline
+- Ideas futuras, fuera del alcance actual: autoagendamiento, triaje, tarifa social e IoT.
 &
-- Creemos que el monitoreo IoT en tiempo real logrará un 30\% más de retención mensual al brindar tranquilidad continua a los cuidadores.\newline
-- Creemos que el auto-agendamiento inteligente reducirá en 50\% el tiempo de coordinación de citas de urgencia.\newline
-- Creemos que el historial y triaje previo aumentará un 40\% los convenios con clínicas.\newline
-- Creemos que las alertas SMS lograrán un 75\% de confirmación en los primeros 5 minutos.\newline
-- Creemos que la tarifa social logrará un 35\% de adopción en hogares sin seguro privado.
+- H1: 4 de 5 familiares interpretan el panel sin ayuda.\newline
+- H2: 4 de 5 profesionales identifican el caso prioritario.\newline
+- H3: 4 de 5 profesionales localizan el registro correcto.\newline
+- H4: 4 de 5 familiares identifican al responsable y lo pendiente.\newline
+- H5: 3 de 5 por segmento aceptan una segunda sesión.
 \\
 \hline
 \multicolumn{2}{|p{0.55\textwidth}|}{\textbf{7. What is the most important thing we need to learn first?}} &
 \textbf{8. What is the least amount of work we need to do to learn the next most important thing?} \\
 \hline
 \multicolumn{2}{|p{0.55\textwidth}|}{
-- Validar si los cuidadores familiares aceptan y confían en el auto-agendamiento ante una anomalía detectada.\newline
-- Confirmar la disposición de las clínicas para publicar y gestionar sus cupos de atención dentro del SaaS.\newline
-- Identificar el rango de precio mensual aceptable para los planes familiares de suscripción.
+- Si familiares y profesionales comprenden la información del prototipo sin ayuda.\newline
+- Si la trazabilidad del caso resuelve la duda de quién atiende un incidente.\newline
+- Si los participantes muestran disposición a continuar en un piloto.
 }
 &
-- Desplegar la Landing Page con la propuesta de valor y medir el interés de registro de cuidadores y clínicas.\newline
-- Probar prototipos interactivos en Figma con cuidadores para validar el flujo de confirmación de citas en un clic.\newline
-- Ejecutar simulaciones del flujo de datos IoT y pre-agendamiento en el MVP inicial.
+- Sesiones moderadas con cinco familiares y cinco profesionales usando casos simulados.\newline
+- Registro por participante de intentos, ayudas, errores y resultado.\newline
+- Invitación a una segunda sesión al finalizar.
 \\
 \hline
 \end{tabular}
