@@ -769,9 +769,9 @@ Release & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pr
 \hline
 Validación de build & `npm run build`: 264 módulos transformados; compilación completada en 1.74 s. \\
 \hline
-Frontend desplegado & \textit{Pendiente de incorporar la URL pública proporcionada por el responsable del despliegue.} \\
+Frontend desplegado & \href{https://vitalink-opal.vercel.app}{https://vitalink-opal.vercel.app} (Vercel, rama \texttt{main}) \\
 \hline
-Servicio REST simulado desplegado & \textit{Pendiente de incorporar la URL pública de JSON Server.} \\
+Servicio REST simulado desplegado & \href{https://vitalink-api-m3uk.onrender.com/api/v1}{https://vitalink-api-m3uk.onrender.com/api/v1} (JSON Server en Render) \\
 \end{longtable}
 \endgroup
 
