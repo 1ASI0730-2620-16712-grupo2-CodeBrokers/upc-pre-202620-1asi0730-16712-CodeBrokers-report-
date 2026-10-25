@@ -681,19 +681,15 @@ Las principales capacidades verificadas fueron las siguientes:
 
 \includegraphics[width=0.92\linewidth]{assets/522-sprint2-professional-dashboard.png}
 
-**Detalle del paciente e historial de intervenciones:**
+**Detalle del familiar: últimas mediciones y casos para seguir:**
 
 \includegraphics[width=0.92\linewidth]{assets/522-sprint2-patient-detail.png}
-
-**Historial de salud ordenado y filtrable:**
-
-\includegraphics[width=0.92\linewidth]{assets/522-sprint2-health-history.png}
 
 **Panel del familiar cuidador:**
 
 \includegraphics[width=0.92\linewidth]{assets/522-sprint2-family-dashboard.png}
 
-**Preferencias de idioma y notificaciones:**
+**Selector de idioma y vista en inglés:**
 
 \includegraphics[width=0.82\linewidth]{assets/522-sprint2-preferences.png}
 
