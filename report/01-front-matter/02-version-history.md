@@ -89,6 +89,8 @@ v1.0.2 & 2026-09-17 & Tello Quispe, Luis German & Resolución de conflictos de i
 \hline
 v1.0.3 & 2026-09-17 & Benigno Montero, Harold Fauskorp & Redacción de conclusiones y recomendaciones. Sincronización del backlog del Sprint 1 con las evidencias de Jira y arreglos en los bloques de imágenes multilinea que rompían el PDF. \\
 \hline
+v1.1.0 & 2026-10-05 & Benigno Montero, Harold Fauskorp & Incorporación de la documentación completa del Sprint 2: planificación, responsables, backlog, commits, evidencias de ejecución, servicio REST simulado, release, despliegue y colaboración del equipo. \\
+\hline
 \end{longtable}
 \endgroup
 
