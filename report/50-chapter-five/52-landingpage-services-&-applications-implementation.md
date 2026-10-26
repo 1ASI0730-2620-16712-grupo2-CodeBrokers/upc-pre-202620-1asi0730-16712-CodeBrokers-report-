@@ -1038,7 +1038,7 @@ El Sprint Backlog 3 reúne doce elementos del Product Backlog orientados a la pr
 
 **URL pública del Sprint Backlog en Jira:** \nolinkurl{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1}
 
-<!-- PENDIENTE: insertar la captura del tablero del Sprint 3 tomada después del Sprint Planning (assets/523-sprint3-board.png). -->
+\includegraphics[width=0.92\linewidth]{assets/523-sprint3-board.png}
 
 \begingroup
 \centering
