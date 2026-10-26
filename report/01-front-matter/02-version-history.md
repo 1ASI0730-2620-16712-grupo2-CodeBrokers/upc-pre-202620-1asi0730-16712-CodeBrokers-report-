@@ -91,6 +91,8 @@ v1.0.3 & 2026-09-17 & Benigno Montero, Harold Fauskorp & Redacción de conclusio
 \hline
 v1.1.0 & 2026-10-05 & Benigno Montero, Harold Fauskorp & Incorporación de la documentación completa del Sprint 2: planificación, responsables, backlog, commits, evidencias de ejecución, servicio REST simulado, release, despliegue y colaboración del equipo. \\
 \hline
+v1.2.0 & 2026-10-25 & Benigno Montero, Harold Fauskorp & Incorporación de la planificación del Sprint 3: Sprint Planning 3, reuniones del sprint, Leadership-and-Collaboration Matrix y Sprint Backlog 3. \\
+\hline
 \end{longtable}
 \endgroup
 
