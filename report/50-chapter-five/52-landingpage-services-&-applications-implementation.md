@@ -832,34 +832,372 @@ La gráfica registra el cierre de los 37 Story Points al finalizar el sprint. Ta
 
 #### 5.2.3.1. Sprint Planning 3
 
+El Sprint 3 tiene como propósito construir y desplegar la primera versión de los RESTful Web Services de VitaLink, desarrollados con ASP.NET Core, Entity Framework Core y C# sobre PostgreSQL, e integrar la Web Application con dichos servicios en reemplazo del servicio REST simulado del Sprint 2. El alcance incluye la persistencia de pacientes, registros de salud y alertas, el ciclo de atención de alertas, el inicio de sesión con navegación por rol, la documentación OpenAPI vía Swagger y la integración con un servicio externo de terceros para el envío de notificaciones por correo.
+
+El sprint se desarrolla del 25 de octubre al 8 de noviembre de 2026, según el sprint **Sprint 3 - Web Services** registrado en Jira. Al tratarse del penúltimo sprint, el equipo comprometió aproximadamente la mitad del Product Backlog pendiente: 53 de los 106 Story Points restantes. La selección consideró el avance del sílabo del curso hasta la entrega del AV2; por ello, el endurecimiento de la seguridad (TS-04) y las pruebas unitarias y de integración de los Web Services se programaron para el Sprint 4, ya que sus temas (Web Services Security - Part 2 y Best Practices) se desarrollan entre las semanas 13 y 16.
+
+<!-- PENDIENTE: completar Time y Attendees con los datos reales de la reunión del 25/10 (captura de inicio y cierre en Microsoft Teams). -->
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Campo} & \textbf{Detalle} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\textbf{Sprint \#} & Sprint 3 \\
+\hline
+\textbf{Date} & 2026-10-25 \\
+\hline
+\textbf{Time} & \textit{Por completar tras la reunión} \\
+\hline
+\textbf{Location} & Reunión remota vía Microsoft Teams \\
+\hline
+\textbf{Prepared By} & Benigno Montero, Harold Fauskorp \\
+\hline
+\textbf{Attendees (to planning meeting)} & \textit{Por completar tras la reunión} \\
+\hline
+\textbf{Sprint 2 Review Summary} & El Sprint 2 concluyó con los 37 Story Points comprometidos en estado finalizado. Se desplegó la primera versión de la Frontend Web Application, desarrollada con Vue 3 y PrimeVue, con las vistas para profesionales de la salud y familiares cuidadores, internacionalización en inglés y español y soporte de accesibilidad, consumiendo un servicio REST simulado. \\
+\hline
+\textbf{Sprint 2 Retrospective Summary} & El equipo identificó que los estados de Jira se actualizaron al cierre del sprint, por lo que el burndown no reflejó el avance real. Se acordó mover cada tarea el mismo día en que cambia de estado, mantener una rama por elemento del backlog y revisar cada Pull Request por otro integrante antes de integrarlo en \texttt{develop}. \\
+\hline
+\textbf{Sprint 3 Goal} & \textbf{Our focus is on} que profesionales de la salud y familiares cuidadores trabajen con datos reales persistidos mediante la API RESTful de VitaLink, con acceso por rol. \newline\newline \textbf{We believe it delivers} alertas, historial de salud y asociación paciente-proveedor confiables, además de avisos por correo ante eventos críticos. \newline\newline \textbf{This will be confirmed when} un usuario inicia sesión en la Web Application desplegada, consulta una alerta generada por la API, la atiende con una observación y el familiar recibe el correo de aviso del servicio externo. \\
+\hline
+\textbf{Sprint 3 Velocity} & 53 Story Points \\
+\hline
+\textbf{Sum of Story Points} & 53 Story Points \\
+\end{longtable}
+\endgroup
+
+Table: Sprint Planning 3
+
+Durante el Sprint Planning, el equipo revisó la descomposición de cada elemento del backlog en tareas, acordó los responsables y estimó en horas cada tarea, con un máximo de 8 horas por tarea; las tareas que superaron ese límite se dividieron en la misma reunión. Además, se programaron cuatro reuniones de seguimiento del sprint en Microsoft Teams, registradas con capturas de inicio y cierre en las que se identifican los participantes.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.04\textwidth}|p{0.25\textwidth}|p{0.22\textwidth}|p{0.40\textwidth}|}
+\hline
+\textbf{\#} & \textbf{Reunión} & \textbf{Fecha y hora} & \textbf{Objetivo} \\
+\hline
+\endfirsthead
+\hline
+\textbf{\#} & \textbf{Reunión} & \textbf{Fecha y hora} & \textbf{Objetivo} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+1 & Sprint Planning 3 & 2026-10-25, 21:00--22:00 & Definir el Sprint Goal, el alcance, los responsables y la estimación en horas de las tareas. \\
+\hline
+2 & Revisión del backend base & 2026-10-29, 21:00--21:20 & Presentar la base de la API y acordar cómo cada integrante construye su módulo sobre ella. \\
+\hline
+3 & Revisión de mitad de sprint & 2026-10-31, 21:00--21:20 & Revisar el tablero, las dependencias entre tareas y los Pull Requests pendientes. \\
+\hline
+4 & Sprint Review y Sprint Retrospective 3 & 2026-11-07, 21:00--22:00 & Demostrar el incremento desplegado, verificar el Sprint Goal y acordar mejoras para el Sprint 4. \\
+\end{longtable}
+\endgroup
+
+Table: Reuniones del Sprint 3
+
+La agenda de cada reunión se presenta a continuación.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.22\textwidth}|p{0.13\textwidth}|p{0.57\textwidth}|}
+\hline
+\textbf{Reunión} & \textbf{Hora} & \textbf{Tema} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Reunión} & \textbf{Hora} & \textbf{Tema} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Sprint Planning 3 & 21:00--21:05 & Captura de inicio con asistentes y apertura. \\
+\cline{2-3}
+(2026-10-25) & 21:05--21:15 & Resumen del Sprint Review y de la Sprint Retrospective del Sprint 2. \\
+\cline{2-3}
+ & 21:15--21:25 & Sprint Goal 3 y alcance: 12 elementos del backlog y 53 Story Points; elementos que se trasladan al Sprint 4 y motivo. \\
+\cline{2-3}
+ & 21:25--21:30 & Responsables y Leadership-and-Collaboration Matrix (LACX). \\
+\cline{2-3}
+ & 21:30--21:50 & Estimación en horas de las tareas T-1 a T-30 (máximo 8 horas por tarea). \\
+\cline{2-3}
+ & 21:50--21:55 & Acuerdos técnicos: repositorio de Web Services en C\# y .NET 10, Swagger mediante Swashbuckle, PostgreSQL, ramas \texttt{feature/}, Pull Requests revisados por otro integrante e internacionalización de la API con inglés por defecto. \\
+\cline{2-3}
+ & 21:55--22:00 & Dudas, cierre y captura final. \\
+\hline
+Revisión del backend base & 21:00--21:02 & Captura de inicio con asistentes. \\
+\cline{2-3}
+(2026-10-29) & 21:02--21:10 & Demostración de la base de la API: solución ASP.NET Core por bounded contexts, Entity Framework Core con PostgreSQL, migración inicial, manejo de errores e internacionalización (T-1 a T-3). \\
+\cline{2-3}
+ & 21:10--21:15 & Construcción de cada módulo sobre la base, con prioridad para los modelos de los que dependen otras tareas: Alert (T-8), HealthRecord (T-18) y Patient (T-27). \\
+\cline{2-3}
+ & 21:15--21:18 & Avance de las tareas que no dependen del código: proveedor de correo (T-13), base de datos en la nube (T-22) y configuración de Swagger (T-25). \\
+\cline{2-3}
+ & 21:18--21:20 & Bloqueos, cierre y captura final. \\
+\hline
+Revisión de mitad de sprint & 21:00--21:02 & Captura de inicio con asistentes. \\
+\cline{2-3}
+(2026-10-31) & 21:02--21:10 & Repaso del tablero de Jira por integrante y actualización de estados. \\
+\cline{2-3}
+ & 21:10--21:15 & Dependencias críticas: HealthRecord (T-18) hacia la generación de alertas (T-9); modelo Alert (T-8) hacia el cambio de estado (T-16), las transiciones de atención (T-11) y la observación (T-30); alerta creada (T-9) hacia el correo al familiar (T-15); API desplegada (T-23) hacia las integraciones de la Web Application. \\
+\cline{2-3}
+ & 21:15--21:18 & Pull Requests pendientes de revisión y asignación de revisores. \\
+\cline{2-3}
+ & 21:18--21:20 & Plan de la segunda semana: inicio de sesión (T-4 a T-7), integración y despliegue final. Cierre y captura final. \\
+\hline
+Sprint Review y & 21:00--21:05 & Captura de inicio con asistentes. \\
+\cline{2-3}
+Sprint Retrospective 3 & 21:05--21:40 & Sprint Review: demostración por integrante en la Web Application y los Web Services desplegados. \\
+\cline{2-3}
+(2026-11-07) & 21:40--21:45 & Verificación del cumplimiento del Sprint Goal. \\
+\cline{2-3}
+ & 21:45--21:57 & Sprint Retrospective: aciertos, oportunidades de mejora y acciones para el Sprint 4. \\
+\cline{2-3}
+ & 21:57--22:00 & Acuerdos, cierre y captura final. \\
+\end{longtable}
+\endgroup
+
+Table: Agenda de las reuniones del Sprint 3
 
 
-#### 5.2.3.2. Aspect Leaders and Collaborrators
+#### 5.2.3.2. Aspect Leaders and Collaborators
 
+Los aspectos del Sprint 3 se organizaron según los bloques funcionales de los Web Services y su integración con la Web Application: **A1.** Base de la API e inicio de sesión, **A2.** Generación de alertas, **A3.** Historial de salud, **A4.** Pacientes y estados de alertas, **A5.** Atención de alertas y notificaciones externas, y **A6.** Despliegue y documentación de servicios. La letra L identifica al líder del aspecto, es decir, al integrante responsable de sus elementos del backlog; la letra C identifica a quienes colaboran porque su trabajo depende de ese aspecto o lo complementa.
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.17\textwidth}|c|c|c|c|c|c|}
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Team Member} & \textbf{GitHub Username} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Benigno Montero, Harold Fauskorp & harold-11 & L & --- & --- & C & --- & C \\
+\hline
+Said Conde, Yazid & BL4Z3K4D & --- & L & C & --- & C & --- \\
+\hline
+Salon Puerta, Merly & MerlySalonP & --- & C & L & --- & --- & --- \\
+\hline
+Osorio Ramírez, Eduardo Jesús & Iron819 & --- & C & --- & C & L & --- \\
+\hline
+Tello Quispe, Luis German & luistello1739-web & --- & C & --- & L & C & --- \\
+\hline
+Rodriguez Gonzales, Leonel German & leokiss15 & C & --- & --- & --- & --- & L \\
+\end{longtable}
+\endgroup
+
+Table: Leadership-and-Collaboration Matrix (LACX) del Sprint 3
+
+Las colaboraciones responden a dependencias entre tareas. En A2, Merly provee el modelo de registros de salud que se evalúa para generar alertas, Luis implementa el cambio de estado sobre el modelo de alerta y Eduardo envía el correo cuando se crea una alerta. En A3, Yazid consume los registros de salud para la evaluación de alertas. En A4, Harold valida el perfil del paciente y Eduardo reutiliza el cambio de estado para las transiciones de atención. En A5, Luis provee el cambio de estado y Yazid registra la observación asociada a la atención. Finalmente, Leonel documenta en Swagger el esquema de autenticación de A1 y Harold provee la base de la API que se despliega en A6.
 
 
 #### 5.2.3.3. Sprint Backlog 3
 
+El Sprint Backlog 3 reúne doce elementos del Product Backlog orientados a la primera versión de los Web Services y a su integración con la Web Application. La planificación y el control de estados se realizan en Jira, en el sprint **Sprint 3 - Web Services** del proyecto VTL, con el flujo To-do, In Process, To Review y Done (Por hacer, En curso, En revisión y Finalizado). La captura del tablero se presenta a continuación y las tablas posteriores transcriben su contenido para mantener el artefacto legible y trazable dentro del informe.
+
+**URL pública del Sprint Backlog en Jira:** \nolinkurl{https://codebrokers.atlassian.net/jira/software/projects/VTL/boards/1}
+
+<!-- PENDIENTE: insertar la captura del tablero del Sprint 3 tomada después del Sprint Planning (assets/523-sprint3-board.png). -->
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{longtable}{|p{0.08\textwidth}|p{0.08\textwidth}|p{0.38\textwidth}|p{0.06\textwidth}|p{0.20\textwidth}|p{0.07\textwidth}|}
+\hline
+\textbf{Story Id} & \textbf{Jira Key} & \textbf{Story Title} & \textbf{SP} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Story Id} & \textbf{Jira Key} & \textbf{Story Title} & \textbf{SP} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+TS-03 & VTL-67 & Configuración base del Backend RESTful API y persistencia & 5 & Benigno Montero, Harold Fauskorp & To-do \\
+\hline
+US-25 & VTL-56 & Inicio y cierre de sesión con navegación por rol & 3 & Benigno Montero, Harold Fauskorp & To-do \\
+\hline
+US-20 & VTL-45 & Validación de datos básicos del paciente & 3 & Benigno Montero, Harold Fauskorp & To-do \\
+\hline
+US-14 & VTL-35 & Generación automática de alerta desde un evento & 8 & Said Conde, Yazid & To-do \\
+\hline
+US-12 & VTL-42 & Observación breve al atender una alerta & 2 & Said Conde, Yazid & To-do \\
+\hline
+US-16 & VTL-47 & Almacenamiento del historial del paciente & 8 & Salon Puerta, Merly & To-do \\
+\hline
+TS-08 & VTL-72 & Integración confiable de notificaciones externas & 5 & Osorio Ramírez, Eduardo Jesús & To-do \\
+\hline
+US-11 & VTL-41 & Marcar alerta como en revisión o atendida & 3 & Osorio Ramírez, Eduardo Jesús & To-do \\
+\hline
+US-18 & VTL-40 & Cambio de estado de alerta sin eliminar & 5 & Tello Quispe, Luis German & To-do \\
+\hline
+US-19 & VTL-46 & Asociación de paciente con proveedor de salud & 3 & Tello Quispe, Luis German & To-do \\
+\hline
+TS-07 & VTL-71 & Integración continua y despliegue de la Web Application & 5 & Rodriguez Gonzales, Leonel German & To-do \\
+\hline
+TS-06 & VTL-70 & Documentación y verificación de contratos de servicios & 3 & Rodriguez Gonzales, Leonel German & To-do \\
+\hline
+\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{53} & \multicolumn{2}{l|}{} \\
+\end{longtable}
+\endgroup
+
+Table: Elementos del Product Backlog incluidos en el Sprint 3
+
+La tabla siguiente presenta la descomposición de cada elemento en tareas, según la estructura de control de estado del sprint. Cada tarea está asignada al mismo integrante responsable de su elemento del backlog.
+
+<!-- PENDIENTE: completar la columna Estimation (Hours) con las horas acordadas en el Sprint Planning del 25/10 y registrar las tareas que se hayan dividido por superar 8 horas. -->
+
+\begingroup
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{longtable}{|p{0.06\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|p{0.17\textwidth}|p{0.24\textwidth}|p{0.06\textwidth}|p{0.11\textwidth}|p{0.05\textwidth}|}
+\hline
+\textbf{Story Id} & \textbf{Story Title} & \textbf{Task Id} & \textbf{Task Title} & \textbf{Task Description} & \textbf{Est. (Hours)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Story Id} & \textbf{Story Title} & \textbf{Task Id} & \textbf{Task Title} & \textbf{Task Description} & \textbf{Est. (Hours)} & \textbf{Assigned To} & \textbf{Status} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+TS-03 & Configuración base del Backend RESTful API y persistencia & T-1 (VTL-73) & Crear la solución ASP.NET Core por bounded contexts & Solución en .NET 10 con capas Domain, Application, Infrastructure e Interfaces, prefijo \texttt{/api/v1}, CORS por entorno y endpoint de salud. & --- & Benigno Montero, Harold & To-do \\
+\hline
+TS-03 & Configuración base del Backend RESTful API y persistencia & T-2 (VTL-74) & Configurar Entity Framework Core con PostgreSQL & DbContext, convenciones de nombres, Unit of Work, repositorio base y migración inicial sin credenciales en el repositorio. & --- & Benigno Montero, Harold & To-do \\
+\hline
+TS-03 & Configuración base del Backend RESTful API y persistencia & T-3 (VTL-75) & Manejo uniforme de errores e internacionalización de la API & Middleware de excepciones con ProblemDetails y mensajes localizados en\_US (por defecto) y es\_419 según el encabezado Accept-Language. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-25 & Inicio y cierre de sesión con navegación por rol & T-4 (VTL-76) & Usuarios, roles, hash de contraseñas y usuarios semilla & Modelo User y Role en el bounded context IAM, contraseñas con BCrypt y usuarios semilla por rol. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-25 & Inicio y cierre de sesión con navegación por rol & T-5 (VTL-77) & Emisión y validación de JWT con autorización por rol & Tokens con expiración, emisor y audiencia, middleware de autenticación y políticas de autorización por rol. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-25 & Inicio y cierre de sesión con navegación por rol & T-6 (VTL-78) & Endpoints de inicio y cierre de sesión & \texttt{POST /api/v1/authentication/sign-in} y \texttt{sign-out}, respuesta segura ante credenciales inválidas y protección de endpoints. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-25 & Inicio y cierre de sesión con navegación por rol & T-7 (VTL-79) & Integrar inicio y cierre de sesión en la Web Application & Vista de inicio de sesión, store de sesión, interceptor de Axios, guards por rol y conexión de los CTA de la Landing Page. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-14 & Generación automática de alerta desde un evento & T-8 (VTL-80) & Modelar el agregado Alert y su persistencia & Agregado Alert y MonitoringRule en el bounded context Alerts con configuración Fluent API y migración. & --- & Said Conde, Yazid & To-do \\
+\hline
+US-14 & Generación automática de alerta desde un evento & T-9 (VTL-81) & Generación automática de alertas por umbral & \texttt{POST /api/v1/alerts} que evalúa un registro de salud y crea una única alerta PENDING de forma idempotente y transaccional. & --- & Said Conde, Yazid & To-do \\
+\hline
+US-14 & Generación automática de alerta desde un evento & T-10 (VTL-82) & Endpoints de consulta de alertas & \texttt{GET /api/v1/alerts} con filtros por estado y paciente, y \texttt{GET /api/v1/alerts/\{id\}}. & --- & Said Conde, Yazid & To-do \\
+\hline
+US-11 & Marcar alerta como en revisión o atendida & T-11 (VTL-83) & Transiciones a en revisión y atendida & Transiciones PENDING, IN\_REVIEW y ATTENDED con actor y fecha sobre el endpoint de estado de US-18. & --- & Osorio Ramírez, Eduardo & To-do \\
+\hline
+US-11 & Marcar alerta como en revisión o atendida & T-12 (VTL-84) & Integrar el resumen y el cambio de estado de alertas en la Web Application & Reemplazo del servicio simulado de alertas por la API real, con manejo de conflictos y errores de red. & --- & Osorio Ramírez, Eduardo & To-do \\
+\hline
+TS-08 & Integración confiable de notificaciones externas & T-13 (VTL-85) & Seleccionar y configurar el proveedor externo de correo & Elección del servicio de terceros, creación de la cuenta, verificación del remitente y registro de la clave como secreto. & --- & Osorio Ramírez, Eduardo & To-do \\
+\hline
+TS-08 & Integración confiable de notificaciones externas & T-14 (VTL-86) & Adaptador del servicio externo de notificaciones & Interfaz de envío y adaptador en el bounded context Notifications con clave idempotente, registro de intentos y reintentos limitados. & --- & Osorio Ramírez, Eduardo & To-do \\
+\hline
+TS-08 & Integración confiable de notificaciones externas & T-15 (VTL-87) & Enviar correo al familiar al generarse una alerta & Envío del correo ante una alerta creada, con plantilla en inglés y español según la preferencia del familiar. & --- & Osorio Ramírez, Eduardo & To-do \\
+\hline
+US-18 & Cambio de estado de alerta sin eliminar & T-16 (VTL-88) & Cambio de estado con historial y control de concurrencia & \texttt{PATCH /api/v1/alerts/\{id\}/status} con validación de transiciones, auditoría, cierre sin eliminación y control de concurrencia. & --- & Tello Quispe, Luis & To-do \\
+\hline
+US-18 & Cambio de estado de alerta sin eliminar & T-17 (VTL-89) & Integrar el estado de las alertas en la vista familiar & Consulta del estado actual y del historial de cambios de las alertas desde la vista familiar. & --- & Tello Quispe, Luis & To-do \\
+\hline
+US-16 & Almacenamiento del historial del paciente & T-18 (VTL-90) & Modelar HealthRecord y su persistencia & HealthRecord y catálogo de tipos de registro en el bounded context Health Records con configuración Fluent API y migración. & --- & Salon Puerta, Merly & To-do \\
+\hline
+US-16 & Almacenamiento del historial del paciente & T-19 (VTL-91) & Endpoints de registro y consulta del historial de salud & \texttt{POST} y \texttt{GET /api/v1/older-adults/\{id\}/health-records} con filtros por fecha y tipo y orden descendente. & --- & Salon Puerta, Merly & To-do \\
+\hline
+US-16 & Almacenamiento del historial del paciente & T-20 (VTL-92) & Validar los registros de salud según su tipo & Reglas de validación por tipo de registro con mensajes localizados en\_US y es\_419, sin persistencia parcial. & --- & Salon Puerta, Merly & To-do \\
+\hline
+US-16 & Almacenamiento del historial del paciente & T-21 (VTL-93) & Integrar el historial del paciente en la Web Application & Reemplazo del servicio simulado del historial de registros por la API real. & --- & Salon Puerta, Merly & To-do \\
+\hline
+TS-07 & Integración continua y despliegue de la Web Application & T-22 (VTL-94) & Desplegar la base de datos PostgreSQL en la nube & Instancia administrada de PostgreSQL con acceso seguro y cadenas de conexión por entorno. & --- & Rodriguez Gonzales, Leonel & To-do \\
+\hline
+TS-07 & Integración continua y despliegue de la Web Application & T-23 (VTL-95) & Desplegar los Web Services con GitHub Actions & Pipeline que compila y despliega la API en la nube al integrar en \texttt{main}, aplicando migraciones con variables protegidas. & --- & Rodriguez Gonzales, Leonel & To-do \\
+\hline
+TS-07 & Integración continua y despliegue de la Web Application & T-24 (VTL-96) & Actualizar el despliegue de la Web Application y la Landing Page & URL de la API por entorno en la Web Application, nuevos despliegues y verificación de los CTA de la Landing Page. & --- & Rodriguez Gonzales, Leonel & To-do \\
+\hline
+TS-06 & Documentación y verificación de contratos de servicios & T-25 (VTL-97) & Configurar Swagger/OpenAPI con ejemplos y esquema JWT & Swagger mediante Swashbuckle con comentarios XML, ejemplos sin datos personales reales y esquema de seguridad Bearer. & --- & Rodriguez Gonzales, Leonel & To-do \\
+\hline
+TS-06 & Documentación y verificación de contratos de servicios & T-26 (VTL-98) & Verificar los contratos y publicar la documentación desplegada & Prueba de los contratos con datos de muestra desde Swagger desplegado y validación de la especificación OpenAPI. & --- & Rodriguez Gonzales, Leonel & To-do \\
+\hline
+US-19 & Asociación de paciente con proveedor de salud & T-27 (VTL-99) & Asociación entre paciente y proveedor de salud & Modelo OlderAdult y CareProvider y \texttt{PUT /api/v1/older-adults/\{id\}/care-provider} idempotente. & --- & Tello Quispe, Luis & To-do \\
+\hline
+US-20 & Validación de datos básicos del paciente & T-28 (VTL-100) & Creación y actualización validada del perfil del paciente & \texttt{POST} y \texttt{PUT /api/v1/older-adults} con validaciones de identificación y de activación del seguimiento. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-20 & Validación de datos básicos del paciente & T-29 (VTL-101) & Integrar la búsqueda y el detalle de pacientes en la Web Application & Reemplazo del servicio simulado de pacientes asignados y del detalle de paciente por la API real. & --- & Benigno Montero, Harold & To-do \\
+\hline
+US-12 & Observación breve al atender una alerta & T-30 (VTL-102) & Observación breve al atender una alerta & Registro de una observación opcional de 1 a 1000 caracteres asociada a la atención y su captura en la Web Application. & --- & Said Conde, Yazid & To-do \\
+\end{longtable}
+\endgroup
+
+Table: Sprint Backlog 3
+
+El esfuerzo total comprometido es de **53 Story Points**. La trazabilidad se conserva mediante las claves VTL de Jira, las ramas de característica y los commits que se registrarán en la sección siguiente.
 
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
+<!-- PENDIENTE (cierre del sprint): introducción con los avances de implementación y tabla de commits por repositorio (Web Services, Frontend Web Application y Landing Page) con Repository, Branch, Commit Id, Commit Message, Commit Message Body y Committed on (Date). -->
 
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+<!-- PENDIENTE (cierre del sprint): resumen de lo alcanzado, capturas de las vistas integradas con la API (inicio de sesión, alertas, historial y pacientes) y URL completa del video de navegación del sprint. -->
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
+<!-- PENDIENTE (cierre del sprint): introducción, tabla de endpoints documentados con OpenAPI (verbo HTTP, sintaxis de llamada, parámetros, ejemplo y explicación del response, URL de la documentación desplegada), capturas de Swagger con datos de muestra, URL del repositorio de Web Services e ids de los commits de documentación. -->
 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+<!-- PENDIENTE (cierre del sprint): pasos y capturas del despliegue de la base de datos PostgreSQL, los Web Services (pipeline de GitHub Actions), la Web Application y la Landing Page; URLs públicas de cada producto. Indicar que la ejecución de pruebas en el pipeline se incorpora en el Sprint 4. -->
 
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
+<!-- PENDIENTE (cierre del sprint): explicación de las actividades de implementación y capturas de los analíticos de colaboración y commits en GitHub de cada repositorio, evidenciando la participación de los seis integrantes. -->
 
 
 ### 5.2.4. Sprint 4
