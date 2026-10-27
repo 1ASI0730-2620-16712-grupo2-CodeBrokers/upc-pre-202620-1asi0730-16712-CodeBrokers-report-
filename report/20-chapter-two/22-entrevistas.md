@@ -40,7 +40,7 @@
 #### Segmento Objetivo: Clinicas y hospitales
 
 
-**SEGMENTO: CLÍNICAS Y HOSPITALES (Asumido por contexto)**
+**SEGMENTO: CLÍNICAS Y HOSPITALES**
 
 
 
