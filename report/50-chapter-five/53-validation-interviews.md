@@ -16,6 +16,111 @@
 \hline
 \multicolumn{2}{|c|}{\textbf{Entrevista 1}} \\
 \hline
+Segmento Objetivo & Clínicas y hospitales \\
+\hline
+Fecha Entrevista &  \\
+\hline
+Entrevistador & Harold Benigno Montero \\
+\hline
+Entrevistado & Dafne Cabrera Sanchez \\
+\hline
+Edad & 23 años \\
+\hline
+Distrito & San Miguel \\
+\hline
+Link del Video &  \\
+\hline
+Minuto de Inicio &  \\
+\hline
+Duración &  \\
+\hline
+Imagen &  \\
+\hline
+Resumen &  \\
+\hline
+\end{longtable}
+\endgroup
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.68\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Entrevista 2}} \\
+\hline
+Segmento Objetivo & Clínicas y hospitales \\
+\hline
+Fecha Entrevista &  \\
+\hline
+Entrevistador & Harold Benigno Montero \\
+\hline
+Entrevistado & Jimena Villanueva Romero \\
+\hline
+Edad & 22 años \\
+\hline
+Distrito & Jesus Maria \\
+\hline
+Link del Video &  \\
+\hline
+Minuto de Inicio &  \\
+\hline
+Duración &  \\
+\hline
+Imagen &  \\
+\hline
+Resumen &  \\
+\hline
+\end{longtable}
+\endgroup
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.68\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Entrevista 3}} \\
+\hline
+Segmento Objetivo & Clínicas y hospitales \\
+\hline
+Fecha Entrevista &  \\
+\hline
+Entrevistador & Harold Benigno Montero \\
+\hline
+Entrevistado & Fatima Flores Almonacid \\
+\hline
+Edad & 21 años \\
+\hline
+Distrito & Surco \\
+\hline
+Link del Video &  \\
+\hline
+Minuto de Inicio &  \\
+\hline
+Duración &  \\
+\hline
+Imagen &  \\
+\hline
+Resumen &  \\
+\hline
+\end{longtable}
+\endgroup
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.68\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Entrevista 4}} \\
+\hline
 Segmento Objetivo & Familiares y adultos mayores \\
 \hline
 Fecha Entrevista &  \\
@@ -49,7 +154,7 @@ Resumen &  \\
 
 \begin{longtable}{|p{0.25\textwidth}|p{0.68\textwidth}|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Entrevista 2}} \\
+\multicolumn{2}{|c|}{\textbf{Entrevista 5}} \\
 \hline
 Segmento Objetivo & Familiares y adultos mayores \\
 \hline
@@ -84,7 +189,7 @@ Resumen &  \\
 
 \begin{longtable}{|p{0.25\textwidth}|p{0.68\textwidth}|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Entrevista 3}} \\
+\multicolumn{2}{|c|}{\textbf{Entrevista 6}} \\
 \hline
 Segmento Objetivo & Familiares y adultos mayores \\
 \hline
