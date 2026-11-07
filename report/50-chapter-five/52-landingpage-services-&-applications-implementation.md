@@ -1194,6 +1194,50 @@ El esfuerzo total comprometido es de **53 Story Points**. La trazabilidad se con
 
 <!-- PENDIENTE (cierre del sprint): pasos y capturas del despliegue de la base de datos PostgreSQL, los Web Services (pipeline de GitHub Actions), la Web Application y la Landing Page; URLs públicas de cada producto. Indicar que la ejecución de pruebas en el pipeline se incorpora en el Sprint 4. -->
 
+**Servicio externo de correo (TS-08)**
+
+Para los avisos por correo de TS-08 se configuró **Resend** como proveedor externo (T-13, VTL-85). Se compararon tres servicios con API HTTP y plan gratuito. Se eligió Resend porque ofrece una API HTTP simple, consumible desde un adaptador con `IHttpClientFactory`, y un plan gratuito de 3 000 correos al mes y 100 al día, suficiente para el alcance académico. SendGrid se descartó porque retiró su plan gratuito en mayo de 2025, y Brevo porque requiere un dominio propio para entregar de forma confiable a buzones de Gmail.
+
+\begingroup
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|p{0.27\textwidth}|p{0.64\textwidth}|}
+\hline
+\textbf{Elemento} & \textbf{Evidencia} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Elemento} & \textbf{Evidencia} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Proveedor & \href{https://resend.com}{Resend} (plan gratuito: 3 000 correos/mes, 100/día) \\
+\hline
+Integración & Puerto \texttt{IEmailSenderService} y adaptador \texttt{ResendEmailSenderService} (\texttt{POST https://api.resend.com/emails}) en el bounded context Notification \\
+\hline
+Remitente & \texttt{onboarding@resend.dev} (\texttt{Notification:Email:SenderAddress}), nombre \texttt{VitaLink} (\texttt{Notification:Email:SenderName}) \\
+\hline
+Credencial & \texttt{Notification:Email:ApiKey}, con permiso de solo envío; se configura con \texttt{dotnet user-secrets} o una variable de entorno y no se incluye en el repositorio \\
+\hline
+Modo sin credenciales & Sin clave de API se registra \texttt{LoggingEmailSenderService}, que solo escribe el mensaje en el log; el equipo desarrolla y prueba sin cuenta en el proveedor \\
+\hline
+Restricción & Sin dominio propio, Resend solo entrega al correo de la cuenta; la demostración del aviso al familiar usa ese destinatario \\
+\hline
+Pull request & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-web-services/pull/2}{Web Services \#2} (T-14, VTL-86) \\
+\end{longtable}
+\endgroup
+
+Table: Configuración del servicio externo de correo del Sprint 3
+
+\includegraphics[width=0.8\linewidth]{assets/5237-resend-api-key.png}
+
+La captura muestra la clave de API \texttt{vitalink-dev} creada en Resend, con su valor oculto.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
