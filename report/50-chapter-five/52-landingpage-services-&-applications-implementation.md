@@ -945,21 +945,21 @@ Sprint Planning 3 & 21:00--21:05 & Captura de inicio con asistentes y apertura. 
 \cline{2-3}
 (2026-10-25) & 21:05--21:15 & Resumen del Sprint Review y de la Sprint Retrospective del Sprint 2. \\
 \cline{2-3}
- & 21:15--21:25 & Sprint Goal 3 y alcance: 12 elementos del backlog y 53 Story Points; elementos que se trasladan al Sprint 4 y motivo. \\
+ & 21:15--21:25 & Sprint Goal 3 y alcance: 12 elementos del backlog y 53 Story Points. \\
 \cline{2-3}
  & 21:25--21:30 & Responsables y Leadership-and-Collaboration Matrix (LACX). \\
 \cline{2-3}
  & 21:30--21:50 & Estimación en horas de las tareas T-1 a T-30 (máximo 8 horas por tarea). \\
 \cline{2-3}
- & 21:50--21:55 & Acuerdos técnicos: repositorio de Web Services en C\# y .NET 10, Swagger mediante Swashbuckle, PostgreSQL, ramas \texttt{feature/}, Pull Requests revisados por otro integrante e internacionalización de la API con inglés por defecto. \\
+ & 21:50--21:55 & Acuerdos técnicos: repositorio de Web Services en C\# y .NET 10, documentación OpenAPI de los endpoints, PostgreSQL, ramas \texttt{feature/}, Pull Requests revisados por otro integrante e internacionalización de la API con inglés por defecto. \\
 \cline{2-3}
  & 21:55--22:00 & Dudas, cierre y captura final. \\
 \hline
 Revisión del backend base & 21:00--21:02 & Captura de inicio con asistentes. \\
 \cline{2-3}
-(2026-10-29) & 21:02--21:10 & Demostración de la base de la API: solución ASP.NET Core por bounded contexts, Entity Framework Core con PostgreSQL, migración inicial, manejo de errores e internacionalización (T-1 a T-3). \\
+(2026-10-29) & 21:02--21:10 & Demostración de la estructura inicial de la API (T-1): proyecto ASP.NET Core con carpetas por bounded context, convención de rutas \texttt{/api/v1} en kebab-case, referencia de API con Scalar, política CORS por entorno y endpoint de health check. Se acordó que la persistencia con Entity Framework Core y PostgreSQL se integraría en los dos días siguientes. \\
 \cline{2-3}
- & 21:10--21:15 & Construcción de cada módulo sobre la base, con prioridad para los modelos de los que dependen otras tareas: Alert (T-8), HealthRecord (T-18) y Patient (T-27). \\
+ & 21:10--21:15 & Inicio de cada módulo sobre esa estructura, empezando por el modelo de dominio mientras se completa la persistencia, con prioridad para los modelos de los que dependen otras tareas: Alert (T-8), HealthRecord (T-18) y Patient (T-27). \\
 \cline{2-3}
  & 21:15--21:18 & Avance de las tareas que no dependen del código: proveedor de correo (T-13), base de datos en la nube (T-22) y configuración de Swagger (T-25). \\
 \cline{2-3}
@@ -973,7 +973,7 @@ Revisión de mitad de sprint & 21:00--21:02 & Captura de inicio con asistentes. 
 \cline{2-3}
  & 21:15--21:18 & Pull Requests pendientes de revisión y asignación de revisores. \\
 \cline{2-3}
- & 21:18--21:20 & Plan de la segunda semana: inicio de sesión (T-4 a T-7), integración y despliegue final. Cierre y captura final. \\
+ & 21:18--21:20 & Plan de la segunda semana: integración de los módulos con la persistencia ya disponible (migración inicial), manejo de errores e internacionalización compartidos, integración con la Web Application y despliegue final. Cierre y captura final. \\
 \hline
 Sprint Review y & 21:00--21:05 & Captura de inicio con asistentes. \\
 \cline{2-3}
