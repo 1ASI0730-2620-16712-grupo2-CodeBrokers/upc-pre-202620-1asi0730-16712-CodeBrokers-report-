@@ -1,4 +1,4 @@
-### 5.3. Validation Interviews
+## 5.3. Validation Interviews
 
 En esta sección se documenta el proceso de validación de **VitaLink** mediante entrevistas realizadas a usuarios representativos de los segmentos objetivo del proyecto.
 
@@ -21,7 +21,7 @@ El proceso de validación se divide en las siguientes secciones:
 
 ---
 
-#### 5.3.1. Diseño de Entrevistas
+### 5.3.1. Diseño de Entrevistas
 
 En esta sección se presenta el diseño de las entrevistas de validación de **VitaLink**, cuyo propósito es evaluar la experiencia de los usuarios al interactuar con la Landing Page y con la Frontend Web Application desarrollada.
 
@@ -31,7 +31,7 @@ Durante las entrevistas se observará la interacción del participante con los p
 
 Se considerará un mínimo de **3 entrevistas por cada segmento objetivo**, con el propósito de obtener diferentes perspectivas respecto a la experiencia proporcionada por el producto.
 
-##### Objetivos de las entrevistas de validación
+#### Objetivos de las entrevistas de validación
 
 Las entrevistas de validación tienen como principales objetivos:
 
@@ -46,7 +46,7 @@ Las entrevistas de validación tienen como principales objetivos:
 9. Recoger sugerencias de mejora para futuras versiones de VitaLink.
 10. Conocer el nivel general de satisfacción de los participantes con la solución.
 
-##### Estructura de la sesión de validación
+#### Estructura de la sesión de validación
 
 Cada sesión de validación estará dividida en tres etapas principales.
 
@@ -73,11 +73,11 @@ Después de completar las tareas, se realizarán preguntas abiertas para conocer
 
 ---
 
-##### Segmento 1: Adultos mayores y sus familias que requieren acompañamiento preventivo
+#### Segmento 1: Adultos mayores y sus familias que requieren acompañamiento preventivo
 
 Para este segmento se evaluará principalmente la facilidad con la que un familiar o adulto mayor puede comprender el estado general de salud, visualizar mediciones y reconocer situaciones que requieren atención.
 
-###### User Flow de validación
+##### User Flow de validación
 
 El participante realizará el siguiente recorrido:
 
@@ -96,7 +96,7 @@ El participante realizará el siguiente recorrido:
 13. Explorar las opciones de red familiar y perfil.
 14. Regresar al dashboard principal.
 
-###### Preguntas de validación
+##### Preguntas de validación
 
 1. ¿Qué entendió que ofrece VitaLink después de revisar la Landing Page?
 2. ¿Le quedó claro para quién está dirigida la plataforma?
@@ -119,11 +119,11 @@ El participante realizará el siguiente recorrido:
 
 ---
 
-##### Segmento 2: Profesionales de salud y representantes de clínicas u hospitales
+#### Segmento 2: Profesionales de salud y representantes de clínicas u hospitales
 
 Para este segmento se evaluará principalmente la capacidad de la plataforma para ayudar a los profesionales de salud a identificar alertas pendientes, reconocer su nivel de urgencia y consultar información relevante de los pacientes.
 
-###### User Flow de validación
+##### User Flow de validación
 
 El participante realizará el siguiente recorrido:
 
@@ -142,7 +142,7 @@ El participante realizará el siguiente recorrido:
 13. Regresar al dashboard y continuar revisando casos pendientes.
 14. Acceder al perfil del profesional.
 
-###### Preguntas de validación
+##### Preguntas de validación
 
 1. ¿Qué entendió que ofrece VitaLink a los profesionales de salud?
 2. ¿La Landing Page explica claramente los beneficios de la plataforma para médicos o instituciones?
@@ -166,7 +166,7 @@ El participante realizará el siguiente recorrido:
 
 ---
 
-##### Criterios de observación durante las sesiones
+#### Criterios de observación durante las sesiones
 
 Además de las respuestas proporcionadas por los participantes, durante la interacción se observarán los siguientes aspectos:
 
@@ -184,7 +184,7 @@ Además de las respuestas proporcionadas por los participantes, durante la inter
 Los resultados obtenidos durante estas sesiones servirán posteriormente como base para el **Registro de Entrevistas** y para la **Evaluación de User Experience según heurísticas de usabilidad, arquitectura de información e Inclusive Design**.
 
  
-### 5.3.2. Registro de Entrevistas.
+### 5.3.2. Registro de Entrevistas
 
 #### Entrevista 3
 
@@ -250,4 +250,4 @@ Los resultados obtenidos durante estas sesiones servirán posteriormente como ba
 | Imagen | ![Evidencia de la entrevista 6](assets/entrevista_jesus_evidencia.png) |
 | Resumen | Jesus evaluó VitaLink desde la perspectiva de un adulto mayor y la percibió como una aplicación interesante y útil para estar más pendiente de su bienestar. Entendió que permite registrar mediciones de presión arterial, ritmo cardíaco y glucosa, que los familiares pueden revisar el estado del adulto mayor y que los médicos reciben alertas cuando un valor sale de los límites establecidos. Para comprender su funcionamiento se guió por los textos, títulos, botones y secciones, apoyándose también en los colores. Navegó sin mayor dificultad y valoró que la información esté ordenada y que no se requieran muchos pasos; al inicio dudó sobre cómo registrar una medición y qué ocurre ante un resultado anormal, pero lo comprendió al revisar las opciones. Identificó al paciente por el nombre visible en el perfil, interpretó las mediciones con sus unidades, usó las fechas y horas para saber qué registro era el más reciente y entendió las alertas abiertas, los casos en seguimiento y los estados pendiente, en revisión y atendida. Consideró legible el texto y útiles los colores para distinguir prioridades, aunque sugirió agrandar algunos textos importantes y acompañar los símbolos con explicaciones breves. El cambio de idioma le pareció útil, aunque él usaría el español. Como mejoras propuso instrucciones más visibles para registrar cada medición, videos o imágenes paso a paso, gráficos de la evolución de las mediciones, una explicación sencilla de por qué se generó cada alerta, el nombre y contacto del médico responsable y notificaciones cuando se revise una alerta. Antes de adoptarla quisiera saber cómo se protegen sus datos, quiénes pueden ver sus mediciones y si contaría con ayuda ante dificultades de uso. |
 
-### 5.3.3. Evaluaciones según heurísticas. 
+### 5.3.3. Evaluaciones según heurísticas
