@@ -908,7 +908,7 @@ Durante el Sprint Planning, el equipo revisó la descomposición de cada element
 \endfoot
 \hline
 \endlastfoot
-1 & Sprint Planning 3 & 2026-10-25, 21:00--22:00 & Definir el Sprint Goal, el alcance, los responsables y la estimación en horas de las tareas. \\
+1 & Sprint Planning 3 & 2026-10-25, 21:15--21:57 & Definir el Sprint Goal, el alcance, los responsables y la estimación en horas de las tareas. \\
 \hline
 2 & Revisión del backend base & 2026-10-29, 21:00--21:20 & Presentar la base de la API y acordar cómo cada integrante construye su módulo sobre ella. \\
 \hline
@@ -941,19 +941,19 @@ La agenda de cada reunión se presenta a continuación.
 \endfoot
 \hline
 \endlastfoot
-Sprint Planning 3 & 21:00--21:05 & Captura de inicio con asistentes y apertura. \\
+Sprint Planning 3 & 21:15--21:17 & Captura de inicio con asistentes y apertura. \\
 \cline{2-3}
-(2026-10-25) & 21:05--21:15 & Resumen del Sprint Review y de la Sprint Retrospective del Sprint 2. \\
+(2026-10-25) & 21:17--21:24 & Resumen del Sprint Review y de la Sprint Retrospective del Sprint 2. \\
 \cline{2-3}
- & 21:15--21:25 & Sprint Goal 3 y alcance: 12 elementos del backlog y 53 Story Points. \\
+ & 21:24--21:31 & Sprint Goal 3 y alcance: 12 elementos del backlog y 53 Story Points. \\
 \cline{2-3}
- & 21:25--21:30 & Responsables y Leadership-and-Collaboration Matrix (LACX). \\
+ & 21:31--21:35 & Responsables y Leadership-and-Collaboration Matrix (LACX). \\
 \cline{2-3}
- & 21:30--21:50 & Estimación en horas de las tareas T-1 a T-30 (máximo 8 horas por tarea). \\
+ & 21:35--21:48 & Estimación en horas de las tareas T-1 a T-30 (máximo 8 horas por tarea). \\
 \cline{2-3}
- & 21:50--21:55 & Acuerdos técnicos: repositorio de Web Services en C\# y .NET 10, documentación OpenAPI de los endpoints, PostgreSQL, ramas \texttt{feature/}, Pull Requests revisados por otro integrante e internacionalización de la API con inglés por defecto. \\
+ & 21:48--21:53 & Acuerdos técnicos: repositorio de Web Services en C\# y .NET 10, documentación OpenAPI de los endpoints, PostgreSQL, ramas \texttt{feature/}, Pull Requests revisados por otro integrante e internacionalización de la API con inglés por defecto. \\
 \cline{2-3}
- & 21:55--22:00 & Dudas, cierre y captura final. \\
+ & 21:53--21:57 & Dudas, cierre y captura final. \\
 \hline
 Revisión del backend base & 21:00--21:02 & Captura de inicio con asistentes. \\
 \cline{2-3}
