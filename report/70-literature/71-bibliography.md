@@ -45,4 +45,31 @@ U.S. Department of Health and Human Services. (1996). \textit{Health Insurance P
 
 \endgroup
 
+\vspace{2em}
+\textbf{\Large Documentación técnica}
+\vspace{1em}
+
+\begingroup
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\everypar{\hangindent=1.27cm\hangafter=1}
+
+Docker Inc. (s.f.). \textit{Docker Compose overview}. Docker Docs. \url{https://docs.docker.com/compose/}
+
+GitHub. (s.f.). \textit{GitHub Actions documentation}. GitHub Docs. \url{https://docs.github.com/actions}
+
+Microsoft. (s.f.-a). \textit{ASP.NET Core documentation}. Microsoft Learn. \url{https://learn.microsoft.com/aspnet/core/}
+
+Microsoft. (s.f.-b). \textit{Entity Framework Core documentation}. Microsoft Learn. \url{https://learn.microsoft.com/ef/core/}
+
+Microsoft. (s.f.-c). \textit{OpenAPI support in ASP.NET Core API apps}. Microsoft Learn. \url{https://learn.microsoft.com/aspnet/core/fundamentals/openapi/overview}
+
+Microsoft. (s.f.-d). \textit{Azure App Service documentation}. Microsoft Learn. \url{https://learn.microsoft.com/azure/app-service/}
+
+Microsoft. (s.f.-e). \textit{Azure Database for PostgreSQL documentation}. Microsoft Learn. \url{https://learn.microsoft.com/azure/postgresql/}
+
+Resend. (s.f.). \textit{Resend API reference}. Resend Docs. \url{https://resend.com/docs/api-reference/introduction}
+
+\endgroup
+
 \newpage

@@ -8,7 +8,7 @@ En esta sección se establecen las decisiones de gestión de configuración que 
 
 En esta sección, el equipo CodeBrokers especifica los productos de software y herramientas colaborativas adoptadas para gestionar el ciclo de vida de VitaLink. Se detallan las herramientas utilizadas en las distintas fases del proyecto, desde la concepción y diseño hasta el desarrollo, despliegue y documentación.
 
-Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las herramientas actualmente utilizadas por el equipo y aquellas previstas para etapas posteriores del proyecto. Cuando una tecnología aún no corresponde al incremento actual, se identifica explícitamente como de uso futuro.
+Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las herramientas utilizadas por el equipo. A partir del Sprint 3 se incorporaron las herramientas de desarrollo, persistencia y despliegue de los RESTful Web Services.
 
 \begingroup
 \centering
@@ -33,8 +33,11 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 \hline
 \endlastfoot
 
-\multirow{2}{=}{\textbf{Project \& Requirements Management}}
+\multirow{3}{=}{\textbf{Project \& Requirements Management}}
 & Jira & SaaS & Gestión ágil del proyecto, administración del Product Backlog, Sprint Backlogs y seguimiento de incidencias. & \href{https://www.atlassian.com/software/jira}{SaaS: Atlassian Jira} \\
+\cline{2-5}
+
+& Microsoft Teams & Desktop / Web & Reuniones del Sprint 3 (Sprint Planning, seguimiento, Sprint Review y Sprint Retrospective) con registro de asistentes. & \href{https://www.microsoft.com/microsoft-teams}{Descarga: Microsoft Teams} \\
 \cline{2-5}
 
 & Discord & Desktop / Web & Medio de comunicación utilizado por el equipo para reuniones de Sprint Planning, Daily Scrums y coordinación remota. & \href{https://discord.com/download}{Descarga: Discord} \\
@@ -47,8 +50,8 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 & UXPressia & SaaS & Elaboración de artefactos de Needfinding, incluyendo User Personas, User Journey Maps y Empathy Maps. & \href{https://uxpressia.com/}{SaaS: UXPressia} \\
 \hline
 
-\multirow{7}{=}{\textbf{Software Development}}
-& Visual Studio Code & \textit{Pendiente de verificar versión} & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
+\multirow{11}{=}{\textbf{Software Development}}
+& Visual Studio Code & \texttt{1.145.3} & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
 \cline{2-5}
 
 & Node.js & \texttt{v24.15.0} & Entorno de ejecución de JavaScript utilizado durante el desarrollo local de la aplicación Frontend basada en Vue.js. & \href{https://nodejs.org/}{Descarga: Node.js} \\
@@ -57,7 +60,18 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 & npm & \texttt{12.2.0} & Gestor de paquetes utilizado para administrar las dependencias y scripts de la aplicación Frontend. & \href{https://www.npmjs.com/}{Package Manager: npm} \\
 \cline{2-5}
 
-& Visual Studio 2022 & \textit{Uso futuro} & IDE previsto para el desarrollo de la REST API con ASP.NET Core y C\#. El Backend todavía no corresponde al incremento actual del proyecto. & \href{https://visualstudio.microsoft.com/}{Descarga: Visual Studio} \\
+& JetBrains Rider & \texttt{2026.2.3.1} & IDE utilizado para desarrollar los RESTful Web Services con ASP.NET Core y C\#, ejecutar la API y administrar la base de datos local. & \href{https://www.jetbrains.com/rider/}{Descarga: Rider} \\
+\cline{2-5}
+& WebStorm & \texttt{2026.2.2} & IDE utilizado para desarrollar la Frontend Web Application con Vue.js, ejecutar el servidor de desarrollo de Vite y depurar la integración con la API. & \href{https://www.jetbrains.com/webstorm/}{Descarga: WebStorm} \\
+\cline{2-5}
+
+& .NET SDK & \texttt{10.0} & SDK para compilar y ejecutar la API con ASP.NET Core y Entity Framework Core; incluye \texttt{dotnet user-secrets} para guardar la cadena de conexión fuera del repositorio. & \href{https://dotnet.microsoft.com/download/dotnet/10.0}{Descarga: .NET 10} \\
+\cline{2-5}
+
+& Entity Framework Core Tools (\texttt{dotnet-ef}) & \texttt{10.0} & Herramienta de línea de comandos para crear las migraciones de cada bounded context. & \href{https://learn.microsoft.com/ef/core/cli/dotnet}{Referencia: dotnet-ef} \\
+\cline{2-5}
+
+& Docker Desktop & Desktop & Ejecuta la base de datos PostgreSQL local mediante \texttt{docker compose} y permite construir la imagen de la API. & \href{https://www.docker.com/products/docker-desktop/}{Descarga: Docker Desktop} \\
 \cline{2-5}
 
 & Git & \texttt{2.51.2.windows.1} & Sistema de control de versiones distribuido utilizado para gestionar localmente el código fuente y la documentación. & \href{https://git-scm.com/downloads}{Descarga: Git} \\
@@ -66,17 +80,26 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 & GitHub & SaaS & Plataforma de alojamiento de repositorios, administración de ramas, revisión de código y gestión de Pull Requests. & \href{https://github.com/}{SaaS: GitHub} \\
 \cline{2-5}
 
-& PostgreSQL & \textit{Uso futuro} & Motor de base de datos previsto para la persistencia de la REST API. Su configuración será incorporada cuando corresponda implementar el Backend. & \href{https://www.postgresql.org/download/}{Descarga: PostgreSQL} \\
+& PostgreSQL & \texttt{16} & Motor de base de datos de la API. En desarrollo se ejecuta en el contenedor \texttt{vitalink-postgres} definido en \texttt{docker-compose.yml}; en la nube, en Azure Database for PostgreSQL. & \href{https://www.postgresql.org/download/}{Descarga: PostgreSQL} \\
 \hline
 
-\multirow{2}{=}{\textbf{Software Deployment}}
+\multirow{5}{=}{\textbf{Software Deployment}}
 & GitHub Pages & SaaS & Servicio utilizado para publicar la Landing Page de VitaLink directamente desde su repositorio en GitHub. & \href{https://pages.github.com/}{SaaS: GitHub Pages} \\
 \cline{2-5}
 
 & Vercel & SaaS & Plataforma utilizada para el despliegue público de la aplicación Frontend de VitaLink. & \href{https://vercel.com/}{SaaS: Vercel} \\
+\cline{2-5}
+
+& GitHub Actions & SaaS & Workflows de integración continua (compilación en cada Pull Request) y de despliegue continuo de los Web Services. & \href{https://github.com/features/actions}{SaaS: GitHub Actions} \\
+\cline{2-5}
+
+& Docker Hub & SaaS & Registro de la imagen Docker de la API (\texttt{leorg15/vitalink-api}). & \href{https://hub.docker.com/}{SaaS: Docker Hub} \\
+\cline{2-5}
+
+& Microsoft Azure & SaaS & App Service que ejecuta el contenedor de la API y Azure Database for PostgreSQL como base de datos en la nube. & \href{https://azure.microsoft.com/}{SaaS: Microsoft Azure} \\
 \hline
 
-\multirow{3}{=}{\textbf{Software Documentation}}
+\multirow{4}{=}{\textbf{Software Documentation}}
 & Pandoc \& LaTeX & Pandoc \texttt{3.9.0.2} / Lua \texttt{5.4} & Herramientas utilizadas para transformar el contenido Markdown y LaTeX del informe en su versión final en PDF. & \href{https://pandoc.org/installing.html}{Descarga: Pandoc} \\
 \cline{2-5}
 
@@ -84,6 +107,9 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 \cline{2-5}
 
 & PlantUML & SaaS / Local & Lenguaje y herramienta de modelado utilizada para elaborar los diagramas de clases orientados a objetos. & \href{https://plantuml.com/}{SaaS / Local: PlantUML} \\
+\cline{2-5}
+
+& OpenAPI (\texttt{Microsoft.AspNetCore.OpenApi}) y Scalar & \texttt{10.0} / \texttt{2.18} & Generación de la especificación OpenAPI de los Web Services y su exploración interactiva en desarrollo. La interfaz Swagger UI se incorpora en el Sprint 4. & \href{https://learn.microsoft.com/aspnet/core/fundamentals/openapi/overview}{Referencia: OpenAPI en ASP.NET Core} \\
 \hline
 
 \end{longtable}
@@ -91,9 +117,7 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 
 Table: Herramientas y productos utilizados para el desarrollo de VitaLink
 
-Las versiones registradas para Node.js, Git y Pandoc corresponden al entorno de trabajo utilizado actualmente por el equipo. Para npm se registra la versión estable adoptada como referencia para el entorno Frontend. Visual Studio 2022 y PostgreSQL se mantienen como tecnologías previstas para la implementación posterior de la REST API, debido a que dicho producto todavía no corresponde al alcance implementado en el incremento actual.
-
-La versión específica de Visual Studio Code permanece pendiente de verificación.
+Las versiones registradas para Visual Studio Code, Node.js, Git y Pandoc corresponden al entorno de trabajo utilizado actualmente por el equipo. Para npm se registra la versión estable adoptada como referencia para el entorno Frontend. Para los Web Services, el repositorio documenta en su README los pasos para preparar el entorno: instalar el .NET SDK 10, crear el archivo \texttt{.env} a partir de \texttt{.env.example}, levantar PostgreSQL con \texttt{docker compose up -d}, registrar la cadena de conexión con \texttt{dotnet user-secrets} y ejecutar la API, que aplica las migraciones al iniciar.
 
 ### 5.1.2. Source Code Management
 
@@ -143,7 +167,7 @@ Los cambios se integran mediante Pull Requests, permitiendo revisar y consolidar
 \texttt{upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application} & Aplicación Frontend de VitaLink desarrollada con Vue.js y con soporte de internacionalización en inglés y español mediante \texttt{vue-i18n}. & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-frontend-application}{Ver repositorio} \\
 \hline
 
-\texttt{RESTful API / Backend} & Servicios de Backend previstos para VitaLink. Su implementación todavía no corresponde al avance actual del proyecto, por lo que el repositorio aún no ha sido creado. & \textit{Pendiente de implementación} \\
+\texttt{upc-pre-202620-1asi0730-16712-CodeBrokers-web-services} & RESTful Web Services de VitaLink desarrollados con ASP.NET Core, Entity Framework Core y C\# sobre PostgreSQL, organizados por bounded contexts. Incluye el \texttt{Dockerfile}, el \texttt{docker-compose.yml} de la base de datos local y los workflows de GitHub Actions. Las pruebas unitarias y de integración se incorporan en el Sprint 4. & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-web-services}{Ver repositorio} \\
 \hline
 
 \end{longtable}
@@ -192,7 +216,7 @@ El historial real del repositorio evidencia actualmente el uso de ramas `feature
 \texttt{docs/*} & Temporal & \texttt{develop} & \texttt{develop} o rama estable según el flujo aplicado & Utilizada para cambios exclusivamente documentales. Existen evidencias reales como \texttt{docs/12-lean-ux-validation}, \texttt{docs/03-collaboration-insights} y \texttt{docs/61-conclusiones}. \\
 \hline
 
-\texttt{fix/*} & Temporal & \texttt{develop} & \texttt{develop} & Convención definida para corregir errores encontrados durante el desarrollo sin introducir nuevas funcionalidades. Su evidencia de uso se encuentra pendiente de verificar. \\
+\texttt{fix/*} & Temporal & \texttt{develop} & \texttt{develop} & Convención definida para corregir errores encontrados durante el desarrollo sin introducir nuevas funcionalidades. Se aplicó en el repositorio del informe con la rama \texttt{fix/52-sprint-1-reconciliacion}. \\
 \hline
 
 \texttt{release/*} & Temporal & \texttt{develop} & \texttt{main} y \texttt{develop} & Convención prevista para la estabilización de una versión antes de una entrega, admitiendo únicamente los ajustes necesarios para su publicación. \\
@@ -220,7 +244,13 @@ El Pull Request permite documentar el objetivo del cambio, revisar las modificac
 
 El historial del repositorio del informe contiene evidencia de este proceso. Entre los registros observados se encuentran los Pull Requests `#33`, `#34`, `#35` y `#37`, junto con sus respectivos commits de integración.
 
-**Evidencia visual de Pull Request:** \textit{Pendiente de incorporar captura.}
+**Evidencia visual de Pull Request:** el Pull Request \#23 del repositorio de Web Services integra la rama \texttt{develop} en \texttt{main} como release del Sprint 3. Su descripción resume los cambios por historia y tarea, la forma en que se verificaron y las notas de despliegue, y solicita la revisión de los demás integrantes.
+
+\includegraphics[width=0.92\linewidth]{assets/512-pull-request-summary.png}
+
+La revisión registra la aprobación de otro integrante (Iron819) con un comentario que confirma la ausencia de conflictos y el despliegue verificado, antes de la fusión en \texttt{main} con la verificación automática del pipeline aprobada.
+
+\includegraphics[width=0.92\linewidth]{assets/512-pull-request-approval.png}
 
 #### Versionado semántico
 
@@ -316,7 +346,7 @@ Para los nuevos cambios del proyecto, el Pull Request debe:
 - Permitir la revisión del cambio antes de su integración.
 - Mantener los mensajes de commit de acuerdo con la convención establecida.
 
-La exigencia de aprobación explícita por parte de otro integrante se encuentra **pendiente de verificar mediante evidencia de los Pull Requests existentes**, por lo que no se establece todavía como una condición demostrada en el historial del proyecto.
+La aprobación explícita por parte de otro integrante se evidencia en los Pull Requests de release, como el \#23 del repositorio de Web Services, que registra la aprobación de un integrante distinto al autor antes de su fusión en \texttt{main}.
 
 Después de integrar una rama temporal y comprobar que no contiene trabajo pendiente, esta puede ser eliminada del repositorio remoto. Las ramas históricas conservadas previamente pueden mantenerse como evidencia del proceso realizado.
 
@@ -342,7 +372,7 @@ Las siguientes convenciones lingüísticas se aplican al proyecto:
 - Los nuevos mensajes de commit se redactan en inglés.
 - El informe académico permanece redactado en español.
 
-Los identificadores exactos de los locales utilizados por `vue-i18n` quedan pendientes de documentar a partir de la configuración del repositorio Frontend.
+La configuración de `vue-i18n` define los locales `en_US`, predeterminado y de respaldo, y `es_419`, correspondiente al español latinoamericano. El idioma elegido se guarda en el navegador (`localStorage`, clave `vitalink.locale`) y se restaura al volver a abrir la aplicación; los identificadores alternativos (`en`, `en-US`, `es` y `es-419`) se normalizan a esos dos valores.
 
 #### Convenciones generales
 
@@ -372,7 +402,7 @@ Los identificadores exactos de los locales utilizados por `vue-i18n` quedan pend
 Codificación de archivos & UTF-8 sin BOM \\
 \hline
 
-Fin de línea & LF (\texttt{\textbackslash{}n}) como convención definida por el equipo. La normalización automática mediante \texttt{.gitattributes} se encuentra pendiente de verificar. \\
+Fin de línea & LF (\texttt{\textbackslash{}n}) como convención definida por el equipo. Los repositorios no incluyen un archivo \texttt{.gitattributes}, por lo que la conversión de fin de línea depende de la configuración \texttt{core.autocrlf} de Git en el equipo de cada integrante. \\
 \hline
 
 Indentación & 2 espacios en HTML, CSS, JavaScript y Vue; 4 espacios en C\# \\
@@ -415,7 +445,7 @@ En CSS se utiliza una nomenclatura consistente para las clases y se centralizan 
 }
 ```
 
-La aplicación exacta de la metodología BEM en todos los estilos del producto se encuentra **pendiente de verificar directamente en los repositorios correspondientes**, por lo que se mantiene como convención recomendada y no como una afirmación sobre la totalidad del código implementado.
+La revisión de los repositorios de la Landing Page y de la Frontend Web Application mostró que sus estilos no aplican la nomenclatura BEM: las clases se nombran en `kebab-case` descriptivo (por ejemplo, `team-card`, `price-tag`, `page-heading` o `stale-banner`), sin separadores de elemento (`__`) ni de modificador (`--`). Por ello, BEM se mantiene como convención recomendada para los nuevos estilos y no como una práctica aplicada en el código actual.
 
 #### JavaScript y Vue.js
 
@@ -431,11 +461,11 @@ AlertSummaryCard.vue
 
 La aplicación Frontend cuenta con soporte de internacionalización mediante **vue-i18n**, permitiendo presentar la interfaz en inglés y español. El inglés se establece como idioma predeterminado y el español como idioma alternativo.
 
-Los identificadores exactos utilizados para los locales y la estructura específica de los archivos de traducción quedan pendientes de documentar a partir de la configuración actual del repositorio Frontend.
+Los textos traducidos se agrupan en `src/locales/en.json` y `src/locales/es.json` y se registran en `src/i18n.js` con los locales `en_US` y `es_419`; cuando falta una traducción se muestra el texto en `en_US` y se registra una advertencia en la consola.
 
 #### C# y ASP.NET Core
 
-C\# y ASP.NET Core forman parte de la tecnología prevista para la futura REST API de VitaLink. Debido a que el Backend todavía no corresponde al avance actual del proyecto, las siguientes reglas constituyen las convenciones que deberán aplicarse cuando inicie su implementación.
+Las siguientes convenciones se aplican en los RESTful Web Services de VitaLink desde el Sprint 3.
 
 Se seguirán como referencia las **Microsoft C# Coding Conventions**. Los tipos, métodos y propiedades públicas se nombrarán en `PascalCase`; los parámetros y variables locales, en `camelCase`; y los campos privados podrán utilizar el prefijo `_` seguido de `camelCase`.
 
@@ -447,11 +477,11 @@ IAlertRepository
 
 Los métodos asíncronos deberán devolver `Task` o `Task<T>` y utilizar el sufijo `Async` cuando corresponda.
 
-La organización definitiva de namespaces y capas se documentará cuando se implemente la REST API y deberá mantenerse alineada con la arquitectura definida para VitaLink.
+Los namespaces siguen la estructura `VitaLink.Platform.API.<BoundedContext>.<Capa>`, con las capas `Domain`, `Application`, `Infrastructure` e `Interfaces` dentro de cada bounded context (por ejemplo, `VitaLink.Platform.API.Alerting.Interfaces.REST`). Las rutas REST usan el prefijo `/api/v1`, sustantivos en plural y kebab-case (por ejemplo, `/api/v1/older-adults/{id}/health-records`). Los mensajes de error se localizan en `SharedResource.resx` (inglés, por defecto) y `SharedResource.es.resx`. Los commits siguen Conventional Commits en inglés, con el bounded context como scope, por ejemplo `feat(alerting): add alert aggregate`.
 
 #### PostgreSQL
 
-PostgreSQL corresponde al motor de persistencia previsto para la futura REST API. Debido a que esta parte del sistema todavía no ha sido implementada, las siguientes reglas representan las convenciones de diseño acordadas y deberán verificarse durante su desarrollo.
+PostgreSQL es el motor de persistencia de los Web Services. Cada bounded context crea sus tablas en su propio esquema (por ejemplo, `iam.users`), y la convención de nombres se aplica de forma automática mediante extensiones de Entity Framework Core.
 
 Los identificadores de base de datos se escribirán en `snake_case` y en minúsculas. Las claves foráneas seguirán un patrón consistente basado en el identificador de la entidad relacionada.
 
@@ -463,7 +493,7 @@ Las restricciones deberán utilizar nombres explícitos y consistentes, pudiendo
 - `ck_` para restricciones de validación.
 - `ix_` para índices.
 
-La aplicación definitiva de estas convenciones deberá mantenerse alineada con el Database Design documentado en la sección 4.8.
+Estas convenciones se mantienen alineadas con el Database Design documentado en la sección 4.8. En el Sprint 3 se detectó que la convención automática genera las claves primarias con el prefijo `p_k_` en lugar de `pk_`; su corrección está planificada para el Sprint 4.
 
 #### Markdown y diagramas como código
 
@@ -483,7 +513,7 @@ para permitir su identificación durante el proceso de generación del documento
 
 ### 5.1.4. Software Deployment Configuration
 
-VitaLink cuenta actualmente con dos productos desplegados públicamente: la **Landing Page** y la **Frontend Application**. Cada producto utiliza una estrategia de despliegue acorde con sus características tecnológicas.
+VitaLink cuenta actualmente con tres productos desplegados públicamente: la **Landing Page**, la **Frontend Application** y los **RESTful Web Services**. Cada producto utiliza una estrategia de despliegue acorde con sus características tecnológicas.
 
 #### Landing Page Deployment
 
@@ -519,7 +549,29 @@ El entorno público de la aplicación está disponible en:
 
 https://vitalink-opal.vercel.app/#/
 
-La rama configurada como Production Branch dentro de Vercel queda pendiente de verificar antes de documentarla como parte del procedimiento definitivo de despliegue.
+Vercel publica la aplicación desde la rama `main` cada vez que se integra un cambio. La URL de los Web Services se define en la variable `VITE_BACKEND_API_BASE_URL` del archivo `.env.production`.
+
+#### Web Services Deployment
+
+Los RESTful Web Services se despliegan en **Microsoft Azure App Service** como un contenedor Docker, a partir del repositorio:
+
+`upc-pre-202620-1asi0730-16712-CodeBrokers-web-services`
+
+Repositorio:
+
+https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/upc-pre-202620-1asi0730-16712-CodeBrokers-web-services
+
+Los pasos para el despliegue son los siguientes:
+
+1. **Imagen Docker.** El `Dockerfile` compila la API con la imagen `mcr.microsoft.com/dotnet/sdk:10.0` y la empaqueta con el runtime `mcr.microsoft.com/dotnet/aspnet:10.0`, expuesta en el puerto 8080.
+2. **Integración continua.** El workflow `.github/workflows/ci.yml` compila la solución en cada Pull Request hacia `develop`.
+3. **Despliegue continuo.** Al integrar en `develop`, el workflow `.github/workflows/cd.yml` construye la imagen y la publica en Docker Hub como `leorg15/vitalink-api`, con las etiquetas `dev` y el SHA del commit. Las credenciales de Docker Hub se guardan como secretos de GitHub Actions.
+4. **Publicación en Azure.** Un webhook de Docker Hub notifica al App Service `vitalink-api-dev`, que descarga la nueva imagen y reinicia la aplicación.
+5. **Configuración.** La cadena de conexión a Azure Database for PostgreSQL (`ConnectionStrings__DefaultConnection`), la clave del proveedor de correo (`Notification__Email__ApiKey`) y los orígenes permitidos de CORS se definen como variables de entorno del App Service. Al iniciar, la API aplica las migraciones pendientes.
+
+El despliegue se verifica con el endpoint de salud:
+
+https://vitalink-api-dev-h4gdanfjc5ezbqep.canadacentral-01.azurewebsites.net/api/v1/health
 
 #### Deployment Status
 
@@ -549,10 +601,10 @@ La rama configurada como Production Branch dentro de Vercel queda pendiente de v
 Landing Page & GitHub Pages & Deploy from a branch utilizando la rama \texttt{main} y el directorio \texttt{/ (root)} & Desplegada públicamente \\
 \hline
 
-Frontend Application & Vercel & Despliegue de la aplicación Vue.js. Production Branch pendiente de verificar. & Desplegada públicamente \\
+Frontend Application & Vercel & Despliegue de la aplicación Vue.js desde la rama \texttt{main} & Desplegada públicamente \\
 \hline
 
-RESTful API & \textit{Pendiente} & \textit{Pendiente} & Todavía no corresponde su implementación \\
+RESTful Web Services & Microsoft Azure App Service & Imagen Docker publicada por GitHub Actions al integrar en \texttt{develop} & Desplegada públicamente (primera versión, Sprint 3) \\
 \hline
 
 \end{longtable}
@@ -560,4 +612,4 @@ RESTful API & \textit{Pendiente} & \textit{Pendiente} & Todavía no corresponde 
 
 Table: Estado de despliegue de los productos de VitaLink
 
-La RESTful API todavía no forma parte del incremento implementado actualmente. Por este motivo, su proveedor, estrategia de despliegue y URL de producción serán documentados cuando corresponda desarrollar el Backend.
+La documentación de la API desplegada (Swagger UI) y la ejecución de pruebas automatizadas en el pipeline se incorporan en el Sprint 4.
