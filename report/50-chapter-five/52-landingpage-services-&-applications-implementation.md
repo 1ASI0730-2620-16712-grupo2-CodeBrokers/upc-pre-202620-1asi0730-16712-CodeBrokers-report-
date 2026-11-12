@@ -1616,11 +1616,11 @@ El campo `version` es el que la Web Application envía en `PATCH /status` para d
 
 \includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-overview.png}
 
-<!-- PENDIENTE: captura de una prueba con datos de muestra desde Scalar.
 **Prueba de POST /api/v1/alerts con datos de muestra desde Scalar:**
 
+La prueba se ejecutó en el entorno local de desarrollo, donde se publica la referencia interactiva de Scalar. Primero se creó una regla de monitoreo de frecuencia cardiaca (50 a 100 bpm, severidad HIGH) con \texttt{POST /api/v1/monitoring-rules} y luego un registro de salud de 130 bpm con \texttt{POST /api/v1/older-adults/\{id\}/\allowbreak{}health-records}. Con el identificador de ese registro, \texttt{POST /api/v1/alerts} respondió \texttt{201 Created} con una alerta en estado \texttt{PENDING}, severidad \texttt{HIGH} y referencias al registro de salud y a la regla incumplida.
+
 \includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-create-alert.png}
--->
 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
