@@ -51,7 +51,7 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 \hline
 
 \multirow{10}{=}{\textbf{Software Development}}
-& Visual Studio Code & \textit{Pendiente de verificar versión} & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
+& Visual Studio Code & 1.145.3 & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
 \cline{2-5}
 
 & Node.js & \texttt{v24.15.0} & Entorno de ejecución de JavaScript utilizado durante el desarrollo local de la aplicación Frontend basada en Vue.js. & \href{https://nodejs.org/}{Descarga: Node.js} \\
@@ -115,9 +115,7 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 
 Table: Herramientas y productos utilizados para el desarrollo de VitaLink
 
-Las versiones registradas para Node.js, Git y Pandoc corresponden al entorno de trabajo utilizado actualmente por el equipo. Para npm se registra la versión estable adoptada como referencia para el entorno Frontend. Para los Web Services, el repositorio documenta en su README los pasos para preparar el entorno: instalar el .NET SDK 10, crear el archivo \texttt{.env} a partir de \texttt{.env.example}, levantar PostgreSQL con \texttt{docker compose up -d}, registrar la cadena de conexión con \texttt{dotnet user-secrets} y ejecutar la API, que aplica las migraciones al iniciar.
-
-La versión específica de Visual Studio Code permanece pendiente de verificación.
+Las versiones registradas para Visual Studio Code, Node.js, Git y Pandoc corresponden al entorno de trabajo utilizado actualmente por el equipo. Para npm se registra la versión estable adoptada como referencia para el entorno Frontend. Para los Web Services, el repositorio documenta en su README los pasos para preparar el entorno: instalar el .NET SDK 10, crear el archivo \texttt{.env} a partir de \texttt{.env.example}, levantar PostgreSQL con \texttt{docker compose up -d}, registrar la cadena de conexión con \texttt{dotnet user-secrets} y ejecutar la API, que aplica las migraciones al iniciar.
 
 ### 5.1.2. Source Code Management
 
@@ -244,7 +242,13 @@ El Pull Request permite documentar el objetivo del cambio, revisar las modificac
 
 El historial del repositorio del informe contiene evidencia de este proceso. Entre los registros observados se encuentran los Pull Requests `#33`, `#34`, `#35` y `#37`, junto con sus respectivos commits de integración.
 
-**Evidencia visual de Pull Request:** \textit{Pendiente de incorporar captura.}
+**Evidencia visual de Pull Request:** el Pull Request \#23 del repositorio de Web Services integra la rama \texttt{develop} en \texttt{main} como release del Sprint 3. Su descripción resume los cambios por historia y tarea, la forma en que se verificaron y las notas de despliegue, y solicita la revisión de los demás integrantes.
+
+\includegraphics[width=0.92\linewidth]{assets/512-pull-request-summary.png}
+
+La revisión registra la aprobación de otro integrante (Iron819) con un comentario que confirma la ausencia de conflictos y el despliegue verificado, antes de la fusión en \texttt{main} con la verificación automática del pipeline aprobada.
+
+\includegraphics[width=0.92\linewidth]{assets/512-pull-request-approval.png}
 
 #### Versionado semántico
 
@@ -340,7 +344,7 @@ Para los nuevos cambios del proyecto, el Pull Request debe:
 - Permitir la revisión del cambio antes de su integración.
 - Mantener los mensajes de commit de acuerdo con la convención establecida.
 
-La exigencia de aprobación explícita por parte de otro integrante se encuentra **pendiente de verificar mediante evidencia de los Pull Requests existentes**, por lo que no se establece todavía como una condición demostrada en el historial del proyecto.
+La aprobación explícita por parte de otro integrante se evidencia en los Pull Requests de release, como el \#23 del repositorio de Web Services, que registra la aprobación de un integrante distinto al autor antes de su fusión en \texttt{main}.
 
 Después de integrar una rama temporal y comprobar que no contiene trabajo pendiente, esta puede ser eliminada del repositorio remoto. Las ramas históricas conservadas previamente pueden mantenerse como evidencia del proceso realizado.
 
