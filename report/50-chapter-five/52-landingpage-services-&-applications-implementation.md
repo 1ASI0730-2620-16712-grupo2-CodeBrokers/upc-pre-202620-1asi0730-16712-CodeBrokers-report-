@@ -1863,6 +1863,7 @@ Acciones para el Sprint 4 & (1) Re-estimar las historias retiradas antes del Spr
 Table: Resumen de la Sprint Retrospective 3
 
 
+<!-- Sprint 4: se completa para el TB2
 ### 5.2.4. Sprint 4
 
 #### 5.2.4.1. Sprint Planning 4
@@ -1894,7 +1895,4 @@ Table: Resumen de la Sprint Retrospective 3
 
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
-
-
-
-
+-->
