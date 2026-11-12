@@ -93,6 +93,10 @@ v1.1.0 & 2026-10-05 & Benigno Montero, Harold Fauskorp & Incorporación de la do
 \hline
 v1.2.0 & 2026-10-25 & Benigno Montero, Harold Fauskorp & Incorporación de la planificación del Sprint 3: Sprint Planning 3, reuniones del sprint, Leadership-and-Collaboration Matrix y Sprint Backlog 3. \\
 \hline
+v1.2.1 & 2026-10-30 & Osorio Ramírez, Eduardo Jesús & Evidencia de la configuración del proveedor externo de correo (Resend) en la sección de despliegue del Sprint 3. \\
+\hline
+v1.3.0 & 2026-11-09 & Benigno Montero, Harold Fauskorp & Cierre del Sprint 3 para el AV2: Development, Execution, Services Documentation, Software Deployment y Team Collaboration Evidence; Sprint Review y Sprint Retrospective 3; estados finales del Sprint Backlog 3 y elementos trasladados al Sprint 4; actualización de 5.1 Software Configuration Management con los Web Services, de Conclusiones, Bibliografía, Project Report Collaboration Insights y Student Outcome. \\
+\hline
 \end{longtable}
 \endgroup
 
