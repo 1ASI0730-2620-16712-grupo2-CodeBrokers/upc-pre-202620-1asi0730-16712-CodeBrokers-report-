@@ -86,14 +86,14 @@ El participante realizará el siguiente recorrido:
 3. Explicar con sus propias palabras qué entiende que ofrece VitaLink.
 4. Identificar los beneficios relacionados con acompañamiento, monitoreo y alertas.
 5. Acceder a la Frontend Web Application.
-6. Iniciar sesión utilizando un perfil correspondiente al segmento.
+6. Seleccionar en la pantalla de inicio el rol de familiar cuidador.
 7. Acceder al dashboard familiar.
 8. Seleccionar al adulto mayor asociado.
 9. Identificar el estado general mostrado por la aplicación.
 10. Revisar las últimas mediciones registradas.
 11. Identificar si existen alertas abiertas.
 12. Revisar la información presentada sobre una situación que requiere atención.
-13. Explorar las opciones de red familiar y perfil.
+13. Abrir el seguimiento del caso para identificar quién lo atiende y qué queda pendiente.
 14. Regresar al dashboard principal.
 
 ##### Preguntas de validación
@@ -107,7 +107,7 @@ El participante realizará el siguiente recorrido:
 7. ¿Pudo identificar rápidamente si existía alguna situación que requería atención?
 8. ¿La información de las alertas le pareció suficientemente clara para comprender qué ocurrió?
 9. ¿Le resultó sencillo diferenciar información normal de información que requiere atención?
-10. ¿La navegación entre el dashboard, red familiar y perfil le resultó clara?
+10. ¿La navegación entre el dashboard familiar y el seguimiento del caso le resultó clara?
 11. ¿Hubo alguna opción, texto o elemento que le generara confusión?
 12. ¿Considera que el tamaño de los textos, botones y elementos de navegación facilita el uso de la plataforma?
 13. ¿Qué fue lo que más le gustó de VitaLink?
@@ -131,7 +131,7 @@ El participante realizará el siguiente recorrido:
 2. Explorar las secciones orientadas a profesionales e instituciones de salud.
 3. Explicar con sus propias palabras la propuesta de valor de VitaLink para el personal médico.
 4. Acceder a la Frontend Web Application.
-5. Iniciar sesión utilizando un perfil de profesional de salud.
+5. Seleccionar en la pantalla de inicio el rol de profesional de salud.
 6. Acceder al dashboard médico.
 7. Identificar la cantidad y estado de las alertas disponibles.
 8. Diferenciar las alertas según su nivel de urgencia.
@@ -140,7 +140,7 @@ El participante realizará el siguiente recorrido:
 11. Acceder al detalle del paciente.
 12. Revisar su información y registros disponibles.
 13. Regresar al dashboard y continuar revisando casos pendientes.
-14. Acceder al perfil del profesional.
+14. Buscar un paciente en la lista de pacientes asignados.
 
 ##### Preguntas de validación
 
