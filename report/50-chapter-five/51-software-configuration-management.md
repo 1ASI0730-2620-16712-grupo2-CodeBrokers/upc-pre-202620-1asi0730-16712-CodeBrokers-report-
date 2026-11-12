@@ -50,8 +50,8 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 & UXPressia & SaaS & Elaboración de artefactos de Needfinding, incluyendo User Personas, User Journey Maps y Empathy Maps. & \href{https://uxpressia.com/}{SaaS: UXPressia} \\
 \hline
 
-\multirow{10}{=}{\textbf{Software Development}}
-& Visual Studio Code & 1.145.3 & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
+\multirow{11}{=}{\textbf{Software Development}}
+& Visual Studio Code & \texttt{1.145.3} & Editor principal para el desarrollo de la Landing Page, la aplicación Frontend y la edición de archivos Markdown. & \href{https://code.visualstudio.com/}{Descarga: VS Code} \\
 \cline{2-5}
 
 & Node.js & \texttt{v24.15.0} & Entorno de ejecución de JavaScript utilizado durante el desarrollo local de la aplicación Frontend basada en Vue.js. & \href{https://nodejs.org/}{Descarga: Node.js} \\
@@ -60,7 +60,9 @@ Con el objetivo de facilitar la reproducibilidad del entorno, se documentan las 
 & npm & \texttt{12.2.0} & Gestor de paquetes utilizado para administrar las dependencias y scripts de la aplicación Frontend. & \href{https://www.npmjs.com/}{Package Manager: npm} \\
 \cline{2-5}
 
-& JetBrains Rider & Desktop & IDE utilizado para desarrollar los RESTful Web Services con ASP.NET Core y C\#, ejecutar la API y administrar la base de datos local. & \href{https://www.jetbrains.com/rider/}{Descarga: Rider} \\
+& JetBrains Rider & \texttt{2026.2.3.1} & IDE utilizado para desarrollar los RESTful Web Services con ASP.NET Core y C\#, ejecutar la API y administrar la base de datos local. & \href{https://www.jetbrains.com/rider/}{Descarga: Rider} \\
+\cline{2-5}
+& WebStorm & \texttt{2026.2.2} & IDE utilizado para desarrollar la Frontend Web Application con Vue.js, ejecutar el servidor de desarrollo de Vite y depurar la integración con la API. & \href{https://www.jetbrains.com/webstorm/}{Descarga: WebStorm} \\
 \cline{2-5}
 
 & .NET SDK & \texttt{10.0} & SDK para compilar y ejecutar la API con ASP.NET Core y Entity Framework Core; incluye \texttt{dotnet user-secrets} para guardar la cadena de conexión fuera del repositorio. & \href{https://dotnet.microsoft.com/download/dotnet/10.0}{Descarga: .NET 10} \\
