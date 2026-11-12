@@ -1616,9 +1616,17 @@ El campo `version` es el que la Web Application envía en `PATCH /status` para d
 
 \includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-overview.png}
 
-**Prueba de POST /api/v1/alerts con datos de muestra desde Scalar:**
+**Prueba de la generación de una alerta con datos de muestra desde Scalar.** La prueba se ejecutó en el entorno local de desarrollo, donde se publica la referencia interactiva de Scalar, y recorre en tres peticiones el flujo que va del registro de salud a la alerta.
 
-La prueba se ejecutó en el entorno local de desarrollo, donde se publica la referencia interactiva de Scalar. Primero se creó una regla de monitoreo de frecuencia cardiaca (50 a 100 bpm, severidad HIGH) con \texttt{POST /api/v1/monitoring-rules} y luego un registro de salud de 130 bpm con \texttt{POST /api/v1/older-adults/\{id\}/\allowbreak{}health-records}. Con el identificador de ese registro, \texttt{POST /api/v1/alerts} respondió \texttt{201 Created} con una alerta en estado \texttt{PENDING}, severidad \texttt{HIGH} y referencias al registro de salud y a la regla incumplida.
+*Paso 1.* \texttt{POST /api/v1/monitoring-rules} crea una regla de monitoreo de frecuencia cardiaca para un adulto mayor de muestra, con umbral de 50 a 100 bpm y severidad \texttt{HIGH}. La API responde \texttt{201 Created} con la regla activa.
+
+\includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-create-rule.png}
+
+*Paso 2.* \texttt{POST /api/v1/older-adults/\{id\}/\allowbreak{}health-records} registra para el mismo adulto mayor una frecuencia cardiaca de 130 bpm informada por un familiar cuidador. La API responde \texttt{201 Created} con el identificador del registro.
+
+\includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-create-health-record.png}
+
+*Paso 3.* \texttt{POST /api/v1/alerts} recibe el identificador de ese registro, lo evalúa contra las reglas activas y responde \texttt{201 Created} con una alerta en estado \texttt{PENDING}, severidad \texttt{HIGH} y referencias al registro de salud y a la regla incumplida.
 
 \includegraphics[width=0.92\linewidth]{assets/523-sprint3-scalar-create-alert.png}
 
