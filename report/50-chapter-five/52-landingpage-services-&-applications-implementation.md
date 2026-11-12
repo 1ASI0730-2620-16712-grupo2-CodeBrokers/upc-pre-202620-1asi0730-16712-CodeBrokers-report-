@@ -1435,7 +1435,7 @@ La Landing Page no registra commits en el Sprint 3. Las historias trasladadas al
 
 Al cierre del Sprint 3, los Web Services están desplegados en Azure y responden con datos persistidos en PostgreSQL, y la Web Application desplegada en Vercel consume la API real en el flujo de alertas. El recorrido verificado en el Sprint Review fue el siguiente:
 
-1. Se registra un registro de salud fuera de umbral para un adulto mayor (`POST /api/v1/older-adults/{id}/health-records`) y se solicita su evaluación (`POST /api/v1/alerts`). La API compara el valor con las reglas de monitoreo activas y crea una única alerta `PENDING` con la severidad de la regla incumplida.
+1. Se registra un registro de salud fuera de umbral para un adulto mayor (\texttt{POST /api/v1/older-adults/\{id\}/\allowbreak{}health-records}) y se solicita su evaluación (`POST /api/v1/alerts`). La API compara el valor con las reglas de monitoreo activas y crea una única alerta `PENDING` con la severidad de la regla incumplida.
 2. Al crearse la alerta, el bounded context Notification envía el correo de aviso al familiar mediante Resend y registra la notificación con su estado de entrega.
 3. El profesional de la salud consulta el resumen de alertas en la Web Application, abre la alerta y la marca como en revisión y luego como atendida. Cada cambio queda en el historial de estados con su actor y fecha; si otra persona modificó la alerta antes, la API responde con un conflicto y la vista muestra un mensaje genérico.
 4. El profesional revisa el historial de salud del paciente, cargado desde la API y ordenado del más reciente al más antiguo.
@@ -1740,13 +1740,11 @@ Pull request & \href{https://github.com/1ASI0730-2620-16712-grupo2-CodeBrokers/u
 
 Table: Configuración del servicio externo de correo del Sprint 3
 
-\includegraphics[width=0.8\linewidth]{assets/5237-resend-api-key.png}
-
-La captura muestra la clave de API \texttt{vitalink-dev} creada en Resend para el desarrollo local, con su valor oculto.
-
-Para el entorno desplegado se creó una segunda clave, \texttt{vitalink-azure}, con permiso de solo envío. Se configuró como variable de entorno del App Service (\texttt{Notification\_\_Email\_\_ApiKey}), de modo que la API desplegada envía los correos sin que la clave figure en el repositorio. El destinatario del aviso se define con la variable \texttt{Notification\_\_AlertRecipient\_\_Email} y debe corresponder a un usuario registrado con el rol de familiar cuidador; como Resend sin dominio propio solo entrega al correo de la cuenta, para la demostración se registró ese correo como familiar cuidador de prueba.
+Además de la clave \texttt{vitalink-dev} usada en el desarrollo local, para el entorno desplegado se creó la clave \texttt{vitalink-azure}, con permiso de solo envío. Se configuró como variable de entorno del App Service (\texttt{Notification\_\_Email\_\_ApiKey}), de modo que la API desplegada envía los correos sin que la clave figure en el repositorio. El destinatario del aviso se define con la variable \texttt{Notification\_\_AlertRecipient\_\_Email} y debe corresponder a un usuario registrado con el rol de familiar cuidador; como Resend sin dominio propio solo entrega al correo de la cuenta, para la demostración se registró ese correo como familiar cuidador de prueba.
 
 \includegraphics[width=0.8\linewidth]{assets/5237-resend-api-key-azure.png}
+
+La captura muestra la clave de API \texttt{vitalink-azure} creada en Resend, con permiso de solo envío y su valor oculto.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
