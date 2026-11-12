@@ -216,7 +216,7 @@ El historial real del repositorio evidencia actualmente el uso de ramas `feature
 \texttt{docs/*} & Temporal & \texttt{develop} & \texttt{develop} o rama estable según el flujo aplicado & Utilizada para cambios exclusivamente documentales. Existen evidencias reales como \texttt{docs/12-lean-ux-validation}, \texttt{docs/03-collaboration-insights} y \texttt{docs/61-conclusiones}. \\
 \hline
 
-\texttt{fix/*} & Temporal & \texttt{develop} & \texttt{develop} & Convención definida para corregir errores encontrados durante el desarrollo sin introducir nuevas funcionalidades. Su evidencia de uso se encuentra pendiente de verificar. \\
+\texttt{fix/*} & Temporal & \texttt{develop} & \texttt{develop} & Convención definida para corregir errores encontrados durante el desarrollo sin introducir nuevas funcionalidades. Se aplicó en el repositorio del informe con la rama \texttt{fix/52-sprint-1-reconciliacion}. \\
 \hline
 
 \texttt{release/*} & Temporal & \texttt{develop} & \texttt{main} y \texttt{develop} & Convención prevista para la estabilización de una versión antes de una entrega, admitiendo únicamente los ajustes necesarios para su publicación. \\
@@ -372,7 +372,7 @@ Las siguientes convenciones lingüísticas se aplican al proyecto:
 - Los nuevos mensajes de commit se redactan en inglés.
 - El informe académico permanece redactado en español.
 
-Los identificadores exactos de los locales utilizados por `vue-i18n` quedan pendientes de documentar a partir de la configuración del repositorio Frontend.
+La configuración de `vue-i18n` define los locales `en_US`, predeterminado y de respaldo, y `es_419`, correspondiente al español latinoamericano. El idioma elegido se guarda en el navegador (`localStorage`, clave `vitalink.locale`) y se restaura al volver a abrir la aplicación; los identificadores alternativos (`en`, `en-US`, `es` y `es-419`) se normalizan a esos dos valores.
 
 #### Convenciones generales
 
@@ -402,7 +402,7 @@ Los identificadores exactos de los locales utilizados por `vue-i18n` quedan pend
 Codificación de archivos & UTF-8 sin BOM \\
 \hline
 
-Fin de línea & LF (\texttt{\textbackslash{}n}) como convención definida por el equipo. La normalización automática mediante \texttt{.gitattributes} se encuentra pendiente de verificar. \\
+Fin de línea & LF (\texttt{\textbackslash{}n}) como convención definida por el equipo. Los repositorios no incluyen un archivo \texttt{.gitattributes}, por lo que la conversión de fin de línea depende de la configuración \texttt{core.autocrlf} de Git en el equipo de cada integrante. \\
 \hline
 
 Indentación & 2 espacios en HTML, CSS, JavaScript y Vue; 4 espacios en C\# \\
@@ -445,7 +445,7 @@ En CSS se utiliza una nomenclatura consistente para las clases y se centralizan 
 }
 ```
 
-La aplicación exacta de la metodología BEM en todos los estilos del producto se encuentra **pendiente de verificar directamente en los repositorios correspondientes**, por lo que se mantiene como convención recomendada y no como una afirmación sobre la totalidad del código implementado.
+La revisión de los repositorios de la Landing Page y de la Frontend Web Application mostró que sus estilos no aplican la nomenclatura BEM: las clases se nombran en `kebab-case` descriptivo (por ejemplo, `team-card`, `price-tag`, `page-heading` o `stale-banner`), sin separadores de elemento (`__`) ni de modificador (`--`). Por ello, BEM se mantiene como convención recomendada para los nuevos estilos y no como una práctica aplicada en el código actual.
 
 #### JavaScript y Vue.js
 
@@ -461,7 +461,7 @@ AlertSummaryCard.vue
 
 La aplicación Frontend cuenta con soporte de internacionalización mediante **vue-i18n**, permitiendo presentar la interfaz en inglés y español. El inglés se establece como idioma predeterminado y el español como idioma alternativo.
 
-Los identificadores exactos utilizados para los locales y la estructura específica de los archivos de traducción quedan pendientes de documentar a partir de la configuración actual del repositorio Frontend.
+Los textos traducidos se agrupan en `src/locales/en.json` y `src/locales/es.json` y se registran en `src/i18n.js` con los locales `en_US` y `es_419`; cuando falta una traducción se muestra el texto en `en_US` y se registra una advertencia en la consola.
 
 #### C# y ASP.NET Core
 
