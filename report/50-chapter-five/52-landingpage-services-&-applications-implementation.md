@@ -1465,9 +1465,7 @@ En este incremento, la Web Application registra los cambios de estado con un pro
 
 \includegraphics[width=0.7\linewidth]{assets/523-sprint3-alert-email.png}
 
-<!-- PENDIENTE: reemplazar por el enlace del video de navegación del Sprint 3 en Microsoft Stream.
-**Video de navegación del Sprint 3:** \href{URL}{Ver video de navegación del Sprint 3}
--->
+**Video de navegación del Sprint 3 (Microsoft Stream):** \href{https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321086_upc_edu_pe/IQC4BrIK5LHuSq7VQL_48I_6AVY9kprIJbjLAhgl82wppVE?e=nOrcR5}{Ver video de navegación del Sprint 3}
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
