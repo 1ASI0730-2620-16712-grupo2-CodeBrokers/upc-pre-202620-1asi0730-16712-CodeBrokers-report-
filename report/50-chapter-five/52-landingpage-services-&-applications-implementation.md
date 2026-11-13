@@ -1087,7 +1087,7 @@ TS-06 & VTL-70 & Documentación y verificación de contratos de servicios & 3 & 
 \hline
 \multicolumn{3}{|r|}{\textbf{Completado (Done)}} & \textbf{42} & \multicolumn{2}{l|}{} \\
 \hline
-\multicolumn{3}{|r|}{\textbf{Trasladado al Sprint 4}} & \textbf{11} & \multicolumn{2}{l|}{} \\
+\multicolumn{3}{|r|}{\textbf{Retirado del sprint (pasa al Sprint 4)}} & \textbf{11} & \multicolumn{2}{l|}{} \\
 \end{longtable}
 \endgroup
 
@@ -1178,7 +1178,7 @@ US-12 & Observación breve al atender una alerta & T-30 (VTL-102) & Observación
 
 Table: Sprint Backlog 3
 
-El esfuerzo total comprometido fue de **53 Story Points** y **159 horas** estimadas. Al cierre, ocho elementos (**42 Story Points**) quedaron en estado Done, junto con 22 de las 30 tareas (**121 horas** estimadas). Los cuatro elementos restantes (**11 Story Points**, 38 horas pendientes) se trasladaron al Sprint 4: US-25 (inicio de sesión con JWT), US-20 (validación del perfil del paciente), US-12 (observación al atender una alerta) y TS-06 (documentación publicada de los contratos). La historia US-25 concentraba 19 horas en cuatro tareas frente a sus 3 Story Points, lo que evidenció una subestimación de su complejidad en el Product Backlog; esta diferencia se analizó en la Sprint Retrospective 3. La trazabilidad se conserva mediante las claves VTL de Jira, las ramas de característica y los commits que se registrarán en la sección siguiente.
+El esfuerzo total comprometido fue de **53 Story Points** y **159 horas** estimadas. Al cierre, ocho elementos (**42 Story Points**) quedaron en estado Done, junto con 22 de las 30 tareas (**121 horas** estimadas). Los cuatro elementos restantes (**11 Story Points**, 38 horas pendientes) se retiraron del sprint y pasan al Sprint 4: US-25 (inicio de sesión por rol), US-20 (validación del perfil del paciente), US-12 (observación al atender una alerta) y TS-06 (documentación publicada de los contratos). La historia US-25 concentraba 19 horas en cuatro tareas frente a sus 3 Story Points, lo que evidenció una subestimación de su complejidad en el Product Backlog; esta diferencia se analizó en la Sprint Retrospective 3. La trazabilidad se conserva mediante las claves VTL de Jira, las ramas de característica y los commits que se registrarán en la sección siguiente.
 
 
 #### 5.2.3.4. Development Evidence for Sprint Review
@@ -1428,7 +1428,7 @@ Frontend Application & main & a0dbf43 & Merge pull request \#18 from develop & 0
 
 Table: Development Evidence del Sprint 3 — Frontend Web Application
 
-La Landing Page no registra commits en el Sprint 3. Las historias trasladadas al Sprint 4 también tienen avance en el repositorio: la base de identidad de US-25 (T-4) ya está integrada en `develop` y el endpoint de observación de US-12 se integró en el Pull Request \#20, pero su captura en la Web Application y la verificación de sus criterios de aceptación quedaron pendientes.
+La Landing Page no registra commits en el Sprint 3. Entre los elementos retirados del sprint, US-12 tiene avance en el repositorio: su endpoint de observación se integró en el Pull Request \#20, pero su captura en la Web Application y la verificación de sus criterios de aceptación quedaron pendientes para el Sprint 4.
 
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
