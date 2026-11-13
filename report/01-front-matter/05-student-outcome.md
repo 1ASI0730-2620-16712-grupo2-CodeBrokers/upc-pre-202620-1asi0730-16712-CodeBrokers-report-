@@ -120,7 +120,7 @@ Lideré la configuración del despliegue continuo de la Landing Page en GitHub P
 Lideré la integración de la capa compartida, el resumen de alertas y el detalle de pacientes. Coordiné la consolidación de ramas, la verificación de compilación y la preparación del release del Sprint 2.
 \newline\newline
 \textbf{Benigno Montero, Harold Fauskorp (Harold-11) — AV2:}
-Lideré la base de los Web Services (TS-03): la estructura por bounded contexts, la persistencia con Entity Framework Core y PostgreSQL, el manejo de errores y la internacionalización, junto con la base de identidad de usuarios (T-4). Participé en la decisión de ajustar el alcance del sprint para asegurar el flujo de alertas.
+Lideré la base de los Web Services (TS-03): la estructura por bounded contexts, la persistencia con Entity Framework Core y PostgreSQL, el manejo de errores y la internacionalización. Participé en la decisión de ajustar el alcance del sprint para asegurar el flujo de alertas y lideré la evaluación heurística de la Landing Page y la Web Application (5.3.3).
 &
 \textbf{TB1 (continuación):}
 Consolidamos el incremento mediante Pull Requests, un release y evidencias de despliegue. Presentamos un resultado común a partir de nuestras contribuciones.
@@ -225,7 +225,7 @@ Coordiné con el equipo el cierre del Sprint 1 en Jira, asegurando que las activ
 Coordiné la integración de ramas y la consolidación del incremento en main. Participé en la verificación de compilación y preparación del release, relacionando los aportes con las evidencias del Sprint 2.
 \newline\newline
 \textbf{Benigno Montero, Harold Fauskorp (Harold-11) — AV2:}
-Organicé el Sprint Planning 3 y las reuniones de seguimiento, establecí las reglas de integración del equipo (migraciones, archivos compartidos y revisión por otro integrante) y documenté el cierre del sprint en el informe.
+Organicé el Sprint Planning 3 y las reuniones de seguimiento, establecí las reglas de integración del equipo (migraciones, archivos compartidos y revisión por otro integrante) y documenté el cierre del sprint en el informe. Además, consolidé los testimonios del equipo en el video About-the-Team y publiqué los videos del AV2 en Microsoft Stream y YouTube.
 &
 \textbf{TB1 (continuación):}
 Identificamos como mejora actualizar Jira durante la ejecución de las actividades y no únicamente al cierre, para representar el avance progresivo y detectar dificultades oportunamente.
