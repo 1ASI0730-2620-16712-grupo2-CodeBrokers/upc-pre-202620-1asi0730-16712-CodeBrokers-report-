@@ -97,6 +97,8 @@ v1.2.1 & 2026-10-30 & Osorio Ramírez, Eduardo Jesús & Evidencia de la configur
 \hline
 v1.3.0 & 2026-11-09 & Benigno Montero, Harold Fauskorp & Cierre del Sprint 3 para el AV2: Development, Execution, Services Documentation, Software Deployment y Team Collaboration Evidence; Sprint Review y Sprint Retrospective 3; estados finales del Sprint Backlog 3 y elementos trasladados al Sprint 4; actualización de 5.1 Software Configuration Management con los Web Services, de Conclusiones, Bibliografía, Project Report Collaboration Insights y Student Outcome. \\
 \hline
+v1.3.1 & 2026-11-13 & Benigno Montero, Harold Fauskorp & Correcciones del AV2: herramientas, revisión de Pull Requests y convenciones en 5.1; pruebas de los Web Services con Scalar (5.2.3.6); unificación de las entrevistas de validación (5.3.1 y 5.3.2) y evaluación según heurísticas (5.3.3); videos About-the-Product (5.4) y About-the-Team (6.2); enlaces del video de navegación del Sprint 3 y de la exposición AV2; precisión del alcance retirado del Sprint 3. \\
+\hline
 \end{longtable}
 \endgroup
 
