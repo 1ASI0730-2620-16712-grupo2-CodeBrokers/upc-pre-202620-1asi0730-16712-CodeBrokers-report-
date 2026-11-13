@@ -35,7 +35,7 @@ AV1 & Exposición AV1 - VitaLink - CodeBrokers & \href{https://upcedupe-my.share
 \hline
 TB1 & Exposición TB1 - VitaLink - CodeBrokers & \href{https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312348_upc_edu_pe/IQBygf6AYXxcQYbZba_l6GXNAdOTODsCQ0-kGBwvfp_W5IE?e=ZQIUu1}{Ver exposición TB1} \\
 \hline
-AV2 & Exposición AV2 - VitaLink - CodeBrokers & \textit{Pendiente de publicación} \\
+AV2 & Exposición AV2 - VitaLink - CodeBrokers & \href{https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321086_upc_edu_pe/IQCnxpVTqXN-S7s3Am818yHTAczwzrIi0XMM94kY98hr0_Y?e=x1DpeC}{Ver exposición AV2} \\
 \hline
 TB2 & Exposición TB2 - VitaLink - CodeBrokers & \textit{Pendiente de publicación} \\
 \end{longtable}
