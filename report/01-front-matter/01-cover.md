@@ -17,7 +17,7 @@
 {\large \text Equipo } \\[0.5cm]
 {\large \textbf {CodeBrokers} } \\[0.5cm]
 {\large \text Proyecto } \\[0.5cm]
-{\large \textbf {VitaLkink} } \\[0.5cm]
+{\large \textbf {Vitakink} } \\[0.5cm]
 
 {\large \textbf {Código - Apellidos y Nombres} } \\[0.2cm]
 {\large \text U22421631 - Osorio Ramírez, Eduardo Jesús } \\[0.2cm]

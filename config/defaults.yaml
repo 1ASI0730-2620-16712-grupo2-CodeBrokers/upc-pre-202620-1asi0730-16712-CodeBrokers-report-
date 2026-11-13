@@ -67,4 +67,4 @@ variables:
     - \usepackage{array}
     
 # Salida del archivo respetando la nomenclatura del curso
-output-file: build/upc-pre-202620-1asi0730-16712-CodeBrokers-report-av1.pdf
+output-file: build/upc-pre-202620-1asi0730-16712-CodeBrokers-report-av2.pdf

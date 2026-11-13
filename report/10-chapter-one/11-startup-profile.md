@@ -88,7 +88,7 @@ A largo plazo, VitaLink podrá evolucionar mediante la integración con disposit
 \textbf{Integrante 1: Luis German Tello Quispe} \newline
 \textbf{Código de estudiante:} U202317767 \newline
 \textbf{Carrera:} Ingeniería de Software \newline
-\textbf{Descripción:} Soy un estudiante de la carrera de ing de software, me interesa mucho el lado del backend, tecnologias como phyton, mysql, mongodb, c++ y tambien me entusiasma en un futuro poder aprender mucho sobre ciberseguridad de la mano del backend. \newline
+\textbf{Descripción:} Soy un estudiante de la carrera de ingeniería de software, me interesa mucho el lado del backend, tecnologías como Phyton, MySQL, MongoDB, C++ y tambien me entusiasma en un futuro poder aprender mucho sobre ciberseguridad de la mano del backend. \newline
 \textbf{Aporte al equipo:} Apoyo a mi equipo con estructuracion de los documentos para el desarrollo del proyecto. Ademas, apoyo mediante analisis de correcciones a lo largo del avance, en base a mis conocimientos tanto de programacion como analisis de requerimientos y requisitos.
 & 
 \vspace{-0.5cm} % Ajusta este valor para subir/bajar la foto
